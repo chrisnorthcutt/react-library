@@ -1,6 +1,6 @@
 {
-	"main": "dist/index.js",
 	"license": "MIT",
+	"main": "dist/index.js",
 	"devDependencies": {
 		"@types/react": "^16.8"
 	},
@@ -9,7 +9,18 @@
 		"react": "^16.8"
 	},
 	"framer": {
+		"displayName": "",
 		"id": "6a190289-5c7e-4ca8-8ef4-037aa795ee76"
 	},
-	"author": "Chris Northcutt"
+	"author": "Chris Northcutt",
+	"name": "",
+	"version": "1.0.0",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"node-sass": "^4.14.1"
+	},
+	"scripts": {
+		"getTokens": "node ./code/getTokens.js",
+		"scss": "node-sass --watch code/App.scss -o code/"
+	}
 }
