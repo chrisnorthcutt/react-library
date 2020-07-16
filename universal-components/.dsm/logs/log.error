@@ -1,0 +1,229 @@
+
+---------------------------------------------------      DSM Log Start      ---------------------------------------------------
+Error message: Upload failed: iframe.html 
+  
+Created Date: 7/15/2020, 2:56:52 PM
+Story file path: No story file path
+Component file path: Not found in "in-dsm"
+
+###  FILE: package.json
+  
+{
+  "pkg": {
+    "name": "universal-components",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@invisionapp/dsm-storybook": "0.0.130",
+      "@storybook/addon-options": "^5.3.19",
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-scripts": "3.4.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "storybook": "start-storybook -p 9009 -s public",
+      "build-storybook": "build-storybook -s public",
+      "dsm-storybook:publish": "dsm-storybook publish",
+      "dsm-storybook:preview": "dsm-storybook preview"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@storybook/addon-actions": "^5.3.19",
+      "@storybook/addon-knobs": "^5.3.19",
+      "@storybook/addon-links": "^5.3.19",
+      "@storybook/addons": "^5.3.19",
+      "@storybook/preset-create-react-app": "^3.1.4",
+      "@storybook/react": "^5.3.19"
+    },
+    "readme": "ERROR: No README data found!",
+    "_id": "universal-components@0.1.0"
+  },
+  "path": "/Users/c303070/Documents/Repos/universal-flows/universal-components/package.json"
+}
+
+###  FILE: '.dsmrc'
+  
+{
+  "dsmHost": "digitalhealth.invisionapp.com",
+  "organization": "digital-health",
+  "outputDir": ".dsm",
+  "storyPath": "src/**/*.stories.js"
+}
+
+####  STORYBOOK CONFIG /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/*
+   
+
+###  FILE: /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/addons.js
+  
+import { registerDsm } from '@invisionapp/dsm-storybook/register';
+registerDsm(process.env.STORYBOOK_DSM);
+
+,
+###  FILE: /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/config.js
+  
+import { configure, addDecorator, addParameters } from '@storybook/react';
+import { initDsm } from '@invisionapp/dsm-storybook';
+
+// automatically import all files ending in *.stories.js
+const req = require.context('../src', true, /\.stories\.js$/);
+function loadStories() {
+  req.keys().forEach((filename) => req(filename));
+}
+
+//Init Dsm
+initDsm({
+  addDecorator,
+  addParameters,
+  callback: () => configure(loadStories, module)
+});
+,
+###  FILE: /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/main.js
+  
+module.exports = {
+  stories: ['../src/**/*.stories.js'],
+  addons: [
+    '@storybook/preset-create-react-app',
+    '@storybook/addon-actions',
+    '@storybook/addon-links',
+    '@storybook/addon-knobs/register'
+  ],
+};
+
+ 
+---------------------------------------------------      DSM Log End      -----------------------------------------------------
+
+---------------------------------------------------      DSM Log Start      ---------------------------------------------------
+Error message: Error: connect ETIMEDOUT 104.17.84.241:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16) 
+  
+Created Date: 7/15/2020, 2:56:52 PM
+Story file path: No story file path
+Component file path: Not found in "in-dsm"
+
+###  FILE: package.json
+  
+{
+  "pkg": {
+    "name": "universal-components",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@invisionapp/dsm-storybook": "0.0.130",
+      "@storybook/addon-options": "^5.3.19",
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-scripts": "3.4.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "storybook": "start-storybook -p 9009 -s public",
+      "build-storybook": "build-storybook -s public",
+      "dsm-storybook:publish": "dsm-storybook publish",
+      "dsm-storybook:preview": "dsm-storybook preview"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@storybook/addon-actions": "^5.3.19",
+      "@storybook/addon-knobs": "^5.3.19",
+      "@storybook/addon-links": "^5.3.19",
+      "@storybook/addons": "^5.3.19",
+      "@storybook/preset-create-react-app": "^3.1.4",
+      "@storybook/react": "^5.3.19"
+    },
+    "readme": "ERROR: No README data found!",
+    "_id": "universal-components@0.1.0"
+  },
+  "path": "/Users/c303070/Documents/Repos/universal-flows/universal-components/package.json"
+}
+
+###  FILE: '.dsmrc'
+  
+{
+  "dsmHost": "digitalhealth.invisionapp.com",
+  "organization": "digital-health",
+  "outputDir": ".dsm",
+  "storyPath": "src/**/*.stories.js"
+}
+
+####  STORYBOOK CONFIG /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/*
+   
+
+###  FILE: /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/addons.js
+  
+import { registerDsm } from '@invisionapp/dsm-storybook/register';
+registerDsm(process.env.STORYBOOK_DSM);
+
+,
+###  FILE: /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/config.js
+  
+import { configure, addDecorator, addParameters } from '@storybook/react';
+import { initDsm } from '@invisionapp/dsm-storybook';
+
+// automatically import all files ending in *.stories.js
+const req = require.context('../src', true, /\.stories\.js$/);
+function loadStories() {
+  req.keys().forEach((filename) => req(filename));
+}
+
+//Init Dsm
+initDsm({
+  addDecorator,
+  addParameters,
+  callback: () => configure(loadStories, module)
+});
+,
+###  FILE: /Users/c303070/Documents/Repos/universal-flows/universal-components/.storybook/main.js
+  
+module.exports = {
+  stories: ['../src/**/*.stories.js'],
+  addons: [
+    '@storybook/preset-create-react-app',
+    '@storybook/addon-actions',
+    '@storybook/addon-links',
+    '@storybook/addon-knobs/register'
+  ],
+};
+
+ 
+---------------------------------------------------      DSM Log End      -----------------------------------------------------

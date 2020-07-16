@@ -1,0 +1,7 @@
+{
+  "authToken": "r1kdyCn1P",
+  "dsmHost": "digitalhealth.invisionapp.com",
+  "organization": "digital-health",
+  "outputDir": ".dsm",
+  "storyPath": "src/**/*.stories.js"
+}

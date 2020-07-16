@@ -1,0 +1,51 @@
+{
+    "name": "ufcomponents",
+    "version": "0.1.0",
+    "private": false,
+    "license": "MIT",
+    "main": ".storybook/main.js",
+    "dependencies": {
+        "@invisionapp/dsm-storybook": "0.0.130",
+        "@storybook/addon-options": "^5.3.19",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-scripts": "3.4.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "storybook": "start-storybook -p 9009 -s public",
+        "build-storybook": "build-storybook -s public",
+        "dsm-storybook:publish": "dsm-storybook publish",
+        "dsm-storybook:preview": "dsm-storybook preview",
+        "createlink": "node scripts/createsymlink.js"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@storybook/addon-actions": "^5.3.19",
+        "@storybook/addon-knobs": "^5.3.19",
+        "@storybook/addon-links": "^5.3.19",
+        "@storybook/addons": "^5.3.19",
+        "@storybook/preset-create-react-app": "^3.1.4",
+        "@storybook/react": "^5.3.19"
+    }
+}
