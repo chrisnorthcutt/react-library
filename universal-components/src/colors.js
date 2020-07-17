@@ -1,0 +1,15 @@
+const colors = {
+   'warning': '#f69a19',
+   'warning-dark': '#c75200',
+   'success': '#45ba7f',
+   'success-dark': '#31845b',
+   'danger': '#d52b1e',
+   'danger-dark': '#aa2218',
+   'grey-200': '#eeeeee',
+   'grey-900': '#212121',
+   'primary-900': '#00384d',
+   'primary-600': '#0081b3',
+   'grey-400': '#bdbdbd',
+   'grey-700': '#616161',
+   'primary-400': '#00a1de',
+}
