@@ -1,0 +1,18 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "ae8f1d11-4644-4acc-8037-0183ccb922f3"
+	},
+	"author": "Chris Northcutt",
+	"dependencies": {
+		"@framer/framer.default": "^1.74.0"
+	}
+}
