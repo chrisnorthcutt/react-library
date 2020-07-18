@@ -14,6 +14,7 @@
         "@types/node": "^14.0.23",
         "@types/react": "^16.9.43",
         "@types/react-dom": "^16.9.8",
+        "npm-watch": "^0.6.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-scripts": "3.4.1",
@@ -28,7 +29,8 @@
         "build-storybook": "build-storybook -s public",
         "dsm-storybook:publish": "dsm-storybook publish",
         "dsm-storybook:preview": "dsm-storybook preview",
-        "createlink": "node createsymlink.js"
+        "createlink": "node createsymlink.js",
+        "watch": "npm-watch"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -52,5 +54,8 @@
         "@storybook/addons": "^5.3.19",
         "@storybook/preset-create-react-app": "^3.1.4",
         "@storybook/react": "^5.3.19"
+    },
+    "watch": {
+        "start": "src/"
     }
 }

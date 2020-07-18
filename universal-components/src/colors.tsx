@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
    'warning': '#f69a19',
    'warning-dark': '#c75200',
    'success': '#45ba7f',
