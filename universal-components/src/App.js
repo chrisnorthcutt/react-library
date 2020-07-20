@@ -5,6 +5,7 @@ import './TextField'
 import './Select'
 import { TextField } from './TextField';
 import { Select } from './Select';
+import { Button } from './Button';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <h4>TextField</h4>
       <TextField type="password" label="test"></TextField>
       <Select></Select>
+      <Button />
     </div>
     
   );

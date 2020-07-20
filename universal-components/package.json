@@ -12,14 +12,21 @@
         "@testing-library/user-event": "^7.1.2",
         "@types/jest": "^26.0.4",
         "@types/node": "^14.0.23",
-        "@types/react": "^16.9.43",
+        "@types/react": "^16.8.8",
         "@types/react-dom": "^16.9.8",
         "@types/styled-components": "^5.1.1",
+        "framer-motion": "^2.1.0",
+        "lodash": "^4.17.19",
+        "npm-watch": "^0.6.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-scripts": "3.4.1",
         "styled-components": "^5.1.1",
         "typescript": "^3.9.7"
+    },
+    "resolutions": {
+        "@types/react": "16.8.8",
+        "styled-components": "^5"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -30,7 +37,8 @@
         "build-storybook": "build-storybook -s public",
         "dsm-storybook:publish": "dsm-storybook publish",
         "dsm-storybook:preview": "dsm-storybook preview",
-        "createlink": "node createsymlink.js"
+        "createlink": "node createsymlink.js",
+        "watch": "npm-watch"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -47,9 +55,6 @@
             "last 1 safari version"
         ]
     },
-    "resolutions": {
-        "styled-components": "^5"
-    },
     "devDependencies": {
         "@storybook/addon-actions": "^5.3.19",
         "@storybook/addon-knobs": "^5.3.19",
@@ -57,5 +62,8 @@
         "@storybook/addons": "^5.3.19",
         "@storybook/preset-create-react-app": "^3.1.4",
         "@storybook/react": "^5.3.19"
+    },
+    "watch": {
+        "start": "src/"
     }
 }
