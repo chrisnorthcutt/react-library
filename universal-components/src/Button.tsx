@@ -5,12 +5,12 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 interface Props {
-    isPressed: Boolean;
+    size: String;
 }
 
 const StyledButton = styled(motion.button).attrs((props: Props) => {
     return {
-        isPressed: props.isPressed,
+        size: props.size,
     }
 })`
     width: ${sizes.auto};
@@ -25,17 +25,19 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
     font-size: 1rem;
     color: ${colors.white};
     &.big-button {
-        width: ${sizes.full};
+        width: calc(${sizes.fit > '300px' ? '300px' : sizes.fit});
+        height: 3rem;
     }
 `
 
 export function Button(props: any) {
+    const { size } = props;
     return (
-        <StyledButton 
+        <StyledButton
             whileTap={{
                 scale: 0.96
             }}
-            className="big-button">
+            className={size === "big" ? "big-button" : ""}>
             Howdy
         </StyledButton>
     )
