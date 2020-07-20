@@ -12,10 +12,13 @@ export const colors = {
    'grey400': '#bdbdbd',
    'grey700': '#616161',
    'primary400': '#00a1de',
-   'white': '#ffffff'
+   'white': '#ffffff',
+   'black': '#000000'
 }
 
 export const sizes = {
    'auto': 'auto',
-   'full': '90vw'
+   'fit': '90%',
+   'full': '90vw',
+   'modal': '80vw'
 }

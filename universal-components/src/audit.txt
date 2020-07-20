@@ -1,0 +1,34 @@
+Make Primary Device Modal
+* Modal
+* Modal Title
+* Modal Close
+* Modal Body
+* Modal Action Button Area
+
+
+Account Info is Pre-filled
+* Page Header
+** Page Header Title
+** Page Header Previous
+** Page Header Next
+* Text Input (email, password)
+* Link/Button Tertiary
+* Checkbox
+* Button (Primary, Tertiary)
+
+Suspended Account
+* Jumbo Title
+* Jumbo Body
+* Jumbo Image
+
+Home Sign In Animation
+* Sign in animation Image
+
+Signed In
+Main App Background
+
+Face ID
+* Face ID Animation
+
+
+
