@@ -1,7 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const 
-console.log(path.relative(__dirname, "../universal-prototypes"))
 
 fs.readdir("../universal-prototypes/", function(err, files) {
     //handling error
