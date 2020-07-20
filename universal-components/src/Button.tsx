@@ -24,20 +24,17 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
     font-weight: 800;
     font-size: 1rem;
     color: ${colors.white};
-    transition: transform 200ms ease-in-out;
-    transform: scale(${props => props.isPressed ? 0.5 : 1});
     &.big-button {
         width: ${sizes.full};
     }
 `
 
 export function Button(props: any) {
-    const [isPressed, setPressed] = useState(false)
     return (
         <StyledButton 
-            onTapStart={() => setPressed(true)}
-            onTap={() => setPressed(false)}
-            isPressed={isPressed}
+            whileTap={{
+                scale: 0.96
+            }}
             className="big-button">
             Howdy
         </StyledButton>
