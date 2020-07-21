@@ -4,9 +4,6 @@ import { colors, sizes } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-interface Props {
-}
-
 const StyledCheckbox = styled(motion.div)`
   position: relative;
   width: 30px;

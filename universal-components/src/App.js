@@ -14,9 +14,9 @@ function App() {
     <div style={{width: "375px", border: "1px solid black", height: "667px"}}>
       <h2>Components</h2>
       <h4>TextField</h4>
-      <TextField type="password" label="test"></TextField>
+      <TextField label="test" />
       <Select></Select>
-      <Button />
+      <Button importance="primary" />
       {/* <h4>TextField</h4> */}
       {/* <TextField type="password" label="test"></TextField> */}
       {/* <Button /> */}
