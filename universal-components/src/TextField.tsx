@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
-import { colors, sizes } from "./variables";
+import { colors, sizes, fonts } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -26,7 +26,9 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
         height: 30px;
         padding: 10px 15px;
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: ${fonts.robotoRegular};
         border-radius: 5px;
         outline: none;
     }
@@ -35,8 +37,9 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
         position: absolute;
         margin-top: 14px;
         margin-left: 15px;
-        font-size: 18px;
-        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: ${fonts.robotoRegular};
     }
 `
 
@@ -53,7 +56,7 @@ export function TextField(props: any) {
         setFocused(true)
     }
     function onBlur() {
-        setFocused(value == "" ? false : true)
+        setFocused(value === "" ? false : true)
     }
 
     return (
@@ -107,80 +110,3 @@ TextField.defaultProps = {
     type: "text",
     disabled: false,
 }
-
-/*
-const [isFocused, setFocused] = useState(false)
-    let id = Math.floor(Math.random() * 8888)
-    const { value, units, type, defaultValue, onChange, label } = props
-
-    function onFocus() {
-        setFocused(true)
-    }
-
-    function onBlur() {
-        setFocused(props.value == "" ? false : true)
-    }
-
-    return (
-        <div>
-            <input
-                type={type}
-                style={{
-                    position: "absolute",
-                    fontSize: "18px",
-                    padding: "13px 15px",
-                    marginBottom: "20px",
-                    width: "calc(90%)",
-                    height: "40px",
-                    left: "5%",
-                    display: "block",
-                    borderRadius: "5px",
-                    outline: isFocused ? "none" : "none",
-                    border: isFocused
-                        ? "2px solid " + ColorPalette.teal
-                        : "1px solid " + "#ccc",
-                }}
-                id={id}
-                value={value}
-                defaultValue={defaultValue}
-                onChange={onChange}
-                onFocus={onFocus}
-                onBlur={onBlur}
-            />
-            <label
-                htmlFor={id}
-                style={{
-                    color: isFocused ? ColorPalette.teal : "#ccc",
-                    background: ColorPalette.white,
-                    fontSize: "16px",
-                    fontWeight: "normal",
-                    position: "absolute",
-                    top: "15px",
-                    left: "calc(5% + 8px)",
-                    padding: "0 8px",
-                    transform: isFocused
-                        ? "scale(.75) translate(-13px,-30px)"
-                        : "scale(1) translate(0px,0px)",
-                    transition: "150ms cubic-bezier(0.4,0,0.2,1) all",
-                    WebkitTransition: "150ms cubic-bezier(0.4,0,0.2,1) all",
-                }}
-            >
-                {label}
-            </label>
-            <span
-                style={{
-                    color: isFocused ? ColorPalette.teal : "#ccc",
-                    background: ColorPalette.white,
-                    fontSize: "16px",
-                    fontWeight: "normal",
-                    position: "absolute",
-                    top: "15px",
-                    right: "calc(5% + 8px)",
-                    padding: "0 8px",
-                }}
-            >
-                {units}
-            </span>
-        </div>
-
-*/

@@ -1,3 +1,5 @@
+import { url } from "inspector"
+
 export const colors = {
    'warning': '#f69a19',
    'warningDark': '#c75200',
@@ -21,4 +23,10 @@ export const sizes = {
    'fit': '90%',
    'full': '90vw',
    'modal': '80vw'
+}
+
+export const fonts = {
+   'robotoRegular': 'url(fonts/Roboto/Roboto-Regular.ttf)',
+   'robotoMedium': 'url(fonts/Roboto/Roboto-Medium.ttf)',
+   'robotoBold': 'url(fonts/Roboto/Roboto-Bold.ttf)',
 }
