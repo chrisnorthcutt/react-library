@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { TextField } from './TextField';
 import { Button } from './Button';
-import { Modal } from './Modal';
+import { ModalContainer } from './ModalContainer';
+import { Checkbox } from './Checkbox';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <h4>TextField</h4> */}
       {/* <TextField type="password" label="test"></TextField> */}
       {/* <Button /> */}
-      <Modal />
+      {/* <ModalContainer /> */}
+      <Checkbox />
     </div>
     
   );
