@@ -1,3 +1,5 @@
+
+
 export const colors = {
    'warning': '#f69a19',
    'warningDark': '#c75200',
@@ -19,6 +21,10 @@ export const colors = {
 export const sizes = {
    'auto': 'auto',
    'fit': '90%',
-   'full': '90vw',
-   'modal': '80vw'
+   'modal': '80vw',
+   'full': '100%',
+   "sm": "8px",
+   "med": "16px",
+   "lg": "32px",
+   "xlg": "48px",
 }
