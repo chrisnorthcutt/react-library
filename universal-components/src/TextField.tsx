@@ -1,10 +1,11 @@
 import * as React from "react"
+import "./TextField.css"
 
 export function TextField(props: any) {
     return (
         <div>
             <label>{props.label}</label>
-            <input type={props.type} disabled={props.disabled} />
+            <input className="uf" type={props.type} disabled={props.disabled} />
         </div>
     )
 }
