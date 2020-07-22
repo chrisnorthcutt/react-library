@@ -38,12 +38,15 @@ function App() {
       <h4>TextField</h4>
       <TextField label="First Name" />
       <hr />
-      <Button importance="primary" />
-      <Button importance="tertiary" />
+      <Button importance="primary" display="block" />
+      <Button importance="secondary" display="block" />
+      <Button importance="tertiary" display="inline" />
+      <Button importance="primary" display="inline" />
+      <Button importance="secondary" display="inline" />
       <hr />
-      <Checkbox />
+      <Checkbox enabled={true} />
       <hr />
-      <Switch enabled={true} />
+      <Switch enabled={true} on={true} />
       <hr />
       <h2>Typography</h2>
       <Type.H1>Heading 1</Type.H1>

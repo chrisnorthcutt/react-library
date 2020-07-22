@@ -9,19 +9,18 @@ interface Props {
 }
 
 const StyledSwitch = styled(motion.div).attrs((props: Props) => {
-  const { enabled } = props;
   return {
-    enabled: enabled
+    enabled: props.enabled
   }
 })`
   width: 40px;
   height: 40px;
+  opacity: ${props => props.enabled === true ? 1 : 0.5};
 
   .bg {
     width: 36px;
     height: 16px;
     border-radius: 16px;
-    opacity: ${props => props.enabled ? 1 : 0.5};
 
     .knob {
       position: relative;
@@ -39,18 +38,18 @@ const StyledSwitch = styled(motion.div).attrs((props: Props) => {
 `
 
 export function Switch(props: any) {
-  const { enabled } = props;
-  const [isOn, setOn] = useState(false);
+  const { enabled, on } = props;
+  const [isOn, setOn] = useState(on);
 
   function onTap() {
     setOn(enabled ? !isOn : isOn)
   }
 
   return (
-    <StyledSwitch onTap={onTap} enabled>
+    <StyledSwitch onTap={onTap} enabled={enabled}>
       <motion.div className="bg"
         initial={{
-          background: colors.grey400
+          background: isOn ? colors.primary600 : colors.grey400
         }}
         animate={{
           background: isOn ? colors.primary600 : colors.grey400
@@ -58,13 +57,13 @@ export function Switch(props: any) {
       >
         <motion.div
           initial={{
-            x: 0
+            x: isOn ? 16 : 0
           }}
           animate={{
             x: isOn ? 16 : 0
           }}
           className="knob"
-          />
+        />
       </motion.div>
     </StyledSwitch>
   )

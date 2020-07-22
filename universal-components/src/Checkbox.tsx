@@ -4,7 +4,15 @@ import { colors, sizes } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const StyledCheckbox = styled(motion.div)`
+interface Props {
+  enabled: Boolean;
+}
+
+const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
+  return {
+    enabled: props.enabled
+  }
+})`
   position: relative;
   width: 24px;
   height: 24px;
@@ -12,6 +20,8 @@ const StyledCheckbox = styled(motion.div)`
   outline: none;
   border: 1px solid ${colors.primary600};
   border-radius: 2px;
+  opacity: ${props => props.enabled === true ? 1 : 0.5};
+
   > .background {
     position: absolute;
     width: 24px;
@@ -41,14 +51,12 @@ const StyledCheckbox = styled(motion.div)`
 `
 
 export function Checkbox(props: any) {
+    const { enabled } = props
     const [isChecked, setChecked] = useState(false)
-    const enabled = true
 
     return (
         <StyledCheckbox
-            onTap={() => {
-                setChecked(enabled ? !isChecked : isChecked)
-            }}
+          onTap={() => {setChecked(enabled ? !isChecked : isChecked)}} enabled={enabled}
         >
             <motion.div
                 initial={{

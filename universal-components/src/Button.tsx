@@ -6,26 +6,29 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 interface Props {
-    size: String;
     text: String;
     importance: String;
+    display: String;
 }
 
 const StyledButton = styled(motion.button).attrs((props: Props) => {
-    const { size, text, importance } = props;
+    const { text, importance, display } = props;
     return {
-        size: size,
         text: text,
-        importance: importance
+        importance: importance,
+        display: display
     }
 })`
-    width: ${sizes.fit};
+    width: ${sizes.auto};
     height: 2.5rem;
+    padding: 10px 16px;
     background: ${props => 
-        props.importance === "tertiary" ? "transparent" : colors.primary600
+        props.importance === "tertiary" || props.importance === "secondary" ? "transparent" : colors.primary600
     };
     outline: none;
-    border: none;
+    border: ${props => 
+        props.importance === "secondary" ? "1px solid " + colors.primary600 : "transparent"
+    };
     border-radius: 1.5rem;
     &.big-button {
         display: block;
@@ -33,19 +36,19 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
         height: 2.5rem;
     }
     > span {
-        color: ${props => props.importance === "tertiary" ? colors.primary600 : colors.white};
+        color: ${props => props.importance === "tertiary" || props.importance === "secondary" ? colors.primary600 : colors.white};
     }
 `
 
 export function Button(props: any) {
-    const { size, text, importance } = props;
+    const { text, importance, display } = props;
     return (
         <StyledButton
             whileTap={{
                 scale: 0.98
             }}
             importance={importance}
-            className={size === "big" ? "big-button" : ""}>
+            className={display === "block" ? "big-button" : ""}>
             <Type.ButtonText>{text}</Type.ButtonText>
         </StyledButton>
     )
