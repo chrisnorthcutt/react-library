@@ -22,7 +22,11 @@ export const sizes = {
    'auto': 'auto',
    'fit': '90%',
    'full': '90vw',
-   'modal': '80vw'
+   'modal': '80vw',
+   'small': '8px',
+   'med': '16px',
+   'lg': '32px',
+   'xlg': '40px'
 }
 
 export const fonts = {

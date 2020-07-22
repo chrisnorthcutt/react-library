@@ -21,25 +21,24 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
     width: 300px;
     height: 70px;
 
-    > .input {
-        width: calc(90%);
-        height: 30px;
-        padding: 10px 15px;
-        margin-bottom: 20px;
-        font-size: 16px;
-        line-height: 19px;
-        font-family: ${fonts.robotoRegular};
-        border-radius: 5px;
-        outline: none;
-    }
-
     > .field-label {
         position: absolute;
-        margin-top: 14px;
-        margin-left: 15px;
+        margin-top: 18px;
+        margin-left: 16px;
+        font-family: Roboto, sans-serif;
         font-size: 16px;
         line-height: 19px;
-        font-family: ${fonts.robotoRegular};
+        origin-x: 0;
+    }
+    > .input {
+        width: 90%;
+        padding: 15px 16px;
+        margin-bottom: 20px;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        border-radius: 4px;
+        outline: none;
     }
 `
 
@@ -64,17 +63,20 @@ export function TextField(props: any) {
             <motion.label
                 className="field-label"
                 htmlFor={"renene" + id}
+                style={{
+                    originX: 0
+                }}
                 initial={{
                     scale: 1,
                     x: 0,
                     y: 0,
-                    color: colors.grey700
+                    color: colors.grey400
                 }}
                 animate={{
-                    scale: isFocused ? 0.75 : 1,
-                    x: isFocused ? -5 : 0,
+                    scale: isFocused ? 0.8 : 1,
+                    x: isFocused ? 1 : 0,
                     y: isFocused ? -15 : 0,
-                    color: isFocused ? colors.primary400 : colors.grey700
+                    color: isFocused ? colors.primary400 : colors.grey400
                 }}
                 transition={{
                     duration: 0.15,
@@ -92,10 +94,10 @@ export function TextField(props: any) {
                 onFocus={onFocus}
                 onBlur={onBlur}
                 initial={{
-                    border: '1px solid ' + colors.grey700
+                    border: '1px solid ' + colors.grey400
                 }}
                 animate={{
-                    border: isFocused ? '2px solid ' + colors.primary400 : '1px solid ' + colors.grey700
+                    border: isFocused ? '2px solid ' + colors.primary400 : '1px solid ' + colors.grey400
                 }}
                 transition={{
                     duration: 0.15

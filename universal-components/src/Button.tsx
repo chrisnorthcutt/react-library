@@ -1,6 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
 import { colors, sizes } from "./variables";
+import * as Type from "./Typography";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -18,23 +19,21 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
         importance: importance
     }
 })`
-    width: ${sizes.auto};
-    height: 4vh;
-    padding: 10px 16px;
+    width: ${sizes.fit};
+    height: 2.5rem;
     background: ${props => 
-        props.importance === "tertiary" ? "transparent" : colors.primary400
+        props.importance === "tertiary" ? "transparent" : colors.primary600
     };
     outline: none;
     border: none;
-    border-radius: 0.5vh;
-    font-family: 'Helvetica';
-    font-weight: 800;
-    font-size: 1rem;
-    color: ${props => props.importance === "tertiary" ? colors.primary400 : colors.white};
+    border-radius: 1.5rem;
     &.big-button {
         display: block;
         width: ${sizes.fit > '300px' ? '300px' : sizes.fit};
-        height: 3rem;
+        height: 2.5rem;
+    }
+    > span {
+        color: ${props => props.importance === "tertiary" ? colors.primary600 : colors.white};
     }
 `
 
@@ -47,7 +46,7 @@ export function Button(props: any) {
             }}
             importance={importance}
             className={size === "big" ? "big-button" : ""}>
-            {text}
+            <Type.ButtonText>{text}</Type.ButtonText>
         </StyledButton>
     )
 }

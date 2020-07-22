@@ -50,3 +50,10 @@ export const Paragraph = styled.p`
     color: ${props => props.color || "#333"};
     font-family: ${fontFamily};
 `
+
+export const ButtonText = styled.span`
+    font-size: 14px;
+    font-weight: 600;
+    color: ${props => props.color || "#333"};
+    font-family: ${fontFamily};
+`
