@@ -6,6 +6,7 @@ import { Switch } from './Switch';
 import { ModalContainer } from './ModalContainer';
 import * as Type from './Typography'
 import { createGlobalStyle } from 'styled-components'
+import { Checkbox } from './Checkbox';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -39,6 +40,8 @@ function App() {
       <hr />
       <Button importance="primary" />
       <Button importance="tertiary" />
+      <hr />
+      <Checkbox />
       <hr />
       <Switch enabled={true} />
       <hr />

@@ -6,24 +6,24 @@ import { motion } from "framer-motion";
 
 const StyledCheckbox = styled(motion.div)`
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   background: ${colors.white};
   outline: none;
-  border: 1px solid ${colors.primary400};
-  border-radius: 4px;
+  border: 1px solid ${colors.primary600};
+  border-radius: 2px;
   > .background {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background: ${colors.primary400};
+    width: 24px;
+    height: 24px;
+    background: ${colors.primary600};
   }
   > .svg-container {
     position: relative;
     top: 0;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background: transparent;
 
     > svg {
@@ -77,8 +77,9 @@ export function Checkbox(props: any) {
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
+                    width="24"
+                    height="24"
+                    viewBox="-2 -3 34 34"
                 >
                     <path
                         d="M 5.5 17 L 11 22.5 L 22.5 6"
