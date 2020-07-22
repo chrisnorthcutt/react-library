@@ -1,12 +1,13 @@
-import React from 'react';
-import { TextField } from './TextField';
-import { Select } from './Select';
-import { Button } from './Button';
-import { Switch } from './Switch';
-import { ModalContainer } from './ModalContainer';
-import * as Type from './Typography'
-import { createGlobalStyle } from 'styled-components'
-import { Checkbox } from './Checkbox';
+import React from "react";
+import { TextField } from "./TextField";
+import { Select } from "./Select";
+import { Button } from "./Button";
+import { Switch } from "./Switch";
+import { ModalContainer } from "./ModalContainer";
+import * as Type from "./Typography";
+import { createGlobalStyle } from "styled-components";
+import { Checkbox } from "./Checkbox";
+import { Radio } from "./Radio";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -28,11 +29,11 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: robotoRegular;
   }
-`
+`;
 
 function App() {
   return (
-    <div style={{width: 375}}>
+    <div style={{ width: 375 }}>
       <GlobalStyle />
       <h2>Components</h2>
       <h4>TextField</h4>
@@ -48,6 +49,8 @@ function App() {
       <hr />
       <Switch enabled={true} on={true} />
       <hr />
+      <Radio enabled={true} />
+      <hr />
       <h2>Typography</h2>
       <Type.H1>Heading 1</Type.H1>
       <Type.H2>Heading 2</Type.H2>
@@ -58,7 +61,6 @@ function App() {
       <Type.Caption>Caption</Type.Caption>
       <h2>Colors</h2>
     </div>
-    
   );
 }
 
