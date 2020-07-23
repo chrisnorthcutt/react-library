@@ -1,114 +1,155 @@
 import * as React from "react";
-import {useState} from "react";
+import { useState, useRef } from "react";
 import { colors, sizes, fonts } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
 interface Props {
-    disabled: Boolean;
-    type: String;
-    focused: Boolean;
+  disabled: Boolean;
+  type: String;
+  focused: Boolean;
 }
 
 const StyledField = styled(motion.div).attrs((props: Props) => {
-    const { disabled, type, focused } = props;
-    return {
-        disabled: disabled,
-        type: type,
-        focused: focused
-    }
+  const { disabled, type, focused } = props;
+  return {
+    disabled: disabled,
+    type: type,
+    focused: focused,
+  };
 })`
-    width: 300px;
-    height: 70px;
+  width: 300px;
+  height: 70px;
 
-    > .field-label {
-        position: absolute;
-        margin-top: 18px;
-        margin-left: 16px;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        line-height: 19px;
-        origin-x: 0;
+  > .field-label {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 16px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    origin-x: 0;
+  }
+  > .input {
+    width: 90%;
+    padding: 15px 16px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 4px;
+    border-style: solid;
+    outline: none;
+
+    &:invalid {
+      border-color: "red";
     }
-    > .input {
-        width: 90%;
-        padding: 15px 16px;
-        margin-bottom: 20px;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        line-height: 19px;
-        border-radius: 4px;
-        outline: none;
-    }
-`
+  }
+  > p {
+    margin-top: 0px;
+    height: 16px;
+    padding: 0 16px;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    color: ${colors.black};
+  }
+`;
 
 export function TextField(props: any) {
-    const { label, disabled, type, defaultValue } = props;
-    const [isFocused, setFocused] = useState(false)
-    const [value, setValue] = useState("")
-    const id = Math.floor(Math.random() * 8888)
-    
-    function onChange(e: any) {
-        setValue(e.target.value)
-    }
-    function onFocus() {
-        setFocused(true)
-    }
-    function onBlur() {
-        setFocused(value === "" ? false : true)
-    }
+  const { label, disabled, type, defaultValue, assistMessage = "Use the force" } = props;
+  const [isFocused, setFocused] = useState(false);
+  const [value, setValue] = useState("");
+  const [isValid, setValid] = useState(false);
+  const id = Math.floor(Math.random() * 8888);
 
-    return (
-        <StyledField>
-            <motion.label
-                className="field-label"
-                htmlFor={"renene" + id}
-                style={{
-                    originX: 0
-                }}
-                initial={{
-                    scale: 1,
-                    x: 0,
-                    y: 0,
-                    color: colors.grey400
-                }}
-                animate={{
-                    scale: isFocused ? 0.8 : 1,
-                    x: isFocused ? 1 : 0,
-                    y: isFocused ? -15 : 0,
-                    color: isFocused ? colors.primary400 : colors.grey400
-                }}
-                transition={{
-                    duration: 0.15,
-                }}
-            >
-                {label}
-            </motion.label>
-            <motion.input
-                id={"renene" + id}
-                className="input"
-                type={type}
-                disabled={disabled}
-                defaultValue={defaultValue}
-                onChange={onChange}
-                onFocus={onFocus}
-                onBlur={onBlur}
-                initial={{
-                    border: '1px solid ' + colors.grey400
-                }}
-                animate={{
-                    border: isFocused ? '2px solid ' + colors.primary400 : '1px solid ' + colors.grey400
-                }}
-                transition={{
-                    duration: 0.15
-                }}
-            />
-        </StyledField>
-    )
+  function onChange(e: any) {
+    setValue(e.target.value);
+    if (type === "email") setValid(emailIsValid(e.target.value));
+    else if (type === "text") setValid(textIsValid(e.target.value));
+  }
+  function onFocus() {
+    setFocused(true);
+  }
+  function onBlur() {
+    setFocused(false);
+  }
+  function emailIsValid(email: string) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+  function textIsValid(text: string) {
+    return /^[a-zA-Z-. ]*$/.test(text);
+  }
+
+  let activeColor;
+  let message;
+  if (isFocused) {
+    activeColor = colors.primary600;
+    message = assistMessage;
+  } else if (!isValid && value.length > 0) {
+    activeColor = colors.danger;
+    message = "Danger message";
+  } else {
+    activeColor = colors.grey400;
+    message = assistMessage;
+  }
+
+  return (
+    <StyledField>
+      <motion.label
+        className="field-label"
+        htmlFor={"renene" + id}
+        style={{
+          originX: 0,
+        }}
+        initial={{
+          scale: 1,
+          x: 0,
+          y: 0,
+          color: activeColor,
+        }}
+        animate={{
+          scale: isFocused || value.length > 0 ? 0.65 : 1,
+          x: isFocused || value.length > 0 ? 1 : 0,
+          y: isFocused || value.length > 0 ? -15 : 0,
+          color: activeColor,
+        }}
+        transition={{
+          duration: 0.15,
+        }}
+      >
+        {label}
+      </motion.label>
+      <motion.input
+        id={"renene" + id}
+        className="input"
+        type={type}
+        disabled={disabled}
+        defaultValue={defaultValue}
+        onChange={onChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        initial={{
+          borderWidth: 1,
+          borderColor: activeColor,
+        }}
+        animate={{
+          borderWidth: isFocused || (!isValid && value.length > 0) ? 1 : 1,
+          borderColor: activeColor,
+        }}
+        transition={{
+          duration: 0.15,
+        }}
+      />
+      <motion.p>
+        {message}
+      </motion.p>
+    </StyledField>
+  );
 }
 
 TextField.defaultProps = {
-    label: "Test",
-    type: "text",
-    disabled: false,
-}
+  label: "Test",
+  type: "text",
+  disabled: false,
+};

@@ -37,7 +37,7 @@ function App() {
       <GlobalStyle />
       <h2>Components</h2>
       <h4>TextField</h4>
-      <TextField label="First Name" />
+      <TextField label="First Name" type="text" />
       <hr />
       <Button importance="primary" display="block" />
       <Button importance="secondary" display="block" />

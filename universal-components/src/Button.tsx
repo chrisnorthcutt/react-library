@@ -45,7 +45,14 @@ export function Button(props: any) {
     return (
         <StyledButton
             whileTap={{
-                scale: 0.98
+                scale: 0.98,
+                boxShadow: 'none'
+            }}
+            whileHover={{
+                boxShadow: importance !== "tertiary" ? '0 2px 5px rgba(0, 0, 0, 0.2)' : 'none'
+            }}
+            style={{
+                boxShadow: importance === "primary" ? '0 2px 5px rgba(0, 0, 0, 0.2)' : 'none'
             }}
             importance={importance}
             className={display === "block" ? "big-button" : ""}>
