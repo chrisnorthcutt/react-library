@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { colors, sizes } from "./variables";
+import { colors, shadows } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -13,24 +13,23 @@ const StyledSwitch = styled(motion.div).attrs((props: Props) => {
     enabled: props.enabled,
   };
 })`
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   opacity: ${(props) => (props.enabled === true ? 1 : 0.5)};
 
   .bg {
-    width: 36px;
-    height: 16px;
-    border-radius: 16px;
+    width: 2.25rem;
+    height: 1rem;
+    border-radius: 1rem;
 
     .knob {
       position: relative;
       top: -2px;
-      width: 20px;
-      height: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
       border-radius: 50%;
-      background: #fff;
-      box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
-        0px 3px 4px rgba(0, 0, 0, 0.14), 0px 1px 8px rgba(0, 0, 0, 0.12);
+      background: ${colors.white};
+      box-shadow: ${shadows.z1};
     }
   }
 `;
@@ -56,10 +55,10 @@ export function Switch(props: any) {
       >
         <motion.div
           initial={{
-            x: isOn ? 16 : 0,
+            x: isOn ? '1rem' : 0,
           }}
           animate={{
-            x: isOn ? 16 : 0,
+            x: isOn ? '1rem' : 0,
           }}
           className="knob"
         />

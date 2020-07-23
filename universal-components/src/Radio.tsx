@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { colors, sizes } from "./variables";
+import { colors } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -17,8 +17,8 @@ const StyledRadio = styled(motion.div).attrs((props: Props) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background: ${colors.white};
   outline: none;
   border: 1px solid ${colors.primary600};
@@ -26,8 +26,8 @@ const StyledRadio = styled(motion.div).attrs((props: Props) => {
   opacity: ${(props) => (props.enabled === true ? 1 : 0.5)};
 
   > .background {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     background: ${colors.primary600};
     border-radius: 50%;
   }

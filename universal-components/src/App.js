@@ -1,5 +1,6 @@
 import React from "react";
 import { TextField } from "./TextField";
+import { DateField } from "./DateField";
 import { Select } from "./Select";
 import { Button } from "./Button";
 import { Switch } from "./Switch";
@@ -8,26 +9,11 @@ import * as Type from "./Typography";
 import { createGlobalStyle } from "styled-components";
 import { Checkbox } from "./Checkbox";
 import { Radio } from "./Radio";
+import { fontFamily } from "./variables";
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: robotoRegular;
-    src: url("/fonts/Roboto/Roboto-Black.ttf") format("ttf");
-  }
-  @font-face {
-    font-family: robotoMedium;
-    src: url("/fonts/Roboto/Roboto-Medium.ttf") format("ttf");
-  }
-  @font-face {
-    font-family: robotoBold;
-    src: url("/fonts/Roboto/Roboto-Bold.ttf") format("ttf");
-  }
-  @font-face {
-    font-family: robotoLight;
-    src: url("/fonts/Roboto/Roboto-Light.ttf") format("ttf");
-  }
-  * {
-    font-family: robotoRegular;
+  html {
+    font-family: ${fontFamily};
   }
 `;
 
@@ -37,7 +23,10 @@ function App() {
       <GlobalStyle />
       <h2>Components</h2>
       <h4>TextField</h4>
-      <TextField label="First Name" type="text" />
+      <TextField label="First Name" type="text" assistMessage="Alphabetical characters only" />
+      <hr />
+      <h4>DateField</h4>
+      <DateField label="DOB" />
       <hr />
       <Button importance="primary" display="block" />
       <Button importance="secondary" display="block" />

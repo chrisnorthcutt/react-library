@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
-import { colors, sizes } from "./variables";
+import { colors, sizes, shadows, textStyles, fontFamily } from "./variables";
 import * as Type from "./Typography";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -21,7 +21,7 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
 })`
     width: ${sizes.auto};
     height: 2.5rem;
-    padding: 10px 16px;
+    padding: 0.625rem 1rem;
     background: ${props => 
         props.importance === "tertiary" || props.importance === "secondary" ? "transparent" : colors.primary600
     };
@@ -36,6 +36,11 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
         height: 2.5rem;
     }
     > span {
+        font-size: ${textStyles.button.fontSize};
+        font-weight: ${textStyles.button.fontWeight};
+        letter-spacing: ${textStyles.button.letterSpacing};
+        line-height: ${textStyles.button.lineHeight};
+        text-transform: ${textStyles.button.textTransform};
         color: ${props => props.importance === "tertiary" || props.importance === "secondary" ? colors.primary600 : colors.white};
     }
 `
@@ -49,14 +54,14 @@ export function Button(props: any) {
                 boxShadow: 'none'
             }}
             whileHover={{
-                boxShadow: importance !== "tertiary" ? '0 2px 5px rgba(0, 0, 0, 0.2)' : 'none'
+                boxShadow: importance !== "tertiary" ? shadows.z1 : 'none'
             }}
             style={{
-                boxShadow: importance === "primary" ? '0 2px 5px rgba(0, 0, 0, 0.2)' : 'none'
+                boxShadow: importance === "primary" ? shadows.z1 : 'none'
             }}
             importance={importance}
             className={display === "block" ? "big-button" : ""}>
-            <Type.ButtonText>{text}</Type.ButtonText>
+            <span>{text}</span>
         </StyledButton>
     )
 }

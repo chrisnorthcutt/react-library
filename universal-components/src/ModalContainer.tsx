@@ -1,20 +1,18 @@
 import * as React from "react";
 import {useState} from "react";
-import { colors, sizes } from "./variables";
+import { colors, sizes, borderRadii } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Button } from "./Button";
 
 const StyledModal = styled(motion.div)`
-    width: ${sizes.modal};
-    min-height: 30vh;
-    max-height: 60vh;
+    width: ${sizes.fit};
     height: 100%;
     margin: 0 auto;
     padding: 0.5rem 1rem;
     background: ${colors.white};
     outline: none;
-    border-radius: 0.5vh;
+    border-radius: ${borderRadii.med};
     border: 1px solid #ddd;
     font-family: 'Helvetica';
     font-weight: 800;

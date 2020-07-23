@@ -6,15 +6,13 @@ import { motion } from "framer-motion";
 
 interface Props {
   disabled: Boolean;
-  type: String;
   focused: Boolean;
 }
 
 const StyledField = styled(motion.div).attrs((props: Props) => {
-  const { disabled, type, focused } = props;
+  const { disabled, focused } = props;
   return {
     disabled: disabled,
-    type: type,
     focused: focused,
   };
 })`
@@ -58,36 +56,31 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
   }
 `;
 
-export function TextField(props: any) {
+export function DateField(props: any) {
     const {
         label,
         disabled,
-        type,
         defaultValue,
-        assistMessage = "Use the force",
-        errorMessage = "You have included non-alphabetical characters"
+        assistMessage = "",
+        errorMessage = "This date isn\'t valid"
     } = props;
   const [isFocused, setFocused] = useState(false);
   const [value, setValue] = useState("");
   const [isValid, setValid] = useState(false);
   const id = Math.floor(Math.random() * 8888);
 
+  function isValidDate(date: string) {
+    return new Date(date).toString() !== 'Invalid Date';
+  }
   function onChange(e: any) {
     setValue(e.target.value);
-    if (type === "email") setValid(emailIsValid(e.target.value));
-    else if (type === "text") setValid(textIsValid(e.target.value));
+    setValid(isValidDate(e.target.value))
   }
   function onFocus() {
     setFocused(true);
   }
   function onBlur() {
     setFocused(false);
-  }
-  function emailIsValid(email: string) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
-  function textIsValid(text: string) {
-    return /^[a-zA-Z-. ]*$/.test(text);
   }
 
   let activeColor;
@@ -132,7 +125,7 @@ export function TextField(props: any) {
       <motion.input
         id={"renene" + id}
         className="input"
-        type={type}
+        type="date"
         disabled={disabled}
         defaultValue={defaultValue}
         onChange={onChange}
@@ -157,7 +150,7 @@ export function TextField(props: any) {
   );
 }
 
-TextField.defaultProps = {
+DateField.defaultProps = {
   label: "Test",
   type: "text",
   disabled: false,

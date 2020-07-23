@@ -25,7 +25,7 @@ export const H3 = styled.h3`
 
 export const H4 = styled.h4`
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 400;
   color: ${(props) => props.color || "#333"};
   font-family: ${fontFamily};
 `;
