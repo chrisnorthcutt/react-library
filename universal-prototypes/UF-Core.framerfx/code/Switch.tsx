@@ -5,14 +5,14 @@ import styled from "styled-components"
 import { motion, addPropertyControls, ControlType } from "framer"
 
 interface Props {
-    enabled: Boolean;
-    color: String;
+    enabled: Boolean
+    color: String
 }
 
 const StyledSwitch = styled(motion.div).attrs((props: Props) => {
     return {
         enabled: props.enabled,
-        color: props.color
+        color: props.color,
     }
 })`
   width: 2.5rem;
@@ -75,7 +75,7 @@ Switch.defaultProps = {
     height: 40,
     enabled: true,
     on: false,
-    color: colors.primary900
+    color: colors.primary900,
 }
 
 addPropertyControls(Switch, {
@@ -93,5 +93,8 @@ addPropertyControls(Switch, {
         title: "Color",
         type: ControlType.Color,
         defaultValue: colors.primary900,
+        hidden(props) {
+            return true
+        },
     },
 })

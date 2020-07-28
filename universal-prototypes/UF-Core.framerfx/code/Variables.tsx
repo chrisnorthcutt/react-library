@@ -16,17 +16,22 @@ export const colors = {
     black: "#000000",
 }
 
-export const sizes = {
-    auto: "auto",
-    fit: "100%",
-    baseFont: "16px",
-    small: "8px",
-    med: "16px",
-    lg: "32px",
-    xlg: "40px",
+export const converToREM = (size) => {
+    return size / 16 + "rem"
 }
 
-export const borderRadii = {
+const base = 8
+
+export const spacing = {
+    "1x": converToREM(1 * base),
+    "2x": converToREM(2 * base),
+    "3x": converToREM(3 * base),
+    "4x": converToREM(4 * base),
+    "5x": converToREM(5 * base),
+    "6x": converToREM(6 * base),
+}
+
+export const borderRadius = {
     small: "4px",
     med: "8px",
     lg: "16px",
@@ -39,97 +44,3 @@ export const shadows = {
 }
 
 export const fontFamily = "Roboto, sans-serif"
-
-export const textStyles = {
-    "subtitle-2": {
-        fontSize: "14px",
-        fontWeight: 600,
-        lineHeight: "24px",
-        letterSpacing: "0.1px",
-        textTransform: "none",
-    },
-    "subtitle-1": {
-        fontSize: "16px",
-        fontWeight: 500,
-        lineHeight: "24px",
-        letterSpacing: "0.15px",
-        textTransform: "none",
-    },
-    "headline-2": {
-        fontSize: "60px",
-        fontWeight: 300,
-        lineHeight: "0px",
-        letterSpacing: "-0.5px",
-        textTransform: "none",
-    },
-    "headline-1": {
-        fontSize: "96px",
-        fontWeight: 300,
-        lineHeight: "0px",
-        letterSpacing: "-1.5px",
-        textTransform: "none",
-    },
-    overline: {
-        fontSize: "10px",
-        fontWeight: 600,
-        lineHeight: "16px",
-        letterSpacing: "1.5px",
-        textTransform: "uppercase",
-    },
-    caption: {
-        fontSize: "12px",
-        fontWeight: 500,
-        lineHeight: "16px",
-        letterSpacing: "0.4px",
-        textTransform: "none",
-    },
-    button: {
-        fontSize: "14px",
-        fontWeight: 900,
-        lineHeight: "0px",
-        letterSpacing: "normal",
-        textTransform: "none",
-    },
-    "body-2": {
-        fontSize: "14px",
-        fontWeight: 500,
-        lineHeight: "20px",
-        letterSpacing: "0.25px",
-        textTransform: "none",
-    },
-    "body-1": {
-        fontSize: "16px",
-        fontWeight: 500,
-        lineHeight: "28px",
-        letterSpacing: "0.44px",
-        textTransform: "none",
-    },
-    "headline-6": {
-        fontSize: "20px",
-        fontWeight: 600,
-        lineHeight: "0px",
-        letterSpacing: "0.15px",
-        textTransform: "none",
-    },
-    "headline-5": {
-        fontSize: "24px",
-        fontWeight: 500,
-        lineHeight: "0px",
-        letterSpacing: "normal",
-        textTransform: "none",
-    },
-    "headline-4": {
-        fontSize: "34px",
-        fontWeight: 500,
-        lineHeight: "0px",
-        letterSpacing: "0.25px",
-        textTransform: "none",
-    },
-    "headline-3": {
-        fontSize: "48px",
-        fontWeight: 500,
-        lineHeight: "0px",
-        letterSpacing: "normal",
-        textTransform: "none",
-    },
-}

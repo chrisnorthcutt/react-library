@@ -2,59 +2,74 @@ import * as React from "react";
 import { useState } from "react";
 import { colors } from "./Variables";
 import styled from "styled-components";
+import * as Type from "./Typography";
 import { motion, addPropertyControls, ControlType } from "framer";
 
 interface Props {
-    enabled: Boolean;
-    color: String;
+  enabled: Boolean;
+  color: String;
 }
 
 const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
   return {
-      enabled: props.enabled,
-      color: props.color
+    enabled: props.enabled,
+    color: props.color,
   };
 })`
-  position: relative;
-  margin: 8px auto;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: ${props => props.enabled ? colors.white : colors.grey200};
-  outline: none;
-  border: 1px solid ${props => props.color};
-  border-radius: 2px;
-  // opacity: ${(props) => (props.enabled === true ? 1 : 0.5)};
-
-  > .background {
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: ${props => props.color};
-  }
-  > .svg-container {
+width: 100%;
+height: 40px;
+display: flex;
+justify-content: start;
+align-content: start;
+align-items: normal;
+    .container {
     position: relative;
-    top: 0;
-    left: 0;
+    margin: 8px 0;
     width: 1.5rem;
     height: 1.5rem;
-    background: transparent;
+    background: ${(props) => (props.enabled ? colors.white : colors.grey200)};
+    outline: none;
+    border: 1px solid ${(props) => props.color};
+    border-radius: 2px;
 
-    > svg {
-      fill: transparent;
-
-      > path {
-        fill: transparent;
-        stroke-width: 2px;
-        stroke: hsl(0, 0%, 100%);
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
+    > .background {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: ${(props) => props.color};
     }
-  }
+    > .svg-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: transparent;
+
+        > svg {
+        fill: transparent;
+
+        > path {
+            fill: transparent;
+            stroke-width: 2px;
+            stroke: hsl(0, 0%, 100%);
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        }
+    }
+    > span.label {
+        // min-width: 10rem;
+        background: #ccc;
+        color: ${(props) => props.color};
+        margin: 0.25rem 8px;
+        font-weight: 900;
+    }
+}
 `;
 
 export function Checkbox(props: any) {
-  const { enabled, checked, color } = props;
+  const { enabled, checked, color, label } = props;
   const [isChecked, setChecked] = useState(checked);
 
   return (
@@ -62,8 +77,8 @@ export function Checkbox(props: any) {
       onTap={() => {
         setChecked(enabled ? !isChecked : isChecked);
       }}
-          enabled={enabled}
-          color={color}
+      enabled={enabled}
+      color={color}
     >
       <motion.div
         initial={{
@@ -101,28 +116,35 @@ export function Checkbox(props: any) {
           <path d="M 5.5 17 L 11 22.5 L 22.5 6"></path>
         </svg>
       </motion.div>
+      <span className="label">{label}</span>
     </StyledCheckbox>
   );
 }
 
 Checkbox.defaultProps = {
-    enabled: true,
-    checked: false,
-    color: colors.primary900,
-    width: 40, height: 40
-}
+  enabled: true,
+  checked: false,
+  color: colors.primary900,
+  width: 200,
+  height: 40,
+  label: "Label",
+};
 
 addPropertyControls(Checkbox, {
-    enabled: {
-        title: "Enabled",
-        type: ControlType.Boolean
-    }, 
-    chekced: {
-        title: "Checked",
-        type: ControlType.Boolean
-    },
-    color: {
-        title: "Color",
-        type: ControlType.Color
-    }
-})
+  enabled: {
+    title: "Enabled",
+    type: ControlType.Boolean,
+  },
+  chekced: {
+    title: "Checked",
+    type: ControlType.Boolean,
+  },
+  color: {
+    title: "Color",
+    type: ControlType.Color,
+  },
+  label: {
+    title: "Label",
+    type: ControlType.String,
+  },
+});
