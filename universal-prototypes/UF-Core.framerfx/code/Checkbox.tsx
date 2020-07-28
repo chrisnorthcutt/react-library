@@ -117,12 +117,15 @@ addPropertyControls(Checkbox, {
         title: "Enabled",
         type: ControlType.Boolean
     }, 
-    chekced: {
+    checked: {
         title: "Checked",
         type: ControlType.Boolean
     },
     color: {
         title: "Color",
-        type: ControlType.Color
+        type: ControlType.Color,
+        hidden(props) {
+          return true
+        }
     }
 })

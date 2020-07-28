@@ -47,6 +47,7 @@ export const H5 = styled.h5`
 
 export const Caption = styled.p`
   color: ${(props) => props.color || "#333"};
+  margin-top: 4px;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;

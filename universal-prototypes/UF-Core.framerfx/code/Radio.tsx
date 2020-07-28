@@ -5,14 +5,14 @@ import styled from "styled-components"
 import { motion, addPropertyControls, ControlType } from "framer"
 
 interface Props {
-    enabled: Boolean;
-    color: String;
+    enabled: Boolean
+    color: String
 }
 
 const StyledRadio = styled(motion.div).attrs((props: Props) => {
     return {
         enabled: props.enabled,
-        color: props.color
+        color: props.color,
     }
 })`
   position: relative;
@@ -24,14 +24,14 @@ const StyledRadio = styled(motion.div).attrs((props: Props) => {
   height: 1.5rem;
   background: ${colors.white};
   outline: none;
-  border: 1px solid ${props => props.color};
+  border: 1px solid ${(props) => props.color};
   border-radius: 50%;
   opacity: ${(props) => (props.enabled === true ? 1 : 0.5)};
 
   > .background {
     width: 1rem;
     height: 1rem;
-    background: ${props => props.color};
+    background: ${(props) => props.color};
     border-radius: 50%;
   }
 `
@@ -79,14 +79,12 @@ addPropertyControls(Radio, {
         type: ControlType.Boolean,
         defaultValue: true,
     },
-    on: {
-        title: "On",
-        type: ControlType.Boolean,
-        defaultValue: true,
-    },
     color: {
         title: "Color",
         type: ControlType.Color,
         defaultValue: colors.primary900,
+        hidden(props) {
+            return true
+        },
     },
 })
