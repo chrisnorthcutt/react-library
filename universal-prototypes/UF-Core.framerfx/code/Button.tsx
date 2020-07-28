@@ -41,7 +41,7 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
         letter-spacing: ${textStyles.button.letterSpacing};
         line-height: ${textStyles.button.lineHeight};
         text-transform: ${textStyles.button.textTransform};
-        color: ${props => props.importance === "tertiary" || props.importance === "secondary" ? colors.primary600 : colors.white};
+        color: ${props => props.importance === "tertiary" || props.importance === "secondary" ? props.color : colors.white};
     }
 `
 
