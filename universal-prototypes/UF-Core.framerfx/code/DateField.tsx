@@ -1,25 +1,25 @@
 import * as React from "react";
 import { useState } from "react";
-import { colors } from "./variables";
+import { colors } from "./Variables";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, addPropertyControls, ControlType } from "framer";
 import * as Type from "./Typography";
 
 interface Props {
-  disabled: Boolean;
+  enabled: Boolean;
   focused: Boolean;
 }
 
 const StyledField = styled(motion.div).attrs((props: Props) => {
-  const { disabled, focused } = props;
+  const { enabled, focused } = props;
   return {
-    disabled: disabled,
+    enabled: enabled,
     focused: focused,
   };
 })`
-  width: 300px;
-  height: 70px;
-  opacity: ${props => props.disabled ? 0.5 : 1};
+  width: 100%;
+  height: 100%;
+  opacity: ${props => props.enabled ? 1 : 0.5};
   margin-bottom: 1.5rem;
 
   > .field-label {
@@ -32,7 +32,7 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
     origin-x: 0;
   }
   > .input {
-    width: 90%;
+    width: 100%;
     padding: 15px 16px;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -40,7 +40,7 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
     border-radius: 4px;
     border-style: solid;
     outline: none;
-    background: ${props => props.disabled ? colors.grey200 : colors.white};
+    background: ${props => props.enabled ? colors.white : colors.grey200 };
 
     &:invalid {
       border-color: "red";
@@ -56,13 +56,15 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 export function DateField(props: any) {
     const {
         label,
-        disabled,
+        enabled,
+        focused,
         defaultValue,
         assistMessage = "",
-        errorMessage = "This date isn't valid"
+        errorMessage = "This date isn't valid",
+        color
     } = props;
-  const [isFocused, setFocused] = useState(false);
-  const [value, setValue] = useState("");
+  const [isFocused, setFocused] = useState(focused);
+  const [value, setValue] = useState(defaultValue);
   const [isValid, setValid] = useState(false);
   const id = Math.floor(Math.random() * 8888);
 
@@ -83,7 +85,7 @@ export function DateField(props: any) {
   let activeColor;
   let message;
   if (isFocused) {
-    activeColor = colors.primary600;
+    activeColor = color;
     message = assistMessage;
   } else if (!isValid && value.length > 0) {
     activeColor = colors.danger;
@@ -94,7 +96,7 @@ export function DateField(props: any) {
   }
 
   return (
-    <StyledField disabled={disabled}>
+    <StyledField enabled={enabled}>
       <motion.label
         className="field-label"
         htmlFor={"renene" + id}
@@ -123,7 +125,7 @@ export function DateField(props: any) {
         id={"renene" + id}
         className="input"
         type="date"
-        disabled={disabled}
+        disabled={!enabled}
         defaultValue={defaultValue}
         onChange={onChange}
         onFocus={onFocus}
@@ -148,7 +150,51 @@ export function DateField(props: any) {
 }
 
 DateField.defaultProps = {
-  label: "Test",
-  type: "text",
-  disabled: false,
+    label: "Test",
+    enabled: true,
+    focused: false,
+    color: colors.primary900,
+    width: 375,
+    height: 70,
 };
+
+addPropertyControls(DateField, {
+    enabled: {
+        title: "Enabled",
+        type: ControlType.Boolean,
+        defaultValue: true,
+    },
+    focused: {
+        title: "Focused",
+        type: ControlType.Boolean,
+        defaultValue: false,
+    },
+    on: {
+        title: "On",
+        type: ControlType.Boolean,
+        defaultValue: true,
+    },
+    color: {
+        title: "Color",
+        type: ControlType.Color,
+        defaultValue: colors.primary900,
+    },
+    type: {
+        title: "Input Type",
+        type: ControlType.Enum,
+        options: ["text", "email", "password", "number"],
+    },
+    defaultValue: {
+        title: "Text",
+        type: ControlType.String,
+        defaultValue: "",
+    },
+    assistMessage: {
+        title: "Assist Msg",
+        type: ControlType.String,
+    },
+    errorMessage: {
+        title: "Error Msg",
+        type: ControlType.String,
+    },
+})

@@ -1,8 +1,9 @@
 import * as React from "react";
-import { useState, useRef } from "react";
-import { colors, sizes } from "./variables";
+import { useState } from "react";
+import { colors } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import * as Type from "./Typography";
 
 interface Props {
   disabled: Boolean;
@@ -20,7 +21,8 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 })`
   width: 300px;
   height: 70px;
-  opacity: ${props => props.disabled ? 0.5 : 1};
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  margin-bottom: 1.5rem;
 
   > .field-label {
     position: absolute;
@@ -40,7 +42,7 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
     border-radius: 4px;
     border-style: solid;
     outline: none;
-    background: ${props => props.disabled ? colors.grey200 : colors.white};
+    background: ${(props) => (props.disabled ? colors.grey200 : colors.white)};
 
     &:invalid {
       border-color: "red";
@@ -50,27 +52,23 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
     margin-top: 0px;
     height: 16px;
     padding: 0 16px;
-    font-size: 12px;
-    font-family: Roboto, sans-serif;
-    line-height: 14px;
-    letter-spacing: 0.4px;
-    color: ${colors.black};
   }
 `;
 
 export function TextField(props: any) {
-    const {
-        label,
-        disabled,
-        type,
-        defaultValue,
-        assistMessage = "Use the force",
-        errorMessage = "You have included non-alphabetical characters"
-    } = props;
+  const {
+    label,
+    disabled,
+    type,
+    defaultValue,
+    assistMessage = "Use the force",
+    errorMessage = "You have included non-alphabetical characters",
+  } = props;
   const [isFocused, setFocused] = useState(false);
   const [value, setValue] = useState("");
   const [isValid, setValid] = useState(false);
   const id = Math.floor(Math.random() * 8888);
+  let activeColor, message;
 
   function onChange(e: any) {
     setValue(e.target.value);
@@ -89,9 +87,7 @@ export function TextField(props: any) {
   function textIsValid(text: string) {
     return /^[a-zA-Z-. ]*$/.test(text);
   }
-
-  let activeColor;
-  let message;
+  
   if (isFocused) {
     activeColor = colors.primary600;
     message = assistMessage;
@@ -150,9 +146,7 @@ export function TextField(props: any) {
           duration: 0.15,
         }}
       />
-      <motion.p>
-        {message}
-      </motion.p>
+      <Type.Caption className="assist">{message}</Type.Caption>
     </StyledField>
   );
 }

@@ -1,24 +1,27 @@
 import * as React from "react";
 import { useState } from "react";
-import { colors } from "./variables";
+import { colors } from "./Variables";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, addPropertyControls, ControlType } from "framer";
 
 interface Props {
-  enabled: Boolean;
+    enabled: Boolean;
+    color: String;
 }
 
 const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
   return {
-    enabled: props.enabled,
+      enabled: props.enabled,
+      color: props.color
   };
 })`
   position: relative;
+  margin: 8px auto;
   width: 1.5rem;
   height: 1.5rem;
   background: ${props => props.enabled ? colors.white : colors.grey200};
   outline: none;
-  border: 1px solid ${colors.primary600};
+  border: 1px solid ${props => props.color};
   border-radius: 2px;
   // opacity: ${(props) => (props.enabled === true ? 1 : 0.5)};
 
@@ -26,7 +29,7 @@ const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
     position: absolute;
     width: 1.5rem;
     height: 1.5rem;
-    background: ${colors.primary600};
+    background: ${props => props.color};
   }
   > .svg-container {
     position: relative;
@@ -51,15 +54,16 @@ const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
 `;
 
 export function Checkbox(props: any) {
-  const { enabled } = props;
-  const [isChecked, setChecked] = useState(false);
+  const { enabled, checked, color } = props;
+  const [isChecked, setChecked] = useState(checked);
 
   return (
     <StyledCheckbox
       onTap={() => {
         setChecked(enabled ? !isChecked : isChecked);
       }}
-      enabled={enabled}
+          enabled={enabled}
+          color={color}
     >
       <motion.div
         initial={{
@@ -100,3 +104,25 @@ export function Checkbox(props: any) {
     </StyledCheckbox>
   );
 }
+
+Checkbox.defaultProps = {
+    enabled: true,
+    checked: false,
+    color: colors.primary900,
+    width: 40, height: 40
+}
+
+addPropertyControls(Checkbox, {
+    enabled: {
+        title: "Enabled",
+        type: ControlType.Boolean
+    }, 
+    chekced: {
+        title: "Checked",
+        type: ControlType.Boolean
+    },
+    color: {
+        title: "Color",
+        type: ControlType.Color
+    }
+})

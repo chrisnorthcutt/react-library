@@ -41,12 +41,12 @@ function App() {
       <Radio enabled={true} />
       <hr />
       <h2>Typography</h2>
-      <Type.H1>Heading 1</Type.H1>
+      <Type.H1>Heading</Type.H1>
       <Type.H2>Heading 2</Type.H2>
       <Type.H3>Heading 3</Type.H3>
       <Type.H4>Heading 4</Type.H4>
       <Type.H5>Heading 5</Type.H5>
-      <Type.Paragraph>Paragraph</Type.Paragraph>
+      <Type.Body1>Paragraph</Type.Body1>
       <Type.Caption>Caption</Type.Caption>
       <h2>Colors</h2>
     </div>

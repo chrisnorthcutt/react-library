@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const H1 = styled.h1`
   color: ${(props) => props.color || "#333"};
@@ -7,7 +7,7 @@ export const H1 = styled.h1`
   line-height: 0px;
   letterspacing: -1.5px;
   text-transform: none;
-`;
+`
 
 export const H2 = styled.h2`
   color: ${(props) => props.color || "#333"};
@@ -16,7 +16,7 @@ export const H2 = styled.h2`
   line-height: 0px;
   letter-spacing: -0.5px;
   text-transform: none;
-`;
+`
 
 export const H3 = styled.h3`
   color: ${(props) => props.color || "#333"};
@@ -25,7 +25,7 @@ export const H3 = styled.h3`
   line-height: 0px;
   letter-spacing: normal;
   text-transform: none;
-`;
+`
 
 export const H4 = styled.h4`
   color: ${(props) => props.color || "#333"};
@@ -34,7 +34,7 @@ export const H4 = styled.h4`
   line-height: 0px;
   letter-spacing: 0.25px;
   text-transform: none;
-`;
+`
 
 export const H5 = styled.h5`
   color: ${(props) => props.color || "#333"};
@@ -43,7 +43,7 @@ export const H5 = styled.h5`
   line-height: 0px;
   letter-spacing: normal;
   text-transform: none;
-`;
+`
 
 export const Caption = styled.p`
   color: ${(props) => props.color || "#333"};
@@ -52,7 +52,7 @@ export const Caption = styled.p`
   line-height: 16px;
   letter-spacing: 0.4px;
   text-transform: none;
-`;
+`
 
 export const Body1 = styled.p`
   color: ${(props) => props.color || "#333"};
@@ -61,7 +61,7 @@ export const Body1 = styled.p`
   line-height: 28px;
   letter-spacing: 0.44px;
   text-transform: none;
-`;
+`
 
 export const Body2 = styled.p`
   color: ${(props) => props.color || "#333"};
@@ -70,7 +70,7 @@ export const Body2 = styled.p`
   line-height: 20px;
   letter-spacing: 0.25px;
   text-transform: none;
-`;
+`
 
 export const ButtonText = styled.span`
   color: ${(props) => props.color || "#333"};
@@ -79,4 +79,4 @@ export const ButtonText = styled.span`
   line-height: 0px;
   letter-spacing: normal;
   text-transform: none;
-`;
+`

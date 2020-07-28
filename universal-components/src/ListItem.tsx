@@ -20,7 +20,7 @@ const Item = styled.div`
 export function ListItem(props: any) {
     return (
         <Item>
-            <Type.Paragraph>{props.item}</Type.Paragraph>
+            <Type.Body1>{props.item}</Type.Body1>
         </Item>
     );
 }

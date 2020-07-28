@@ -9,11 +9,10 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "ae8f1d11-4644-4acc-8037-0183ccb922f3"
+		"id": "94324af5-ec57-4777-bfc2-5736423a34b2"
 	},
-	"author": "Chris Northcutt",
+	"author": "Ken Spry",
 	"dependencies": {
-		"@framer/framer.default": "^1.74.0",
-		"styled-components": "^5.1.1"
+		"@framer/framer.default": "^1.74.0"
 	}
 }

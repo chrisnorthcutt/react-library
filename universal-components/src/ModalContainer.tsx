@@ -1,5 +1,4 @@
 import * as React from "react";
-import {useState} from "react";
 import { colors, sizes, borderRadii } from "./variables";
 import styled from "styled-components";
 import { motion } from "framer-motion";

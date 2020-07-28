@@ -27,7 +27,7 @@ fs.readdir("../universal-prototypes/", function(err, files) {
             fs.symlink(source, target, (err) => {
                 if (err) console.log(err);
                 else {
-                    console.log("Symlink created");
+                    console.log("Symlink created " + framerfile);
                     console.log(
                         "Symlink is a directory:",
                         fs.statSync(source).isDirectory()

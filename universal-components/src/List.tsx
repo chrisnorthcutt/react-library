@@ -24,9 +24,9 @@ export function List(props: any) {
                 ) : (
                     props.options.map((x: React.ReactNode) => (
                         <ListItem>
-                            <Type.Paragraph color={colors.grey900}>
+                            <Type.Body1 color={colors.grey900}>
                                 {x}
-                            </Type.Paragraph>
+                            </Type.Body1>
                         </ListItem>
                     ))
                 )}
