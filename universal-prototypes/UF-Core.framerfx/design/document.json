@@ -308,7 +308,7 @@
             "blendingMode" : "normal",
             "bottom" : null,
             "centerAnchorX" : 0.49879227053140096,
-            "centerAnchorY" : 0.19754464285714285,
+            "centerAnchorY" : 0.20479910714285715,
             "children" : [
               {
                 "__class" : "CodeComponentNode",
@@ -434,18 +434,18 @@
               {
                 "__class" : "CodeComponentNode",
                 "aspectRatio" : null,
-                "bottom" : -12,
+                "bottom" : null,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.89669421487603307,
+                "centerAnchorY" : 0.52479338842975209,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/TextField.tsx_TextField",
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
-                  "assistMessage" : "Your email",
+                  "assistMessage" : "email@company.com",
                   "color" : "#00384d",
                   "defaultValue" : "",
                   "enabled" : true,
-                  "errorMessage" : "No, YOUR given name",
+                  "errorMessage" : "You didn't meet the requirements",
                   "focused" : false,
                   "label" : "Email",
                   "type" : "email"
@@ -467,9 +467,9 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 74,
+                "height" : 94,
                 "heightType" : 0,
-                "id" : "seXetFBW3",
+                "id" : "q02bm_dmp",
                 "intrinsicHeight" : 70,
                 "intrinsicWidth" : 375,
                 "left" : 0,
@@ -486,9 +486,9 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : 0,
+                "right" : null,
                 "rotation" : 0,
-                "top" : null,
+                "top" : 0,
                 "visible" : true,
                 "width" : 375,
                 "widthType" : 0
@@ -516,7 +516,7 @@
             "guidesY" : [
 
             ],
-            "height" : 242,
+            "height" : 255,
             "heightType" : 0,
             "id" : "KqRNgT7LR",
             "intrinsicHeight" : null,
