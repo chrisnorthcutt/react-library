@@ -40,7 +40,7 @@ export const H5 = styled.h5`
   color: ${(props) => props.color || "#333"};
   font-size: 24px;
   font-weight: 500;
-  line-height: 0px;
+  line-height: 1;
   letter-spacing: normal;
   text-transform: none;
 `;
@@ -76,7 +76,7 @@ export const Body2 = styled.p`
 export const ButtonText = styled.span`
   color: ${(props) => props.color || "#333"};
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 0px;
   letter-spacing: normal;
   text-transform: none;

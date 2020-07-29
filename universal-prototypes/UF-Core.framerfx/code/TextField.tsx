@@ -237,6 +237,9 @@ addPropertyControls(TextField, {
 	errorMessage: {
 		title: "Error Msg",
 		type: ControlType.String,
+		hidden(props) {
+			return props.type === "password"
+		}
 	},
 	enabled: {
 		title: "Enabled",

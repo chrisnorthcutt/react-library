@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled from "styled-components"
-import { motion, addPropertyControls, ControlType } from "framer"
+import { motion, addPropertyControls, ControlType, useNavigation } from "framer"
 // Import Variables & Type
 import { colors, spacing, shadows } from "./Variables"
 import * as Text from "./Typography"
@@ -63,13 +63,14 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
 
 // Export button component
 export function Button(props: any) {
-    const { text, buttonStyle, isDisabled, onTap, ...rest } = props
+    const { text, buttonStyle, isDisabled, onTap, style, ...rest } = props
+    const navigation = useNavigation()
     const labelStyle =
         !isDisabled && buttonStyle != "primary"
             ? colors.primary600 : isDisabled && buttonStyle != "primary" ? colors.grey700
             : colors.white
     return (
-        <StyledButton onTap={onTap} buttonStyle={buttonStyle} disabled={isDisabled}>
+        <StyledButton onTap={onTap} buttonStyle={buttonStyle} style={style} disabled={isDisabled}>
             <Text.ButtonText color={labelStyle}>{text}</Text.ButtonText>
         </StyledButton>
     )
