@@ -1,10 +1,10 @@
-import * as React from "react"
-import { useState } from "react"
-import { colors, spacing } from "./Variables"
-import styled from "styled-components"
-import { motion, addPropertyControls, ControlType, Frame } from "framer"
-import * as Type from "./Typography"
-import { Icon } from "./Icon"
+import * as React from "react";
+import { useState, useRef } from "react";
+import { colors, spacing } from "./Variables";
+import styled from "styled-components";
+import { motion, addPropertyControls, ControlType, Frame } from "framer";
+import * as Type from "./Typography";
+import { Icon } from "./Icon";
 
 interface Props {
   enabled: Boolean;
@@ -58,36 +58,39 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 `;
 
 export function TextField(props: any) {
-    const {
-        label,
-        enabled,
-        focused,
-        type,
-        defaultValue = "",
-        assistMessage = "Use the force",
-        errorMessage = "You have included non-alphabetical characters",
-        color,
-        ...rest
-    } = props
-    const [isFocused, setFocused] = useState(focused)
-    const [value, setValue] = useState(defaultValue)
-    const [isValid, setValid] = useState(false)
-    const [showPassword, setShowPassword] = useState(false)
+  const {
+    label,
+    enabled,
+    focused,
+    type,
+    defaultValue = "",
+    assistMessage = "Password must contain at least one letter, at least one number, and be longer than six charaters.",
+    errorMessage = "You have included non-alphabetical characters",
+    color,
+    ...rest
+  } = props;
+  const [isFocused, setFocused] = useState(focused);
+  const [value, setValue] = useState(defaultValue);
+  const [isValid, setValid] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const inputRef = useRef();
 
-    const id = Math.floor(Math.random() * 8888)
-    let showIcon = false
-    let activeColor, message
+  const id = Math.floor(Math.random() * 8888);
+  let showIcon = false;
+  let activeColor, message;
 
   function onChange(e: any) {
     setValue(e.target.value);
     if (type === "email") setValid(emailIsValid(e.target.value));
     else if (type === "text") setValid(textIsValid(e.target.value));
+    else if (type === "password") setValid(passwordIsValid(e.target.value));
   }
   function onFocus() {
     setFocused(true);
   }
   function onBlur() {
     setFocused(false);
+    setShowPassword(false);
   }
   function emailIsValid(email: string) {
     return /\S+@\S+\.\S+/.test(email);
@@ -95,142 +98,146 @@ export function TextField(props: any) {
   function textIsValid(text: string) {
     return /^[a-zA-Z-. ]*$/.test(text);
   }
+  function passwordIsValid(password: string) {
+    return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(password);
+  }
 
-    if (isFocused) {
-        activeColor = color
-        message = assistMessage
-    } else if (!isValid && value.length > 0) {
-        activeColor = colors.danger
-        message = errorMessage
-        showIcon = !showIcon
-    } else {
-        activeColor = colors.grey400
-        message = assistMessage
-    }
+  if (isFocused) {
+    activeColor = color;
+    message = assistMessage;
+  } else if (!isValid && value.length > 0) {
+    activeColor = colors.danger;
+    message = errorMessage;
+    showIcon = !showIcon;
+  } else {
+    activeColor = colors.grey400;
+    message = assistMessage;
+  }
 
-    const togglePassword = () => {
-        setShowPassword(!showPassword)
-    }
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+    //@ts-ignore
+    inputRef.current.focus();
+  };
 
-    return (
-        <StyledField enabled={enabled}>
-            <motion.label
-                className="label"
-                htmlFor={"renene" + id}
-                style={{
-                    originX: 0,
-                }}
-                initial={{
-                    scale: 1,
-                    x: 0,
-                    y: 0,
-                    color: activeColor,
-                }}
-                animate={{
-                    scale: isFocused || value.length > 0 ? 0.65 : 1,
-                    x: isFocused || value.length > 0 ? 1 : 0,
-                    y: isFocused || value.length > 0 ? -15 : 0,
-                    color: activeColor,
-                }}
-                transition={{
-                    duration: 0.15,
-                }}
-            >
-                {label}
-            </motion.label>
+  return (
+    <StyledField enabled={enabled}>
+      <motion.label
+        className="label"
+        htmlFor={"renene" + id}
+        style={{
+          originX: 0,
+        }}
+        initial={{
+          scale: 1,
+          x: 0,
+          y: 0,
+          color: activeColor,
+        }}
+        animate={{
+          scale: isFocused || value.length > 0 ? 0.65 : 1,
+          x: isFocused || value.length > 0 ? 1 : 0,
+          y: isFocused || value.length > 0 ? -15 : 0,
+          color: activeColor,
+        }}
+        transition={{
+          duration: 0.15,
+        }}
+      >
+        {label}
+      </motion.label>
 
-            <motion.input
-                id={"renene" + id}
-                className="input"
-                type={showPassword ? "text" : type}
-                disabled={!enabled}
-                defaultValue={defaultValue}
-                onChange={onChange}
-                onFocus={onFocus}
-                onBlur={onBlur}
-                initial={{
-                    borderWidth: 1,
-                    borderColor: activeColor,
-                }}
-                animate={{
-                    borderWidth:
-                        isFocused || (!isValid && value.length > 0) ? 1 : 1,
-                    borderColor: activeColor,
-                }}
-                transition={{
-                    duration: 0.15,
-                }}
-            />
-            <Icon
-                onClick={togglePassword}
-                style={{
-                    position: "absolute",
-                    right: "12px",
-                    top: "12px",
-                    display: type === "password" ? "initial" : "none",
-                }}
-                name={!showPassword ? "show" : "hide"}
-                fill={colors.grey700}
-                size={"24px"}
-            />
-            <Frame
-                left={16}
-                width={"100%"}
-                height={16}
-                background={"transparent"}
-            >
-                <Type.Caption>{message}</Type.Caption>
-            </Frame>
-        </StyledField>
-    )
+      <motion.input
+        id={"renene" + id}
+        ref={inputRef}
+        className="input"
+        type={showPassword ? "text" : type}
+        disabled={!enabled}
+        defaultValue={defaultValue}
+        onChange={onChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        initial={{
+          borderWidth: 1,
+          borderColor: activeColor,
+        }}
+        animate={{
+          borderWidth: isFocused || (!isValid && value.length > 0) ? 1 : 1,
+          borderColor: activeColor,
+        }}
+        transition={{
+          duration: 0.15,
+        }}
+      />
+      <Icon
+        onClick={togglePassword}
+        style={{
+          position: "absolute",
+          right: "12px",
+          top: "12px",
+          display: type === "password" ? "initial" : "none",
+        }}
+        name={!showPassword ? "show" : "hide"}
+        fill={colors.grey700}
+        size={"24px"}
+      />
+      <Frame left={16} width={"100%"} height={16} background={"transparent"}>
+        <Type.Caption>{message}</Type.Caption>
+      </Frame>
+    </StyledField>
+  );
 }
 
 TextField.defaultProps = {
-    label: "Test",
-    type: "password",
-    enabled: true,
-    focused: false,
-    color: colors.primary900,
-    width: 375,
-    height: 70,
-}
+  label: "Test",
+  type: "text",
+  enabled: true,
+  focused: false,
+  color: colors.primary900,
+  width: 375,
+  height: 70,
+};
 
 addPropertyControls(TextField, {
-    defaultValue: {
-        title: "Label",
-        type: ControlType.String,
-        defaultValue: "",
+  defaultValue: {
+    title: "Label",
+    type: ControlType.String,
+    defaultValue: "",
+  },
+  type: {
+    title: "Input Type",
+    type: ControlType.Enum,
+    options: ["text", "email", "password", "number"],
+    optionTitles: ["Text", "Email", "Password", "Number"],
+  },
+  label: {
+    title: "Label",
+    type: ControlType.String,
+  },
+  assistMessage: {
+    title: "Assist Msg",
+    type: ControlType.String,
+  },
+  errorMessage: {
+    title: "Error Msg",
+    type: ControlType.String,
+  },
+  enabled: {
+    title: "Enabled",
+    type: ControlType.Boolean,
+    defaultValue: true,
+  },
+  focused: {
+    title: "Focused",
+    type: ControlType.Boolean,
+    defaultValue: false,
+  },
+  color: {
+    title: "Color",
+    type: ControlType.Color,
+    defaultValue: colors.primary900,
+    hidden(props) {
+      return true;
     },
-    type: {
-        title: "Input Type",
-        type: ControlType.Enum,
-        options: ["text", "email", "password", "number"],
-        optionTitles: ["Text", "Email", "Password", "Number"],
-    },
-    assistMessage: {
-        title: "Assist Msg",
-        type: ControlType.String,
-    },
-    errorMessage: {
-        title: "Error Msg",
-        type: ControlType.String,
-    },
-    enabled: {
-        title: "Enabled",
-        type: ControlType.Boolean,
-        defaultValue: true,
-    },
-    focused: {
-        title: "Focused",
-        type: ControlType.Boolean,
-        defaultValue: false,
-    },
-    color: {
-        title: "Color",
-        type: ControlType.Color,
-        defaultValue: colors.primary900,
-        hidden(props) {
-            return true
-        },
-    },
-})
+  },
+});

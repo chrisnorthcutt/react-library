@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { colors } from "./Variables";
+import { colors, spacing } from "./Variables";
 import styled from "styled-components";
 import * as Type from "./Typography";
 import { motion, addPropertyControls, ControlType } from "framer";
@@ -16,15 +16,14 @@ const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
     color: props.color,
   };
 })`
-width: 100%;
-height: 40px;
-display: flex;
-justify-content: start;
-align-content: start;
-align-items: normal;
-    .container {
-    position: relative;
-    margin: 8px 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  align-items: center;
+
+  .container {
     width: 1.5rem;
     height: 1.5rem;
     background: ${(props) => (props.enabled ? colors.white : colors.grey200)};
@@ -33,39 +32,36 @@ align-items: normal;
     border-radius: 2px;
 
     > .background {
-        position: absolute;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: ${(props) => props.color};
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: ${(props) => props.color};
     }
     > .svg-container {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: transparent;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: transparent;
 
-        > svg {
+      > svg {
         fill: transparent;
 
         > path {
-            fill: transparent;
-            stroke-width: 2px;
-            stroke: hsl(0, 0%, 100%);
-            stroke-linecap: round;
-            stroke-linejoin: round;
+          fill: transparent;
+          stroke-width: 2px;
+          stroke: hsl(0, 0%, 100%);
+          stroke-linecap: round;
+          stroke-linejoin: round;
         }
-        }
+      }
     }
-    > span.label {
-        // min-width: 10rem;
-        background: #ccc;
-        color: ${(props) => props.color};
-        margin: 0.25rem 8px;
-        font-weight: 900;
-    }
-}
+  }
+  > .label {
+      margin: 0 ${spacing['2x']};
+    color: ${(props) => props.color};
+  }
 `;
 
 export function Checkbox(props: any) {
@@ -80,43 +76,45 @@ export function Checkbox(props: any) {
       enabled={enabled}
       color={color}
     >
-      <motion.div
-        initial={{
-          opacity: isChecked ? 1 : 0,
-        }}
-        animate={{
-          opacity: isChecked ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
-        className="background"
-      />
-      <motion.div
-        initial={{
-          scale: isChecked ? 1 : 0,
-          opacity: isChecked ? 1 : 0,
-        }}
-        animate={{
-          scale: isChecked ? 1 : 0,
-          opacity: isChecked ? 1 : 0,
-        }}
-        transition={{
-          delay: 0.05,
-          duration: 0.15,
-        }}
-        className="svg-container"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1.5rem"
-          height="1.5rem"
-          viewBox="0 -6 30 40"
+      <div className="container">
+        <motion.div
+          initial={{
+            opacity: isChecked ? 1 : 0,
+          }}
+          animate={{
+            opacity: isChecked ? 1 : 0,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
+          className="background"
+        />
+        <motion.div
+          initial={{
+            scale: isChecked ? 1 : 0,
+            opacity: isChecked ? 1 : 0,
+          }}
+          animate={{
+            scale: isChecked ? 1 : 0,
+            opacity: isChecked ? 1 : 0,
+          }}
+          transition={{
+            delay: 0.05,
+            duration: 0.15,
+          }}
+          className="svg-container"
         >
-          <path d="M 5.5 17 L 11 22.5 L 22.5 6"></path>
-        </svg>
-      </motion.div>
-      <span className="label">{label}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.5rem"
+            height="1.5rem"
+            viewBox="0 -6 30 40"
+          >
+            <path d="M 5.5 17 L 11 22.5 L 22.5 6"></path>
+          </svg>
+        </motion.div>
+      </div>
+      <Type.Body2 className="label">{label}</Type.Body2>
     </StyledCheckbox>
   );
 }
