@@ -63,13 +63,13 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
 
 // Export button component
 export function Button(props: any) {
-    const { text, buttonStyle, isDisabled, ...rest } = props
+    const { text, buttonStyle, isDisabled, onTap, ...rest } = props
     const labelStyle =
         !isDisabled && buttonStyle != "primary"
             ? colors.primary600 : isDisabled && buttonStyle != "primary" ? colors.grey700
             : colors.white
     return (
-        <StyledButton buttonStyle={buttonStyle} disabled={isDisabled}>
+        <StyledButton onTap={onTap} buttonStyle={buttonStyle} disabled={isDisabled}>
             <Text.ButtonText color={labelStyle}>{text}</Text.ButtonText>
         </StyledButton>
     )
@@ -98,4 +98,7 @@ addPropertyControls(Button, {
         type: ControlType.Boolean,
         defaultValue: false,
     },
+    onTap: {
+        type: ControlType.EventHandler,
+    }
 })

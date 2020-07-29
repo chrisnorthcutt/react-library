@@ -53,4 +53,7 @@ addPropertyControls(Icon, {
         title: "Fill Color",
         type: ControlType.Color,
     },
+    onTap: {
+        type: ControlType.EventHandler
+    }
 })
