@@ -81,10 +81,18 @@ export function TextField(props: any) {
 	let activeColor, message;
 
 	function onChange(e: any) {
-		setValue(e.target.value);
-		if (type === "email") setValid(emailIsValid(e.target.value));
-		else if (type === "text") setValid(textIsValid(e.target.value));
-		else if (type === "password") setValid(passwordIsValid(e.target.value));
+		const value = e.target.value
+		if (props.onChange) props.onChange(value)
+
+        setValue(value)
+
+        if (props.onValueChange) {
+            props.onValueChange(value)
+        }
+		setValue(value);
+		if (type === "email") setValid(emailIsValid(value));
+		else if (type === "text") setValid(textIsValid(value));
+		else if (type === "password") setValid(passwordIsValid(value));
 	}
 	function onFocus() {
 		setFocused(true);
