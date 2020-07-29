@@ -441,14 +441,14 @@
                 "codeComponentIdentifier" : ".\/TextField.tsx_TextField",
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
-                  "assistMessage" : "Your given name",
+                  "assistMessage" : "Your email",
                   "color" : "#00384d",
                   "defaultValue" : "",
                   "enabled" : true,
                   "errorMessage" : "No, YOUR given name",
                   "focused" : false,
-                  "label" : "Name",
-                  "type" : "text"
+                  "label" : "Email",
+                  "type" : "email"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
