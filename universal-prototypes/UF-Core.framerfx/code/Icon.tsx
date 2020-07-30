@@ -46,8 +46,8 @@ addPropertyControls(Icon, {
         title: "Icon",
         type: ControlType.Enum,
         defaultValue: "check",
-        options: iconNames,
-        optionTitles: iconOptions,
+        options: iconNames.sort(),
+        optionTitles: iconOptions.sort(),
     },
     fill: {
         title: "Fill Color",

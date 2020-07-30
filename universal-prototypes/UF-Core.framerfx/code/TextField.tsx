@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { colors, spacing } from "./Variables";
 import styled from "styled-components";
 import { motion, addPropertyControls, ControlType, Frame } from "framer";
@@ -64,6 +64,7 @@ export function TextField(props: any) {
 		enabled,
 		focused,
 		type,
+		empty,
 		defaultValue = "",
 		assistMessage = "Password must contain at least one letter, at least one number, and be longer than six charaters.",
 		errorMessage = "You have included non-alphabetical characters",
@@ -71,8 +72,10 @@ export function TextField(props: any) {
 		...rest
 	} = props;
 	const [isFocused, setFocused] = useState(focused);
+
 	const [value, setValue] = useState(defaultValue);
 	const [isValid, setValid] = useState(false);
+
 	const [showPassword, setShowPassword] = useState(false);
 	const inputRef = useRef();
 
@@ -113,15 +116,18 @@ export function TextField(props: any) {
 	}
 
 	if (isFocused) {
-		activeColor = color;
+		activeColor = colors.primary600;
 		message = assistMessage;
 	} else if (!isValid && value.length > 0 && !isFocused) {
 		activeColor = colors.danger;
 		message = errorMessage;
 		showIcon = !showIcon;
-	} else if (!isFocused) {
+	} else if (!isFocused && !empty) {
 		activeColor = colors.grey400;
 		message = assistMessage;
+	} else if (empty && !isFocused) {
+		activeColor = colors.danger;
+		message = label + " cannot be empty";
 	}
 
 	const togglePassword = () => {
@@ -130,8 +136,12 @@ export function TextField(props: any) {
 		inputRef.current.focus();
 	};
 
+
+
+
+
 	return (
-		<StyledField enabled={enabled}>
+		<StyledField  enabled={enabled}>
 			<motion.label
 				className="label"
 				htmlFor={"renene" + id}
@@ -154,7 +164,7 @@ export function TextField(props: any) {
 					duration: 0.15,
 				}}
 			>
-				{label}
+				{ label }
 			</motion.label>
 
 			<motion.input
@@ -167,6 +177,7 @@ export function TextField(props: any) {
 				onChange={onChange}
 				onFocus={onFocus}
 				onBlur={onBlur}
+				onInvalid={() => setValid(false)}
 				initial={{
 					borderWidth: 1,
 					borderColor: activeColor,
@@ -193,12 +204,12 @@ export function TextField(props: any) {
 				size={"24px"}
 			/>
 			<Frame
-				left={16}
+				style={{paddingLeft: 16}}
 				width={"100%"}
-				height={16}
+				height={32}
 				background={"transparent"}
 			>
-				<Type.Caption>{message}</Type.Caption>
+				<Type.Caption color={!isValid ? colors.dangerDark : colors.grey700}>{message}</Type.Caption>
 			</Frame>
 		</StyledField>
 	);
@@ -220,6 +231,15 @@ addPropertyControls(TextField, {
 		type: ControlType.String,
 		defaultValue: "",
 	},
+	currentValue: {
+		title: "Current Value",
+		type: ControlType.String,
+		defaultValue: "",
+		hidden() {
+
+			return true
+		}
+	},
 	type: {
 		title: "Input Type",
 		type: ControlType.Enum,
@@ -237,9 +257,6 @@ addPropertyControls(TextField, {
 	errorMessage: {
 		title: "Error Msg",
 		type: ControlType.String,
-		hidden(props) {
-			return props.type === "password"
-		}
 	},
 	enabled: {
 		title: "Enabled",
@@ -250,6 +267,14 @@ addPropertyControls(TextField, {
 		title: "Focused",
 		type: ControlType.Boolean,
 		defaultValue: false,
+	},
+	empty: {
+		title: "Empty",
+		type: ControlType.Boolean,
+		defaultValue: false,
+		hidden() {
+			return true
+		}
 	},
 	color: {
 		title: "Color",

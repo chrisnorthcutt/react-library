@@ -1,18 +1,20 @@
 import * as React from "react";
 import { useState } from "react";
-import { colors, spacing } from "./Variables";
+import { colors, spacing, converToREM } from "./Variables";
 import styled from "styled-components";
 import * as Type from "./Typography";
 import { motion, addPropertyControls, ControlType } from "framer";
 
 interface Props {
-  enabled: Boolean;
+  disabled: Boolean;
   color: String;
+  checked: Boolean;
 }
 
 const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
   return {
-    enabled: props.enabled,
+    checked: props.checked,
+    disabled: props.disabled,
     color: props.color,
   };
 })`
@@ -24,25 +26,30 @@ const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
   align-items: center;
 
   .container {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: ${(props) => (props.enabled ? colors.white : colors.grey200)};
+    position: relative;
+    width: ${spacing["3x"]};
+    height: ${spacing["3x"]};
+    background: ${(props) => (!props.disabled ? colors.white : colors.grey200)};
     outline: none;
-    border: 1px solid ${(props) => props.color};
+    border: 1px solid ${(props) => props.checked && !props.disabled ? colors.primary900 : colors.grey400};
     border-radius: 2px;
 
     > .background {
       position: absolute;
-      width: 1.5rem;
-      height: 1.5rem;
-      background: ${(props) => props.color};
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: ${converToREM(22)};
+      height: ${converToREM(22)};
+      background: ${(props) => !props.disabled ? colors.primary900 : colors.grey400};
     }
     > .svg-container {
-      position: relative;
+      position: absolute;
       top: 0;
       left: 0;
-      width: 1.5rem;
-      height: 1.5rem;
+      width: ${converToREM(22)};
+      height: ${converToREM(22)};
       background: transparent;
 
       > svg {
@@ -65,16 +72,27 @@ const StyledCheckbox = styled(motion.div).attrs((props: Props) => {
 `;
 
 export function Checkbox(props: any) {
-  const { enabled, checked, color, label } = props;
+  const { disabled, checked, label } = props;
   const [isChecked, setChecked] = useState(checked);
+
+
+  const toggleChecked = () => {
+    if (disabled && isChecked) {
+      return
+    } else {
+      setChecked(!isChecked)
+    }
+    
+  }
+
+
+
 
   return (
     <StyledCheckbox
-      onTap={() => {
-        setChecked(enabled ? !isChecked : isChecked);
-      }}
-      enabled={enabled}
-      color={color}
+      onTap={toggleChecked}
+      checked={isChecked}
+      disabled={disabled}
     >
       <div className="container">
         <motion.div
@@ -106,8 +124,8 @@ export function Checkbox(props: any) {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
-            height="1.5rem"
+            width={converToREM(22)}
+            height={converToREM(22)}
             viewBox="0 -6 30 40"
           >
             <path d="M 5.5 17 L 11 22.5 L 22.5 6"></path>
@@ -120,26 +138,21 @@ export function Checkbox(props: any) {
 }
 
 Checkbox.defaultProps = {
-  enabled: true,
+  disabled: false,
   checked: false,
-  color: colors.primary900,
   width: 200,
   height: 40,
   label: "Label",
 };
 
 addPropertyControls(Checkbox, {
-  enabled: {
-    title: "Enabled",
+  disabled: {
+    title: "Disabled",
     type: ControlType.Boolean,
   },
   checked: {
     title: "Checked",
     type: ControlType.Boolean,
-  },
-  color: {
-    title: "Color",
-    type: ControlType.Color,
   },
   label: {
     title: "Label",

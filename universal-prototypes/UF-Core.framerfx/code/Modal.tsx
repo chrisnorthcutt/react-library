@@ -40,7 +40,7 @@ export function Modal(props) {
                         alignContent: "start",
                     }}
                 >
-                    <Type.H5 style={{ margin: 0 }}>{header}</Type.H5>
+                    <Type.H6 style={{ margin: 0 }}>{header}</Type.H6>
                 </div>
 
                 <Type.Body2 style={{ margin: 0 }}>{body}</Type.Body2>
