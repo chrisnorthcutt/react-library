@@ -50,7 +50,7 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 			border-color: ${colors.danger};
 		}
 	}
-	> .assitive {
+	> .assistive {
 		margin-top: 0px;
 		height: ${spacing["2x"]};
 		padding: 0 ${spacing["2x"]};
@@ -181,7 +181,7 @@ export function TextField(props: any) {
 				}}
 			/>
 			<Icon
-				onClick={togglePassword}
+                onTap={togglePassword}
 				style={{
 					position: "absolute",
 					right: "12px",
