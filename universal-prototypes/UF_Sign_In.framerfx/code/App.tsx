@@ -35,6 +35,7 @@ export function savePassword(props): Override {
 
 export function saveEmailAddress(props): Override {
     return {
+        defaultValue: data.enteredEmail,
         onValueChange(value) {
             data.enteredEmail = value
             data.emptyEmail = data.enteredEmail.length < 0
@@ -98,6 +99,13 @@ export function sendEmailLink(): Override {
                 />
             )
         },
+    }
+}
+
+export function continuePasswordReset(): Override {
+    const navigation = useNavigation()
+    return {
+        isDisabled: data.enteredEmail === "",
     }
 }
 
