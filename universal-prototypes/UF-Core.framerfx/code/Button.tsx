@@ -33,9 +33,10 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
             ? "1px solid " + colors.primary600
             : "transparent"};
     border-radius: 1.5rem;
-    box-shadow: none;
+    box-shadow: ${(props) => props.buttonStyle === "primary" ? shadows.z1 : "none" };
+    transition: all 0.25s ease-in-out;
     &:hover {
-        box-shadow: ${(props) => props.buttonStyle === "primary" ? shadows.z1 : "none"} ;
+        box-shadow: ${(props) => props.buttonStyle === "primary" || props.buttonStyle === "secondary" ? shadows.z1 : "none"} ;
     }
     &:active {
         box-shadow: none;

@@ -209,7 +209,7 @@ export function TextField(props: any) {
 				height={32}
 				background={"transparent"}
 			>
-				<Type.Caption color={!isValid ? colors.dangerDark : colors.grey700}>{message}</Type.Caption>
+				<Type.Caption color={activeColor}>{message}</Type.Caption>
 			</Frame>
 		</StyledField>
 	);
