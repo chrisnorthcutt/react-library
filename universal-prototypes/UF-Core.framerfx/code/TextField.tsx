@@ -116,7 +116,7 @@ export function TextField(props: any) {
 	}
 
 	if (isFocused) {
-		activeColor = colors.primary600;
+		activeColor = color;
 		message = assistMessage;
 	} else if (!isValid && value.length > 0 && !isFocused) {
 		activeColor = colors.danger;
