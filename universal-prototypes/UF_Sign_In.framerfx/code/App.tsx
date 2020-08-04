@@ -24,8 +24,6 @@ const data = Data({
         "Password4",
         "Password6",
     ],
-    successColor: "#45BA7F",
-    errorColor: "#D52B1E",
     attempts: 0,
 })
 
@@ -76,6 +74,7 @@ export function savePassword(props): Override {
             meetsRequirements.lastFive =
                 data.lastFivePasswords.indexOf(data.enteredPassword) === -1
         },
+        defaultValue: data.enteredPassword,
         empty: data.emptyPassword,
     }
 }
@@ -261,5 +260,20 @@ export function PasswordsMatch(props): Override {
 export function ResetPassword(): Override {
     return {
         isDisabled: !allTrue(meetsRequirements),
+    }
+}
+
+export function FaceID(): Override {
+    const navigation = useNavigation()
+    return {
+        onTap() {
+            setTimeout(function () {
+                data.enteredEmail = data.accountEmail
+                data.enteredPassword = data.accountPassword
+            }, 5250)
+            setTimeout(function () {
+                navigation.push(<Welcome />)
+            }, 5600)
+        },
     }
 }

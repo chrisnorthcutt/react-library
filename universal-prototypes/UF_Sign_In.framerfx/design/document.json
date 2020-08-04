@@ -948,9 +948,9 @@
                 "codeComponentIdentifier" : "@framer\/framer.lottie\/.\/Lottie.tsx_Lottie",
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
-                  "loop" : true,
+                  "loop" : false,
                   "lottieJsonURL" : "https:\/\/assets6.lottiefiles.com\/packages\/lf20_BSSWOQ.json",
-                  "refresh" : "■"
+                  "refresh" : "❙❙"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -1141,7 +1141,7 @@
           }
         ],
         "clip" : true,
-        "codeOverrideEnabled" : false,
+        "codeOverrideEnabled" : true,
         "constraintsLocked" : false,
         "duplicatedFrom" : null,
         "exportOptions" : [
@@ -1170,7 +1170,7 @@
         "isExternalMaster" : null,
         "isMaster" : false,
         "isTarget" : false,
-        "left" : 1960,
+        "left" : 1656,
         "locked" : false,
         "name" : "Face ID Animation",
         "opacity" : 1,
@@ -1187,7 +1187,7 @@
         "replicaInfo" : null,
         "right" : null,
         "rotation" : 0,
-        "top" : -191,
+        "top" : 82,
         "visible" : true,
         "width" : 216,
         "widthType" : 0
@@ -1831,7 +1831,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "fill" : "hsl(0, 0%, 100%)",
-                  "name" : "check"
+                  "iconName" : "check"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -2082,7 +2082,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "more-vertical",
+                  "iconName" : "check",
                   "onTap" : [
 
                   ]
@@ -2143,7 +2143,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "check",
+                  "iconName" : "check",
                   "onTap" : [
 
                   ]
@@ -2205,7 +2205,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "clock",
+                  "iconName" : "check",
                   "onTap" : [
 
                   ]
@@ -2268,7 +2268,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "arrow-left",
+                  "iconName" : "check",
                   "onTap" : [
 
                   ]
@@ -3177,7 +3177,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "fill" : "hsl(0, 0%, 100%)",
-              "name" : "sync"
+              "iconName" : "check"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -6136,7 +6136,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "fill" : "hsl(0, 0%, 100%)",
-                  "name" : "sync"
+                  "iconName" : "sync"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -6388,7 +6388,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "more-vertical",
+                  "iconName" : "more-vertical",
                   "onTap" : [
 
                   ]
@@ -6448,7 +6448,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "check",
+                  "iconName" : "clock",
                   "onTap" : [
 
                   ]
@@ -6509,7 +6509,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "clock",
+                  "iconName" : "check",
                   "onTap" : [
 
                   ]
@@ -6571,7 +6571,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "arrow-left",
+                  "iconName" : "arrow-left",
                   "onTap" : [
 
                   ]
@@ -7462,7 +7462,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "fill" : "hsl(0, 0%, 100%)",
-              "name" : "sync"
+              "iconName" : "sync"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -8595,7 +8595,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "fill" : "hsl(0, 0%, 100%)",
-                  "name" : "send"
+                  "iconName" : "send"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -8814,7 +8814,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "arrow-left",
+                  "iconName" : "arrow-left",
                   "onTap" : [
                     {
                       "actionIdentifier" : "framer\/useNavigate",
@@ -8914,7 +8914,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "info",
+                  "iconName" : "info",
                   "onTap" : [
 
                   ]
@@ -9714,7 +9714,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "fill" : "hsl(0, 0%, 100%)",
-                  "name" : "question"
+                  "iconName" : "sync"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -9924,7 +9924,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "fill" : "#212121",
-              "name" : "arrow-left",
+              "iconName" : "check",
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -10093,7 +10093,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "arrow-left",
+                  "iconName" : "arrow-left",
                   "onTap" : [
 
                   ]
@@ -10315,7 +10315,7 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "fill" : "#212121",
-                  "name" : "info",
+                  "iconName" : "info",
                   "onTap" : [
 
                   ]
@@ -10574,7 +10574,7 @@
             "blurType" : "layer",
             "bottom" : null,
             "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.29160419790104947,
+            "centerAnchorY" : 0.28410794602698652,
             "clip" : true,
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -10601,8 +10601,8 @@
                   "data" : {
                     "emptyStyle" : [
                       "COLOR:rgb(33, 33, 33)",
-                      "ALIGN:left",
-                      "SIZE:16"
+                      "SIZE:16",
+                      "ALIGN:center"
                     ]
                   },
                   "depth" : 0,
@@ -10623,12 +10623,12 @@
                     {
                       "length" : 12,
                       "offset" : 0,
-                      "style" : "ALIGN:left"
+                      "style" : "SIZE:16"
                     },
                     {
                       "length" : 12,
                       "offset" : 0,
-                      "style" : "SIZE:16"
+                      "style" : "ALIGN:center"
                     }
                   ],
                   "key" : "key",
@@ -10636,12 +10636,21 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgb(33, 33, 33);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Good Morning<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 19,
+                  "width" : 103
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
             },
             "textVerticalAlignment" : "top",
-            "top" : 185,
+            "top" : 180,
             "visible" : true,
             "width" : 103,
             "widthType" : 0
@@ -10653,7 +10662,7 @@
             "blurType" : "layer",
             "bottom" : null,
             "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.4107946026986507,
+            "centerAnchorY" : 0.42428785607196401,
             "clip" : true,
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -10679,7 +10688,8 @@
                 {
                   "data" : {
                     "emptyStyle" : [
-                      "COLOR:rgba(97,97,97,1)"
+                      "COLOR:rgba(97,97,97,1)",
+                      "ALIGN:left"
                     ]
                   },
                   "depth" : 0,
@@ -10706,6 +10716,11 @@
                       "length" : 23,
                       "offset" : 0,
                       "style" : "COLOR:rgba(97,97,97,1)"
+                    },
+                    {
+                      "length" : 23,
+                      "offset" : 0,
+                      "style" : "ALIGN:left"
                     }
                   ],
                   "key" : "key",
@@ -10714,7 +10729,7 @@
                 }
               ],
               "cached" : {
-                "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(97,97,97,1);font-size:16px;letter-spacing:0px;line-height:1.75;font-weight:400\"><span data-text=\"true\">Welcome to the LillyApp<\/span><\/span><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(97,97,97,1);font-size:16px;letter-spacing:0px;line-height:1.75;font-weight:400\"><span data-text=\"true\">Welcome to the LillyApp<\/span><\/span><\/div><\/div>",
                 "os" : "macos 10_15 framerx",
                 "size" : {
                   "height" : 28,
@@ -10727,7 +10742,7 @@
               }
             },
             "textVerticalAlignment" : "top",
-            "top" : 260,
+            "top" : 269,
             "visible" : true,
             "width" : 173,
             "widthType" : 0
@@ -10838,7 +10853,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "fill" : "#09F",
-                  "name" : "caret-up"
+                  "iconName" : "caret-up"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -12236,7 +12251,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "fill" : "rgba(0, 129, 179, 1.00)",
-              "name" : "bell"
+              "iconName" : "bell"
             },
             "codeOverrideEnabled" : true,
             "codeOverrideFile" : ".\/App.tsx",
@@ -12351,7 +12366,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "fill" : "hsl(29, 95%, 63%)",
-              "name" : "sun"
+              "iconName" : "sun"
             },
             "codeOverrideEnabled" : true,
             "codeOverrideFile" : ".\/App.tsx",
@@ -12402,8 +12417,8 @@
             "__class" : "TextNode",
             "autoSize" : true,
             "bottom" : null,
-            "centerAnchorX" : 0.5013333333333333,
-            "centerAnchorY" : 0.34782608695652173,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.35307346326836581,
             "clip" : true,
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -12411,7 +12426,7 @@
             "exportOptions" : [
 
             ],
-            "height" : 40,
+            "height" : 57,
             "heightType" : 0,
             "id" : "ZiOljcsxt",
             "isTarget" : false,
@@ -12429,9 +12444,10 @@
                 {
                   "data" : {
                     "emptyStyle" : [
-                      "SIZE:34",
                       "COLOR:#212121",
-                      "FONT:Roboto-Medium"
+                      "FONT:Roboto-Medium",
+                      "SIZE:48",
+                      "ALIGN:center"
                     ]
                   },
                   "depth" : 0,
@@ -12440,44 +12456,114 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 4,
+                      "length" : 7,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 4,
+                      "length" : 7,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "SIZE:34"
-                    },
-                    {
-                      "length" : 4,
+                      "length" : 7,
                       "offset" : 0,
                       "style" : "COLOR:#212121"
                     },
                     {
-                      "length" : 4,
+                      "length" : 7,
                       "offset" : 0,
                       "style" : "FONT:Roboto-Medium"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "SIZE:48"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "ALIGN:center"
                     }
                   ],
                   "key" : "9c5ni",
-                  "text" : "John",
+                  "text" : "John Q.",
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"9c5ni-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"9c5ni-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Medium&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:#212121;font-size:48px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">John Q.<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 57,
+                  "width" : 167
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
             },
             "textVerticalAlignment" : "top",
-            "top" : 212,
+            "top" : 207,
             "visible" : true,
-            "width" : 78,
+            "width" : 167,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : 245,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.60269865067466266,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
+            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentProps" : {
+              "buttonStyle" : "primary",
+              "isDisabled" : false,
+              "text" : "Let's Get Started!"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "t2FdhCOXO"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "n6xpWQqiV",
+            "intrinsicHeight" : 40,
+            "intrinsicWidth" : 375,
+            "left" : 24,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "CC59cSy5X",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 24,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 327,
             "widthType" : 0
           }
         ],
@@ -13056,6 +13142,111 @@
                     "right" : 0,
                     "rotation" : 0,
                     "top" : -1,
+                    "visible" : true,
+                    "width" : 327,
+                    "widthType" : 0
+                  },
+                  {
+                    "__class" : "CodeComponentNode",
+                    "aspectRatio" : null,
+                    "bottom" : 0,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.77272727272727271,
+                    "clip" : true,
+                    "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
+                    "codeComponentPackageVersion" : null,
+                    "codeComponentProps" : {
+                      "buttonStyle" : "tertiary",
+                      "isDisabled" : false,
+                      "onTap" : [
+                        {
+                          "actionIdentifier" : "framer\/useNavigate",
+                          "controls" : {
+                            "animation" : {
+                              "type" : "transition",
+                              "value" : {
+                                "damping" : 60,
+                                "delay" : 0,
+                                "duration" : 0.29999999999999999,
+                                "ease" : [
+                                  0.44,
+                                  0,
+                                  0.56000000000000005,
+                                  1
+                                ],
+                                "mass" : 1,
+                                "stiffness" : 500,
+                                "type" : "spring"
+                              }
+                            },
+                            "appearsFrom" : {
+                              "type" : "segmentedenum",
+                              "value" : "right"
+                            },
+                            "backdropColor" : {
+                              "type" : "color",
+                              "value" : "hsla(0, 0%, 100%, 0.4)"
+                            },
+                            "target" : {
+                              "type" : "componentinstance",
+                              "value" : "ves76mqzJ"
+                            },
+                            "transition" : {
+                              "type" : "enum",
+                              "value" : "modal"
+                            },
+                            "type" : {
+                              "type" : "segmentedenum",
+                              "value" : "next"
+                            }
+                          },
+                          "identifier" : "9ba1103f-2f98-49c5-850e-56c0ef304280"
+                        }
+                      ],
+                      "text" : "Sign In with Face ID"
+                    },
+                    "codeOverrideEnabled" : true,
+                    "codeOverrideFile" : ".\/App.tsx",
+                    "codeOverrideIdentifier" : ".\/App.tsx_FaceID",
+                    "codeOverrideName" : "FaceID",
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      ".\/code\/Button.tsx_Button",
+                      "oM5qtvukL"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 40,
+                    "heightType" : 0,
+                    "id" : "z9Xt3vOIM",
+                    "intrinsicHeight" : 40,
+                    "intrinsicWidth" : 375,
+                    "left" : 0,
+                    "locked" : false,
+                    "name" : null,
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "hV5hGujVd",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : 0,
+                    "rotation" : 0,
+                    "top" : null,
                     "visible" : true,
                     "width" : 327,
                     "widthType" : 0
@@ -13656,6 +13847,15 @@
                           "type" : "unstyled"
                         }
                       ],
+                      "cached" : {
+                        "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(97,97,97,1);font-size:12px;letter-spacing:0px;line-height:1.3333333333333333;font-weight:400\"><span data-text=\"true\">or<\/span><\/span><\/div>",
+                        "os" : "macos 10_15 framerx",
+                        "size" : {
+                          "height" : 16,
+                          "width" : 12
+                        },
+                        "width" : 0
+                      },
                       "entityMap" : {
 
                       }
@@ -14091,7 +14291,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "hasIcon" : false,
-              "icon" : "check",
+              "icon" : "arrow-left",
               "label" : "Existing User Sign In",
               "onTap" : [
                 {
@@ -14192,7 +14392,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "hasIcon" : false,
-              "icon" : "check",
+              "icon" : "arrow-left",
               "label" : "Forgot Password",
               "onTap" : [
                 {
@@ -14294,7 +14494,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "hasIcon" : false,
-              "icon" : "check",
+              "icon" : "arrow-left",
               "label" : "Error Scenarios",
               "onTap" : [
                 {
@@ -14397,7 +14597,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "hasIcon" : false,
-              "icon" : "check",
+              "icon" : "arrow-left",
               "label" : "Alternate Scenarios",
               "onTap" : [
                 {
@@ -15916,7 +16116,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-                "parentid" : "TbPzCVeud",
+                "parentid" : "adNOc0b5t",
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -16020,7 +16220,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-                "parentid" : "TbPzCVeud",
+                "parentid" : "adNOc0b5t",
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -16098,7 +16298,7 @@
             "fillType" : "color",
             "height" : 30,
             "heightType" : 0,
-            "id" : "TbPzCVeud",
+            "id" : "adNOc0b5t",
             "left" : 0,
             "locked" : false,
             "name" : null,
