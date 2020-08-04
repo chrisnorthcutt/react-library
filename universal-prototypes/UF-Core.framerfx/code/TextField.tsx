@@ -212,7 +212,7 @@ export function TextField(props: any) {
 					top: "12px",
 					display: type === "password" ? "initial" : "none",
 				}}
-				name={!showPassword ? "show" : "hide"}
+				iconName={!showPassword ? "show" : "hide"}
 				fill={colors.grey700}
 				size={"24px"}
 			/>

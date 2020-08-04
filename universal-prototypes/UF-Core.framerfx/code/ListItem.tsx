@@ -21,7 +21,7 @@ export function ListItem(props) {
                 direction={"horizontal"}
             >
                 <Icon
-                    name={icon}
+                    iconName={icon}
                     style={{ display: hasIcon ? "initial" : "none" }}
                     fill={colors.primary600}
                     size={24}
