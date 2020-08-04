@@ -1,7 +1,7 @@
 import * as React from "react"
-import { addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType, useNavigation } from "framer"
 import { Button } from "./Button"
-import { colors, spacing, converToREM } from "./Variables";
+import { colors, spacing, shadows, converToREM } from "./Variables";
 import styled from "styled-components";
 import * as Type from "./Typography";
 
@@ -14,6 +14,8 @@ export function Modal(props) {
         primaryAction,
         secondaryAction,
         showSecondaryAction,
+        primaryActionTap,
+        secondaryActionTap,
         ...rest
     } = props
 
@@ -25,9 +27,8 @@ export function Modal(props) {
                 justify-content: left;
                 width: ${converToREM(280)};
                 border-radius: 4px;
-                box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 3px 5px -1px rgba(0,0,0,0.2);
+                box-shadow: ${shadows.z5};
     ` 
-
     return (
         <StyledModal>
             <div style={{ marginBottom: 24 }}>
@@ -49,11 +50,13 @@ export function Modal(props) {
                 style={{ marginBottom: 8 }}
                 buttonStyle={"primary"}
                 text={primaryAction}
+                onTap={primaryActionTap}
             />
             <Button
                 style={{ display: showSecondaryAction ? "initial" : "none" }}
                 buttonStyle={"tertiary"}
                 text={secondaryAction}
+                onTap={secondaryActionTap}
             />
         </StyledModal>
     )
@@ -65,7 +68,6 @@ Modal.defaultProps = {
     header: "Dialog Header",
     body:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu mauris dui.",
-    tint: "#0099ff",
     showSecondaryAction: true,
 }
 

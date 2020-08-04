@@ -14,13 +14,13 @@ export const colors = {
     primary400: "#00a1de",
     white: "#ffffff",
     black: "#000000",
-}
+};
 
 export const converToREM = (size) => {
-    return size / 16 + "rem"
-}
+    return size / 16 + "rem";
+};
 
-const base = 8
+const base = 8;
 
 export const spacing = {
     "1x": converToREM(1 * base),
@@ -29,18 +29,20 @@ export const spacing = {
     "4x": converToREM(4 * base),
     "5x": converToREM(5 * base),
     "6x": converToREM(6 * base),
-}
+};
 
 export const borderRadius = {
     small: "4px",
     med: "8px",
     lg: "16px",
     circle: "50%",
-}
+};
 
 export const shadows = {
     z1:
         "0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.14), 0px 1px 8px rgba(0, 0, 0, 0.12)",
-}
+    z5:
+        "0 3px 5px -1px rgba(0,0,0,0.20), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12)",
+};
 
-export const fontFamily = "Roboto, sans-serif"
+export const fontFamily = "Roboto, sans-serif";

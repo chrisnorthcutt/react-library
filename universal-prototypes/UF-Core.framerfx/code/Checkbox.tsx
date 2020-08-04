@@ -132,7 +132,7 @@ export function Checkbox(props: any) {
           </svg>
         </motion.div>
       </div>
-      <Type.Body2 className="label">{label}</Type.Body2>
+      <Type.Body2 className="label" style={{marginLeft: ".5rem"}}>{label}</Type.Body2>
     </StyledCheckbox>
   );
 }

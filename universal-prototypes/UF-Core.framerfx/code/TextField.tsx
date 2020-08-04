@@ -32,7 +32,6 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 		font-family: Roboto, sans-serif;
 		font-size: 16px;
 		line-height: 19px;
-		origin-x: 0;
 	}
 	> .input {
 		width: 100%;
@@ -104,7 +103,6 @@ export function TextField(props: any) {
 	useEffect(() => {
 		if (emailIsValid(defaultValue)) {
 			setValid(true)
-			console.log(value + " " + defaultValue)
 			if (value != defaultValue ||  defaultValue != "") {
 				setValue(defaultValue)
 			}
