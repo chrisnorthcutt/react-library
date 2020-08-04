@@ -8,7 +8,7 @@ import { iconOptions, iconNames } from "./IconList"
 // Learn more: https://framer.com/api
 
 export function ListItem(props) {
-    const { label, icon, onTap, hasIcon, ...rest } = props
+    const { label, icon, onTap, hasIcon, iconPosition, ...rest } = props
 
     return (
         <Frame {...rest} background={colors.white}>
@@ -18,15 +18,22 @@ export function ListItem(props) {
                 paddingLeft={16}
                 gap={16}
                 alignment={"center"}
+                distribution={iconPosition === "Left" ? "start" : "space-between"}
                 direction={"horizontal"}
             >
-                <Icon
+                {iconPosition === "Left" ? <Icon
                     iconName={icon}
                     style={{ display: hasIcon ? "initial" : "none" }}
                     fill={colors.primary600}
                     size={24}
-                />
+                /> : null}
                 <Type.Body1>{label}</Type.Body1>
+                {iconPosition === "Right" ? <Icon
+                    iconName={icon}
+                    style={{ display: hasIcon ? "initial" : "none"}}
+                    fill={colors.primary600}
+                    size={24}
+                /> : null}
             </Stack>
             <Frame
                 bottom={0}
@@ -64,6 +71,15 @@ addPropertyControls(ListItem, {
         hidden(props) {
             return !props.hasIcon
         },
+    },
+    iconPosition: {
+        title: "Icon Position",
+        type: ControlType.SegmentedEnum,
+        options: ["Left", "Right"],
+        defaultValue: "Left",
+        hidden(props) {
+            return !props.hasIcon
+        }
     },
     onTap: {
         type: ControlType.EventHandler,
