@@ -93,10 +93,25 @@ export function TextField(props: any) {
             props.onValueChange(value)
         }
 		setValue(value);
-		if (type === "email") setValid(emailIsValid(value));
+		if (type === "email") {
+			setValid(emailIsValid(value))
+
+		}
 		else if (type === "text") setValid(textIsValid(value));
 		else if (type === "password") setValid(passwordIsValid(value));
 	}
+
+	useEffect(() => {
+		if (emailIsValid(defaultValue)) {
+			setValid(true)
+			console.log(value + " " + defaultValue)
+			if (value != defaultValue ||  defaultValue != "") {
+				setValue(defaultValue)
+			}
+		}
+	  }, [defaultValue])
+
+
 	function onFocus() {
 		setFocused(true);
 	}
@@ -122,7 +137,7 @@ export function TextField(props: any) {
 		activeColor = colors.danger;
 		message = errorMessage;
 		showIcon = !showIcon;
-	} else if (!isFocused && !empty) {
+	} else if (!isFocused && !empty || defaultValue != "") {
 		activeColor = colors.grey400;
 		message = assistMessage;
 	} else if (empty && !isFocused) {
@@ -155,9 +170,9 @@ export function TextField(props: any) {
 					color: activeColor,
 				}}
 				animate={{
-					scale: isFocused || value.length > 0 ? 0.65 : 1,
-					x: isFocused || value.length > 0 ? 1 : 0,
-					y: isFocused || value.length > 0 ? -15 : 0,
+					scale: isFocused || value.length > 0  || defaultValue.length > 0 ? 0.65 : 1,
+					x: isFocused || value.length > 0 || defaultValue.length > 0 ? 1 : 0,
+					y: isFocused || value.length > 0 || defaultValue.length > 0 ? -15 : 0,
 					color: activeColor,
 				}}
 				transition={{
