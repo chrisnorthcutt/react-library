@@ -81,7 +81,7 @@ addPropertyControls(NavBar, {
         type: ControlType.EventHandler,
     },
     iconRight: {
-        title: "right Icon",
+        title: "Right Icon",
         type: ControlType.Enum,
         options: iconNames,
         optionTitles: iconOptions,

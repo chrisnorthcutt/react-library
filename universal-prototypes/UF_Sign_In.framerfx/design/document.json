@@ -7646,7 +7646,7 @@
                     },
                     "target" : {
                       "type" : "componentinstance",
-                      "value" : "TSLyC6RwR"
+                      "value" : "KrVuAwtIo"
                     },
                     "transition" : {
                       "type" : "enum",
@@ -7660,7 +7660,7 @@
                   "identifier" : "21b09cca-6749-4db4-be6b-b8cd490ef530"
                 }
               ],
-              "iconRight" : "info",
+              "iconRight" : "blank",
               "navTitle" : "Back"
             },
             "codeOverrideEnabled" : false,
@@ -8559,58 +8559,13 @@
                   "identifier" : "21b09cca-6749-4db4-be6b-b8cd490ef530"
                 }
               ],
-              "iconRight" : "info",
+              "iconRight" : "blank",
               "iconRightNav" : [
-                {
-                  "actionIdentifier" : "framer\/useNavigate",
-                  "controls" : {
-                    "animation" : {
-                      "type" : "transition",
-                      "value" : {
-                        "damping" : 60,
-                        "delay" : 0,
-                        "duration" : 0.29999999999999999,
-                        "ease" : [
-                          0.44,
-                          0,
-                          0.56000000000000005,
-                          1
-                        ],
-                        "mass" : 1,
-                        "stiffness" : 500,
-                        "type" : "spring"
-                      }
-                    },
-                    "appearsFrom" : {
-                      "type" : "segmentedenum",
-                      "value" : "right"
-                    },
-                    "backdropColor" : {
-                      "type" : "color",
-                      "value" : "rgba(4,4,15,.4)"
-                    },
-                    "target" : {
-                      "type" : "componentinstance",
-                      "value" : "hZPS4O6Vu"
-                    },
-                    "transition" : {
-                      "type" : "enum",
-                      "value" : "modal"
-                    },
-                    "type" : {
-                      "type" : "segmentedenum",
-                      "value" : "next"
-                    }
-                  },
-                  "identifier" : "84fdf111-7ee3-45c7-a181-144cfe85f14a"
-                }
+
               ],
               "navTitle" : "Back"
             },
-            "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/App.tsx",
-            "codeOverrideIdentifier" : ".\/App.tsx_getProps",
-            "codeOverrideName" : "getProps",
+            "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "duplicatedFrom" : [
               "DtiVyTfiI"
@@ -8657,22 +8612,19 @@
             "aspectRatio" : null,
             "bottom" : null,
             "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.020989505247376312,
+            "centerAnchorY" : 0.017991004497751123,
             "clip" : true,
-            "codeComponentIdentifier" : "@framer\/framer.examples\/.\/StatusBar.tsx_StatusBar",
-            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentIdentifier" : ".\/code\/StatusBar.tsx_StatusBar",
+            "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
-              "appearance" : "dark",
-              "batteryLevel" : 100,
-              "carrier" : "Framer"
+              "battery" : 100,
+              "carrier" : "LillApp",
+              "signal" : 4
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "duplicatedFrom" : [
-              "z6ZazWjTp",
-              "cJFhXCe6k",
-              "xdpD_UiAi",
-              "xAoZQCsCY"
+              ".\/code\/StatusBar.tsx_StatusBar"
             ],
             "exportOptions" : [
 
@@ -8685,12 +8637,12 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 20,
+            "height" : 24,
             "heightType" : 0,
-            "id" : "oD92x7avy",
-            "intrinsicHeight" : 20,
-            "intrinsicWidth" : 200,
-            "left" : 16,
+            "id" : "gOAYbmAxG",
+            "intrinsicHeight" : 24,
+            "intrinsicWidth" : 375,
+            "left" : 0,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -8704,11 +8656,11 @@
             "radiusPerCorner" : false,
             "radiusTopLeft" : 0,
             "radiusTopRight" : 0,
-            "right" : 16,
+            "right" : 0,
             "rotation" : 0,
-            "top" : 4,
+            "top" : 0,
             "visible" : true,
-            "width" : 343,
+            "width" : 375,
             "widthType" : 0
           }
         ],
@@ -13005,69 +12957,6 @@
         "aspectRatio" : null,
         "blendingEnabled" : 0,
         "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0,
-        "centerAnchorY" : 0,
-        "children" : [
-
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : null,
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(0, 0, 0, 0.25)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 24,
-        "heightType" : 0,
-        "id" : "yGn5NLjKK",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : 1513,
-        "locked" : false,
-        "name" : null,
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "rBZrlMYeg",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 587,
-        "visible" : true,
-        "width" : 29,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
         "blur" : 12,
         "blurEnabled" : 0,
         "blurType" : "layer",
@@ -14379,7 +14268,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-                "parentid" : "k3pWpYmH7",
+                "parentid" : "DYUZxZRew",
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -14483,7 +14372,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-                "parentid" : "k3pWpYmH7",
+                "parentid" : "DYUZxZRew",
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -14561,7 +14450,7 @@
             "fillType" : "color",
             "height" : 30,
             "heightType" : 0,
-            "id" : "k3pWpYmH7",
+            "id" : "DYUZxZRew",
             "left" : 0,
             "locked" : false,
             "name" : null,
