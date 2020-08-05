@@ -1,5 +1,5 @@
 import { Data, Override, useNavigation } from "framer"
-import { Check_Email, Welcome, Email_Client } from "./canvas"
+import { Check_Email, Welcome, Email_Client, Face_ID_Dialog } from "./canvas"
 import { LoadingAnimation } from "./code/LoadingAnimation"
 import { Modal } from "./code/Modal"
 import * as React from "react"
@@ -17,6 +17,7 @@ const data = Data({
     emptyEmail: false,
     rememberMe: "false",
     rotate: 0,
+    faceIdEnabled: false,
     lastFivePasswords: [
         "Password3",
         "Password2",
@@ -123,7 +124,7 @@ export function signIn(): Override {
     const matchingCredentials = matchingEmail && matchingPassword
     const emptyPassword = data.enteredPassword.length <= 0
     const emptyEmail = data.enteredEmail.length <= 0
-    const accountSuspended = data.attempts === 5 && matchingEmail
+    const accountSuspended = data.attempts >= 5 && matchingEmail
     return {
         onTap(currentValue) {
             console.log(matchingCredentials)
@@ -135,6 +136,17 @@ export function signIn(): Override {
                         delay={2000}
                     />
                 )
+            } else if (data.faceIdEnabled) {
+                navigation.modal(<Face_ID_Dialog />, {
+                    backdropColor: "rgba(4,4,15,0)",
+                })
+                setTimeout(function () {
+                    data.enteredEmail = data.accountEmail
+                    data.enteredPassword = data.accountPassword
+                }, 5250)
+                setTimeout(function () {
+                    navigation.push(<Welcome />)
+                }, 5600)
             } else if (!matchingCredentials && !emptyPassword && !emptyEmail) {
                 navigation.modal(
                     <Modal
@@ -161,6 +173,10 @@ export function signIn(): Override {
                 data.emptyEmail = true
                 data.emptyPassword = true
             }
+            setTimeout(() => {
+                data.emptyEmail = false
+                data.emptyPassword = false
+            }, 3000)
             data.attempts += 1
         },
     }
@@ -275,5 +291,12 @@ export function FaceID(): Override {
                 navigation.push(<Welcome />)
             }, 5600)
         },
+    }
+}
+
+export function getProps(props): Override {
+    console.log(props)
+    return {
+
     }
 }

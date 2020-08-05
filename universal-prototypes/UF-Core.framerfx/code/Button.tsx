@@ -1,9 +1,9 @@
 import * as React from "react"
-import styled from "styled-components"
 import { motion, addPropertyControls, ControlType, useNavigation } from "framer"
 // Import Variables & Type
 import { colors, spacing, shadows } from "./Variables"
 import * as Text from "./Typography"
+import styled from "styled-components"
 
 // Set props
 interface Props {
