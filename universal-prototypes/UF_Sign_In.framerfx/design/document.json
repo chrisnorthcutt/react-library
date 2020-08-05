@@ -12173,6 +12173,7 @@
             "codeComponentProps" : {
               "hasIcon" : false,
               "icon" : "arrow-left",
+              "iconPosition" : "Left",
               "label" : "Existing User Sign In",
               "onTap" : [
                 {
@@ -12274,6 +12275,7 @@
             "codeComponentProps" : {
               "hasIcon" : false,
               "icon" : "arrow-left",
+              "iconPosition" : "Left",
               "label" : "Forgot Password",
               "onTap" : [
                 {
@@ -12376,6 +12378,7 @@
             "codeComponentProps" : {
               "hasIcon" : false,
               "icon" : "arrow-left",
+              "iconPosition" : "Left",
               "label" : "Error Scenarios",
               "onTap" : [
                 {
@@ -12479,6 +12482,7 @@
             "codeComponentProps" : {
               "hasIcon" : false,
               "icon" : "arrow-left",
+              "iconPosition" : "Left",
               "label" : "Alternate Scenarios",
               "onTap" : [
                 {
@@ -14268,7 +14272,11 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
+<<<<<<< Updated upstream
                 "parentid" : "DYUZxZRew",
+=======
+                "parentid" : "OPCv6WDIX",
+>>>>>>> Stashed changes
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -14372,7 +14380,11 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
+<<<<<<< Updated upstream
                 "parentid" : "DYUZxZRew",
+=======
+                "parentid" : "OPCv6WDIX",
+>>>>>>> Stashed changes
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -14450,7 +14462,11 @@
             "fillType" : "color",
             "height" : 30,
             "heightType" : 0,
+<<<<<<< Updated upstream
             "id" : "DYUZxZRew",
+=======
+            "id" : "OPCv6WDIX",
+>>>>>>> Stashed changes
             "left" : 0,
             "locked" : false,
             "name" : null,
