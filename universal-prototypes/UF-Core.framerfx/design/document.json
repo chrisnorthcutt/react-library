@@ -821,8 +821,8 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "hasIcon" : true,
-              "icon" : "arrow-left",
-              "iconPosition" : "Left",
+              "icon" : "caret-right",
+              "iconPosition" : "Right",
               "label" : "Hello Framer!"
             },
             "codeOverrideEnabled" : false,

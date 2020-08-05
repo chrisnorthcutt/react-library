@@ -9919,6 +9919,297 @@
         "aspectRatio" : null,
         "blendingEnabled" : 0,
         "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : true,
+        "codeOverrideFile" : ".\/App.tsx",
+        "codeOverrideIdentifier" : ".\/App.tsx_OutofAppTransition",
+        "codeOverrideName" : "OutofAppTransition",
+        "constraintsLocked" : false,
+        "duplicatedFrom" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "var(--token-62d02b63-8da8-4fde-8c93-567876742301, rgb(250, 250, 250)) \/* {\"name\":\"offwhite\"} *\/",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "framePreset" : "iPhone_375_667",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 667,
+        "heightType" : 0,
+        "id" : "ZBCc1onq9",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 7962,
+        "locked" : false,
+        "name" : null,
+        "onTap" : [
+
+        ],
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "Qjz4fbJHx",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 13,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.5,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "ZBCc1onq9",
+              "F05XXXYeB"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "hsl(197, 62%, 58%)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : "iPhone_375_667",
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 667,
+            "heightType" : 0,
+            "id" : "peFrQyJnq",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 0,
+            "locked" : false,
+            "name" : null,
+            "onTap" : [
+              {
+                "actionIdentifier" : "framer\/useNavigate",
+                "controls" : {
+                  "animation" : {
+                    "type" : "transition",
+                    "value" : {
+                      "damping" : 60,
+                      "delay" : 0,
+                      "duration" : 0.29999999999999999,
+                      "ease" : [
+                        0.44,
+                        0,
+                        0.56000000000000005,
+                        1
+                      ],
+                      "mass" : 1,
+                      "stiffness" : 500,
+                      "type" : "spring"
+                    }
+                  },
+                  "appearsFrom" : {
+                    "type" : "segmentedenum",
+                    "value" : "right"
+                  },
+                  "backdropColor" : {
+                    "type" : "color",
+                    "value" : "rgba(4,4,15,.4)"
+                  },
+                  "target" : {
+                    "type" : "componentinstance",
+                    "value" : "vDjPk3zSb"
+                  },
+                  "transition" : {
+                    "type" : "enum",
+                    "value" : "magicMotion"
+                  },
+                  "type" : {
+                    "type" : "segmentedenum",
+                    "value" : "next"
+                  }
+                },
+                "identifier" : "3624d239-6a0a-4f8e-b55d-7d6967b17ff5"
+              }
+            ],
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "DX6XoFzBE",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 0,
+            "visible" : true,
+            "width" : 375,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : true,
+        "codeOverrideFile" : ".\/App.tsx",
+        "codeOverrideIdentifier" : ".\/App.tsx_EmailClientOverride",
+        "codeOverrideName" : "EmailClientOverride",
+        "constraintsLocked" : false,
+        "duplicatedFrom" : [
+          "b9kosnp76"
+        ],
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 667,
+        "heightType" : 0,
+        "id" : "DX6XoFzBE",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : true,
+        "isTarget" : false,
+        "left" : 8437,
+        "locked" : false,
+        "name" : "Phone",
+        "onTap" : [
+          {
+            "actionIdentifier" : "framer\/useNavigate",
+            "controls" : {
+              "animation" : {
+                "type" : "transition",
+                "value" : {
+                  "damping" : 60,
+                  "delay" : 0,
+                  "duration" : 0.29999999999999999,
+                  "ease" : [
+                    0.44,
+                    0,
+                    0.56000000000000005,
+                    1
+                  ],
+                  "mass" : 1,
+                  "stiffness" : 500,
+                  "type" : "spring"
+                }
+              },
+              "appearsFrom" : {
+                "type" : "segmentedenum",
+                "value" : "right"
+              },
+              "backdropColor" : {
+                "type" : "color",
+                "value" : "rgba(4,4,15,.4)"
+              },
+              "target" : {
+                "type" : "componentinstance"
+              },
+              "transition" : {
+                "type" : "enum",
+                "value" : "magicMotion"
+              },
+              "type" : {
+                "type" : "segmentedenum",
+                "value" : "previous"
+              }
+            },
+            "identifier" : "908805dc-ca78-4283-8dd8-af78d4c3a029"
+          }
+        ],
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "Qjz4fbJHx",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 13,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
         "blur" : 12,
         "blurEnabled" : 0,
         "blurType" : "layer",
@@ -11884,297 +12175,6 @@
         "sepia" : 0,
         "sepiaEnabled" : 0,
         "top" : 0,
-        "visible" : true,
-        "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0,
-        "centerAnchorY" : 0,
-        "children" : [
-
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : true,
-        "codeOverrideFile" : ".\/App.tsx",
-        "codeOverrideIdentifier" : ".\/App.tsx_OutofAppTransition",
-        "codeOverrideName" : "OutofAppTransition",
-        "constraintsLocked" : false,
-        "duplicatedFrom" : null,
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "var(--token-62d02b63-8da8-4fde-8c93-567876742301, rgb(250, 250, 250)) \/* {\"name\":\"offwhite\"} *\/",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : "iPhone_375_667",
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 667,
-        "heightType" : 0,
-        "id" : "ZBCc1onq9",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : 7962,
-        "locked" : false,
-        "name" : null,
-        "onTap" : [
-
-        ],
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "Qjz4fbJHx",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 13,
-        "visible" : true,
-        "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0,
-        "centerAnchorY" : 0,
-        "children" : [
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "bottom" : 0,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.5,
-            "children" : [
-
-            ],
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "ZBCc1onq9",
-              "F05XXXYeB"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "hsl(197, 62%, 58%)",
-            "fillEnabled" : true,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "framePreset" : "iPhone_375_667",
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 667,
-            "heightType" : 0,
-            "id" : "peFrQyJnq",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : 0,
-            "locked" : false,
-            "name" : null,
-            "onTap" : [
-              {
-                "actionIdentifier" : "framer\/useNavigate",
-                "controls" : {
-                  "animation" : {
-                    "type" : "transition",
-                    "value" : {
-                      "damping" : 60,
-                      "delay" : 0,
-                      "duration" : 0.29999999999999999,
-                      "ease" : [
-                        0.44,
-                        0,
-                        0.56000000000000005,
-                        1
-                      ],
-                      "mass" : 1,
-                      "stiffness" : 500,
-                      "type" : "spring"
-                    }
-                  },
-                  "appearsFrom" : {
-                    "type" : "segmentedenum",
-                    "value" : "right"
-                  },
-                  "backdropColor" : {
-                    "type" : "color",
-                    "value" : "rgba(4,4,15,.4)"
-                  },
-                  "target" : {
-                    "type" : "componentinstance",
-                    "value" : "vDjPk3zSb"
-                  },
-                  "transition" : {
-                    "type" : "enum",
-                    "value" : "magicMotion"
-                  },
-                  "type" : {
-                    "type" : "segmentedenum",
-                    "value" : "next"
-                  }
-                },
-                "identifier" : "3624d239-6a0a-4f8e-b55d-7d6967b17ff5"
-              }
-            ],
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "DX6XoFzBE",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : 0,
-            "rotation" : 0,
-            "top" : 0,
-            "visible" : true,
-            "width" : 375,
-            "widthType" : 0
-          }
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : true,
-        "codeOverrideFile" : ".\/App.tsx",
-        "codeOverrideIdentifier" : ".\/App.tsx_EmailClientOverride",
-        "codeOverrideName" : "EmailClientOverride",
-        "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "b9kosnp76"
-        ],
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(255,255,255,1)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 667,
-        "heightType" : 0,
-        "id" : "DX6XoFzBE",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : true,
-        "isTarget" : false,
-        "left" : 8437,
-        "locked" : false,
-        "name" : "Phone",
-        "onTap" : [
-          {
-            "actionIdentifier" : "framer\/useNavigate",
-            "controls" : {
-              "animation" : {
-                "type" : "transition",
-                "value" : {
-                  "damping" : 60,
-                  "delay" : 0,
-                  "duration" : 0.29999999999999999,
-                  "ease" : [
-                    0.44,
-                    0,
-                    0.56000000000000005,
-                    1
-                  ],
-                  "mass" : 1,
-                  "stiffness" : 500,
-                  "type" : "spring"
-                }
-              },
-              "appearsFrom" : {
-                "type" : "segmentedenum",
-                "value" : "right"
-              },
-              "backdropColor" : {
-                "type" : "color",
-                "value" : "rgba(4,4,15,.4)"
-              },
-              "target" : {
-                "type" : "componentinstance"
-              },
-              "transition" : {
-                "type" : "enum",
-                "value" : "magicMotion"
-              },
-              "type" : {
-                "type" : "segmentedenum",
-                "value" : "previous"
-              }
-            },
-            "identifier" : "908805dc-ca78-4283-8dd8-af78d4c3a029"
-          }
-        ],
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "Qjz4fbJHx",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 13,
         "visible" : true,
         "width" : 375,
         "widthType" : 0
