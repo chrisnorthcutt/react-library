@@ -1,6 +1,7 @@
 import { Override, Data, Color, useNavigation } from "framer"
 import * as React from "react"
 import { colors } from "./code/Variables"
+//@ts-ignore
 import { Phone } from "./canvas"
 
 // [1]

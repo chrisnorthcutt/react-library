@@ -123,7 +123,7 @@ export function TextField(props: any) {
 		return /^[a-zA-Z-. ]*$/.test(text);
 	}
 	function passwordIsValid(password: string) {
-		return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(
+		return /^[0-9a-zA-Z]{10,}$/.test(
 			password
 		);
 	}
