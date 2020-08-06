@@ -19,7 +19,7 @@ const StyledSwitch = styled(motion.div).attrs((props: Props) => {
   width: 100%;
   height: 40px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-content: flex-start;
   align-items: center;
 
@@ -55,12 +55,13 @@ export function Switch(props: any) {
   const { enabled, on, color, label } = props;
   const [isOn, setOn] = useState(on);
 
-  function onTap() {
+  function handleOnTap() {
+    props.onValueChange(!isOn)
     setOn(enabled ? !isOn : isOn);
   }
 
   return (
-    <StyledSwitch onTap={onTap} enabled={enabled} color={color}>
+    <StyledSwitch onTap={handleOnTap} enabled={enabled} color={color}>
       <Type.Body2 className="label">{label}</Type.Body2>
       <div className="container">
         <motion.div
@@ -94,6 +95,7 @@ Switch.defaultProps = {
   on: false,
   color: colors.primary900,
   label: "Label",
+  onValueChange: () => null
 };
 
 addPropertyControls(Switch, {
