@@ -295,8 +295,29 @@ export function FaceID(): Override {
 }
 
 export function getProps(props): Override {
-    console.log(props)
-    return {
+    return {}
+}
 
+export function setAccountEmail(props): Override {
+    return {
+        onValueChange(value) {
+            data.accountEmail = value
+        },
+    }
+}
+
+export function setAccountPassword(props): Override {
+    return {
+        onValueChange(value) {
+            data.accountPassword = value
+        },
+    }
+}
+
+export function setFaceID(props): Override {
+    return {
+        onValueChange(on) {
+            data.faceIdEnabled = on
+        },
     }
 }
