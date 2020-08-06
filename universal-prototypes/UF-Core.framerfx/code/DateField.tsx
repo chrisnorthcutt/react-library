@@ -1,23 +1,23 @@
-import * as React from "react"
-import { useState } from "react"
-import { colors, spacing } from "./Variables"
-import styled from "styled-components"
-import { motion, Frame, addPropertyControls, ControlType } from "framer"
-import * as Type from "./Typography"
+import * as React from "react";
+import { useState } from "react";
+import { colors, spacing } from "./Variables";
+import styled from "styled-components";
+import { motion, Frame, addPropertyControls, ControlType } from "framer";
+import * as Type from "./Typography";
 
 interface Props {
-    enabled: Boolean
-    focused: Boolean
+	enabled: Boolean;
+	focused: Boolean;
 }
 
 const StyledField = styled(motion.div).attrs((props: Props) => {
-    const { enabled, focused } = props
-    return {
-        enabled: enabled,
-        focused: focused,
-    }
+	const { enabled, focused } = props;
+	return {
+		enabled: enabled,
+		focused: focused,
+	};
 })`
-  width: 100%;
+	width: 100%;
 	height: 100%;
 	opacity: ${(props) => (props.enabled ? 1 : 0.5)};
 	margin-bottom: 1.5rem;
@@ -40,7 +40,8 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 		border-radius: 4px;
 		border-style: solid;
 		outline: none;
-		background: ${(props) => (props.enabled ? colors.white : colors.grey200)};
+		background: ${(props) =>
+			props.enabled ? colors.white : colors.grey200};
 
 		&:invalid {
 			border-color: ${colors.danger};
@@ -52,150 +53,158 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 		padding: 0 ${spacing["2x"]};
 		padding-top: 4px;
 	}
-`
+`;
 
 export function DateField(props: any) {
-    const {
-        label,
-        enabled,
-        focused,
-        defaultValue,
-        assistMessage = "",
-        errorMessage = "This date isn't valid",
-        color,
-    } = props
-    const [isFocused, setFocused] = useState(focused)
-    const [value, setValue] = useState(defaultValue)
-    const [isValid, setValid] = useState(false)
-    const id = Math.floor(Math.random() * 8888)
+	const {
+		label,
+		enabled,
+		focused,
+		defaultValue = "",
+		assistMessage = "",
+		errorMessage = "This date isn't valid",
+		color,
+	} = props;
+	const [isFocused, setFocused] = useState(focused);
+	const [value, setValue] = useState(defaultValue);
+	const [isValid, setValid] = useState(false);
+	const id = Math.floor(Math.random() * 8888);
 
-    function isValidDate(date: string) {
-        return new Date(date).toString() !== "Invalid Date"
-    }
-    function onChange(e: any) {
-        setValue(e.target.value)
-        setValid(isValidDate(e.target.value))
-    }
-    function onFocus() {
-        setFocused(true)
-    }
-    function onBlur() {
-        setFocused(false)
-    }
+	function isValidDate(date: string) {
+		return new Date(date).toString() !== "Invalid Date";
+	}
+	function onChange(e: any) {
+		const value = e.target.value
+		if (props.onChange) props.onChange(value)
 
-    let activeColor
-    let message
-    if (isFocused) {
-        activeColor = color
-        message = assistMessage
-    } else if (!isValid && value.length > 0) {
-        activeColor = colors.danger
-        message = errorMessage
-    } else {
-        activeColor = colors.grey400
-        message = assistMessage
-    }
+        setValue(value)
 
-    return (
-        <StyledField enabled={enabled}>
-            <motion.label
-                className="label"
-                htmlFor={"renene" + id}
-                style={{
-                    originX: 0,
-                }}
-                initial={{
-                    scale: 1,
-                    x: 0,
-                    y: 0,
-                    color: activeColor,
-                }}
-                animate={{
-                    scale: isFocused || value.length > 0 ? 0.65 : 1,
-                    x: isFocused || value.length > 0 ? 1 : 0,
-                    y: isFocused || value.length > 0 ? -15 : 0,
-                    color: activeColor,
-                }}
-                transition={{
-                    duration: 0.15,
-                }}
-            >
-                {label}
-            </motion.label>
-            <motion.input
-                id={"renene" + id}
-                className="input"
-                type="date"
-                disabled={!enabled}
-                defaultValue={defaultValue}
-                onChange={onChange}
-                onFocus={onFocus}
-                onBlur={onBlur}
-                initial={{
-                    borderWidth: 1,
-                    borderColor: activeColor,
-                }}
-                animate={{
-                    borderWidth:
-                        isFocused || (!isValid && value.length > 0) ? 1 : 1,
-                    borderColor: activeColor,
-                }}
-                transition={{
-                    duration: 0.15,
-                }}
-            />
-            <Frame
-                left={16}
-                width={"100%"}
-                height={16}
-                background={"transparent"}
-            >
-                <Type.Caption>{message}</Type.Caption>
-            </Frame>
-        </StyledField>
-    )
+        if (props.onValueChange) {
+            props.onValueChange(value)
+        }
+		setValue(value);
+		setValid(isValidDate(value));
+	}
+	function onFocus() {
+		setFocused(true);
+	}
+	function onBlur() {
+		setFocused(false);
+	}
+
+	let activeColor;
+	let message;
+	if (isFocused) {
+		activeColor = color;
+		message = assistMessage;
+	} else if (!isValid && value.length > 0) {
+		activeColor = colors.danger;
+		message = errorMessage;
+	} else {
+		activeColor = colors.grey400;
+		message = assistMessage;
+	}
+
+	return (
+		<StyledField enabled={enabled}>
+			<motion.label
+				className="label"
+				htmlFor={"renene" + id}
+				style={{
+					originX: 0,
+				}}
+				initial={{
+					scale: 1,
+					x: 0,
+					y: 0,
+					color: activeColor,
+				}}
+				animate={{
+					scale: isFocused || value.length > 0 ? 0.65 : 1,
+					x: isFocused || value.length > 0 ? 1 : 0,
+					y: isFocused || value.length > 0 ? -15 : 0,
+					color: activeColor,
+				}}
+				transition={{
+					duration: 0.15,
+				}}
+			>
+				{label}
+			</motion.label>
+			<motion.input
+				id={"renene" + id}
+				className="input"
+				type="date"
+				disabled={!enabled}
+				defaultValue={defaultValue}
+				onChange={onChange}
+				onFocus={onFocus}
+				onBlur={onBlur}
+				initial={{
+					borderWidth: 1,
+					borderColor: activeColor,
+				}}
+				animate={{
+					borderWidth:
+						isFocused || (!isValid && value.length > 0) ? 1 : 1,
+					borderColor: activeColor,
+				}}
+				transition={{
+					duration: 0.15,
+				}}
+			/>
+			<Frame
+				left={16}
+				width={"100%"}
+				height={16}
+				background={"transparent"}
+			>
+				<Type.Caption>{message}</Type.Caption>
+			</Frame>
+		</StyledField>
+	);
 }
 
 DateField.defaultProps = {
-    label: "Test",
-    enabled: true,
-    focused: false,
-    color: colors.primary900,
-    width: 375,
-    height: 70,
-}
+	label: "Test",
+	enabled: true,
+	focused: false,
+	color: colors.primary900,
+	width: 375,
+	height: 70,
+};
 
 addPropertyControls(DateField, {
-    enabled: {
-        title: "Enabled",
-        type: ControlType.Boolean,
-        defaultValue: true,
-    },
-    focused: {
-        title: "Focused",
-        type: ControlType.Boolean,
-        defaultValue: false,
-    },
-    color: {
-        title: "Color",
-        type: ControlType.Color,
-        defaultValue: colors.primary900,
-    },
-    defaultValue: {
-        title: "Date",
-        type: ControlType.String,
-        defaultValue: "",
-    },
-    label: {
-        title: "Label",
-        type: ControlType.String,
-    },
-    assistMessage: {
-        title: "Assist Msg",
-        type: ControlType.String,
-    },
-    errorMessage: {
-        title: "Error Msg",
-        type: ControlType.String,
-    },
-})
+	enabled: {
+		title: "Enabled",
+		type: ControlType.Boolean,
+		defaultValue: true,
+	},
+	focused: {
+		title: "Focused",
+		type: ControlType.Boolean,
+		defaultValue: false,
+	},
+	color: {
+		title: "Color",
+		type: ControlType.Color,
+		defaultValue: colors.primary900,
+	},
+	defaultValue: {
+		title: "Date",
+		type: ControlType.String,
+		defaultValue: "",
+	},
+	label: {
+		title: "Label",
+		type: ControlType.String,
+	},
+	assistMessage: {
+		title: "Assist Msg",
+		type: ControlType.String,
+	},
+	errorMessage: {
+		title: "Error Msg",
+		type: ControlType.String,
+	},
+});

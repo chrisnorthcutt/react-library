@@ -3,6 +3,7 @@ import * as React from "react"
 import { colors } from "./code/Variables"
 //@ts-ignore
 import { Phone } from "./canvas"
+import { Modal } from "./code/Modal"
 
 // [1]
 const data = Data({
@@ -10,9 +11,12 @@ const data = Data({
     lastName: "Question",
     accountEmail: "JohnQ@gmail.com",
     accountPassword: "Password1",
+    enteredFirstName: "",
+    enteredLastName: "",
     enteredEmail: "",
     enteredPassword: "",
     reenteredPassword: "",
+    enteredDOB: "",
     emptyPassword: false,
     emptyEmail: false,
     rememberMe: "false",
@@ -24,6 +28,7 @@ const data = Data({
         "Password4",
         "Password6",
     ],
+    attempts: 0,
 })
 
 function allTrue(obj) {
@@ -32,7 +37,7 @@ function allTrue(obj) {
     return true
 }
 
-export let meetsRequirements = {
+export let meetsPasswordRequirements = {
     character: false,
     username: false,
     email: false,
@@ -42,26 +47,83 @@ export let meetsRequirements = {
     passwordsMatch: false,
 }
 
+export function saveFirstName(props): Override {
+    return {
+        onValueChange(defaultValue) {
+            data.enteredFirstName = defaultValue
+        },
+    }
+}
+
+export function saveLastName(props): Override {
+    return {
+        onValueChange(defaultValue) {
+            data.enteredLastName = defaultValue
+        },
+    }
+}
+
+export function saveDOB(props): Override {
+    return {
+        onValueChange(defaultValue) {
+            data.enteredDOB = defaultValue
+        },
+    }
+}
+
+export function saveEmailAddress(props): Override {
+    return {
+        onValueChange(defaultValue) {
+            data.enteredEmail = defaultValue
+            data.emptyEmail = data.enteredEmail.length < 0
+        },
+        defaultValue: data.enteredEmail,
+        empty: data.emptyEmail,
+    }
+}
+
+export function setEmailAddress(props): Override {
+    return {
+        defaultValue: data.enteredEmail,
+    }
+}
+
+export function funSignIn(): Override {
+    return {
+        animate: { rotate: data.rotate },
+        onTap() {
+            data.rotate = data.rotate + 90
+        },
+    }
+}
+
+export function signIn(): Override {
+
+    return {
+        disabled: !(data.enteredFirstName.length > 0 && data.enteredLastName.length > 0 && data.enteredEmail.length > 0 && data.enteredDOB.length > 0)
+    }
+}
+
 export function savePassword(props): Override {
     return {
         onValueChange(value) {
             data.enteredPassword = value
             data.emptyPassword = data.enteredPassword.length < 0
-            meetsRequirements.character = data.enteredPassword.length >= 10
-            meetsRequirements.username =
+            meetsPasswordRequirements.character = data.enteredPassword.length >= 10
+            meetsPasswordRequirements.username =
                 data.enteredPassword.indexOf(
                     data.accountEmail.toLowerCase().split("@", 1)[0]
                 ) === -1
-            meetsRequirements.email =
+            meetsPasswordRequirements.email =
                 data.enteredPassword.indexOf(
                     data.accountEmail.toLowerCase()
                 ) === -1
-            meetsRequirements.first =
+            meetsPasswordRequirements.first =
                 data.enteredPassword.indexOf(data.firstName.toLowerCase()) ===
                 -1
-            meetsRequirements.last =
+            meetsPasswordRequirements.last =
                 data.enteredPassword.indexOf(data.lastName.toLowerCase()) === -1
-            meetsRequirements.lastFive =
+            meetsPasswordRequirements.lastFive =
                 data.lastFivePasswords.indexOf(data.enteredPassword) === -1
         },
         empty: data.emptyPassword,
@@ -72,7 +134,7 @@ export function saveReenteredPassword(props): Override {
     return {
         onValueChange(value) {
             data.reenteredPassword = value
-            meetsRequirements.passwordsMatch =
+            meetsPasswordRequirements.passwordsMatch =
                 data.reenteredPassword === data.enteredPassword
         },
     }
@@ -82,14 +144,14 @@ export function PasswordRequirements(props): Override {
     return {
         children: React.Children.map(props.children, (child) => {
             if (
-                meetsRequirements[child.props.name] &&
+                meetsPasswordRequirements[child.props.name] &&
                 data.enteredPassword != ""
             ) {
                 return React.cloneElement(child as any, {
                     background: colors.success,
                 })
             } else if (
-                !meetsRequirements[child.props.name] &&
+                !meetsPasswordRequirements[child.props.name] &&
                 data.enteredPassword != ""
             ) {
                 return React.cloneElement(child as any, {
@@ -117,7 +179,7 @@ export function PasswordsMatch(props): Override {
 
 export function ResetPassword(): Override {
     return {
-        isDisabled: !allTrue(meetsRequirements),
+        isDisabled: !allTrue(meetsPasswordRequirements),
     }
 }
 
