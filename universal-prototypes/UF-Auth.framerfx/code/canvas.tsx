@@ -1,8 +1,10 @@
 // WARNING: this file is auto generated, any changes will be lost
 import { createDesignComponent, CanvasStore } from "framer"
 const canvas = CanvasStore.shared(); // CANVAS_DATA;
-export const Check_Email = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_TMLSdyemw", {}, 375,667);
+export const Check_Email = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,Title?:string,Check_Message?:string,Click_Message?:string}>(canvas, "id_TMLSdyemw", {Title:"string",Check_Message:"string",Click_Message:"string"}, 375,667);
+export const Email_Verified = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_fur12vfw2", {}, 375,667);
 export const Phone = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_DX6XoFzBE", {}, 375,667);
+export const SetPassword = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_s85MmptS4", {}, 375,667);
 
 export const colors = Object.freeze({
     /** #00384D */

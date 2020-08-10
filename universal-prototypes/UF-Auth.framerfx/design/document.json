@@ -1424,7 +1424,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "tertiary",
-              "isDisabled" : false,
+              "isEnabled" : false,
               "text" : "Disagree"
             },
             "codeOverrideEnabled" : false,
@@ -1480,7 +1480,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "isEnabled" : false,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -2312,9 +2312,9 @@
                       "defaultValue" : "",
                       "empty" : false,
                       "enabled" : true,
-                      "errorMessage" : "Please use a valid email address (example@gmail.com)",
+                      "errorMessage" : "",
                       "focused" : false,
-                      "label" : "First Name",
+                      "label" : "First Name*",
                       "type" : "text"
                     },
                     "codeOverrideEnabled" : true,
@@ -2367,7 +2367,7 @@
                     "aspectRatio" : null,
                     "bottom" : null,
                     "centerAnchorX" : 0.5,
-                    "centerAnchorY" : 0.5,
+                    "centerAnchorY" : 0.31392045454545453,
                     "clip" : true,
                     "codeComponentIdentifier" : ".\/code\/TextField.tsx_TextField",
                     "codeComponentPackageVersion" : null,
@@ -2378,9 +2378,9 @@
                       "defaultValue" : "",
                       "empty" : false,
                       "enabled" : true,
-                      "errorMessage" : "Password must contain at least one letter, at least one number, and be longer than six characters",
+                      "errorMessage" : "",
                       "focused" : false,
-                      "label" : "Last Name",
+                      "label" : "Last Name*",
                       "type" : "text"
                     },
                     "codeOverrideEnabled" : true,
@@ -2407,7 +2407,7 @@
                     "id" : "Wh4qKkSxl",
                     "intrinsicHeight" : 70,
                     "intrinsicWidth" : 375,
-                    "left" : 0,
+                    "left" : null,
                     "locked" : false,
                     "name" : null,
                     "opacity" : 1,
@@ -2421,9 +2421,9 @@
                     "radiusPerCorner" : false,
                     "radiusTopLeft" : 0,
                     "radiusTopRight" : 0,
-                    "right" : 0,
+                    "right" : null,
                     "rotation" : 0,
-                    "top" : null,
+                    "top" : 78,
                     "visible" : true,
                     "width" : 1,
                     "widthType" : 3
@@ -2444,9 +2444,9 @@
                       "defaultValue" : "",
                       "empty" : false,
                       "enabled" : true,
-                      "errorMessage" : "Password must contain at least one letter, at least one number, and be longer than six characters",
+                      "errorMessage" : "Please enter a valid email address",
                       "focused" : false,
-                      "label" : "Email Address",
+                      "label" : "Email Address*",
                       "type" : "email"
                     },
                     "codeOverrideEnabled" : true,
@@ -2505,13 +2505,13 @@
                     "codeComponentIdentifier" : ".\/code\/DateField.tsx_DateField",
                     "codeComponentPackageVersion" : "1.74.0",
                     "codeComponentProps" : {
-                      "assistMessage" : "",
+                      "assistMessage" : "You must be 18 years or older to register",
                       "color" : "#00384d",
                       "defaultValue" : "",
                       "enabled" : true,
                       "errorMessage" : "",
                       "focused" : false,
-                      "label" : "Date of Birth"
+                      "label" : "Date of Birth*"
                     },
                     "codeOverrideEnabled" : true,
                     "codeOverrideFile" : ".\/App.tsx",
@@ -2616,7 +2616,7 @@
                 "stackDirection" : "vertical",
                 "stackDistribution" : "start",
                 "stackEnabled" : true,
-                "stackGap" : 24,
+                "stackGap" : 8,
                 "top" : 180,
                 "visible" : true,
                 "width" : 323,
@@ -2633,7 +2633,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "buttonStyle" : "primary",
-                  "isDisabled" : true,
+                  "isEnabled" : false,
                   "text" : "Continue"
                 },
                 "codeOverrideEnabled" : true,
@@ -2760,90 +2760,6 @@
                 "top" : 76,
                 "visible" : true,
                 "width" : 267,
-                "widthType" : 0
-              },
-              {
-                "__class" : "TextNode",
-                "autoSize" : false,
-                "blur" : 10,
-                "blurType" : "layer",
-                "bottom" : 80,
-                "centerAnchorX" : 0.48933333333333334,
-                "centerAnchorY" : 0.85907046476761617,
-                "clip" : true,
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "HpfQKIDpx",
-                  "w_NtXNJYA",
-                  "wRDtREgjr"
-                ],
-                "exportOptions" : [
-
-                ],
-                "height" : 28,
-                "heightType" : 0,
-                "id" : "PydNM_gTG",
-                "isTarget" : false,
-                "left" : 24,
-                "locked" : false,
-                "name" : "I have read and agre",
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "pMAXcz20Y",
-                "right" : 32,
-                "rotation" : 0,
-                "styledText" : {
-                  "__class" : "StyledTextDraft",
-                  "blocks" : [
-                    {
-                      "data" : {
-                        "emptyStyle" : [
-                          "SIZE:16",
-                          "FONT:Roboto-Regular",
-                          "LINEHEIGHT:1.75",
-                          "COLOR:var(--token-967f243b-25f6-4060-a79e-0cbbf0d656b3, rgb(33, 33, 33)) \/* {\"name\":\"grey900\"} *\/"
-                        ]
-                      },
-                      "depth" : 0,
-                      "entityRanges" : [
-
-                      ],
-                      "inlineStyleRanges" : [
-                        {
-                          "length" : 42,
-                          "offset" : 0,
-                          "style" : "SIZE:16"
-                        },
-                        {
-                          "length" : 42,
-                          "offset" : 0,
-                          "style" : "FONT:Roboto-Regular"
-                        },
-                        {
-                          "length" : 42,
-                          "offset" : 0,
-                          "style" : "LINEHEIGHT:1.75"
-                        },
-                        {
-                          "length" : 42,
-                          "offset" : 0,
-                          "style" : "COLOR:var(--token-967f243b-25f6-4060-a79e-0cbbf0d656b3, rgb(33, 33, 33)) \/* {\"name\":\"grey900\"} *\/"
-                        }
-                      ],
-                      "key" : "key",
-                      "text" : "You must be 18 years or older to register.",
-                      "type" : "unstyled"
-                    }
-                  ],
-                  "entityMap" : {
-
-                  }
-                },
-                "textVerticalAlignment" : "top",
-                "top" : null,
-                "visible" : true,
-                "width" : 319,
                 "widthType" : 0
               }
             ],
@@ -3046,7 +2962,7 @@
                   "enabled" : true,
                   "errorMessage" : "",
                   "focused" : false,
-                  "label" : "New Password",
+                  "label" : "New Password*",
                   "type" : "password"
                 },
                 "codeOverrideEnabled" : true,
@@ -3113,7 +3029,7 @@
                   "enabled" : true,
                   "errorMessage" : "",
                   "focused" : false,
-                  "label" : "Repeat Password",
+                  "label" : "Repeat Password*",
                   "type" : "password"
                 },
                 "codeOverrideEnabled" : true,
@@ -5083,7 +4999,7 @@
             "stackDirection" : "vertical",
             "stackDistribution" : "start",
             "stackEnabled" : true,
-            "stackGap" : 24,
+            "stackGap" : 8,
             "top" : 152,
             "visible" : true,
             "width" : 327,
@@ -5100,7 +5016,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : true,
+              "isEnabled" : false,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -5132,7 +5048,7 @@
                     },
                     "target" : {
                       "type" : "componentinstance",
-                      "value" : "HSxsnOS5q"
+                      "value" : "TMLSdyemw"
                     },
                     "transition" : {
                       "type" : "enum",
@@ -5365,11 +5281,11 @@
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
-        "isMaster" : false,
+        "isMaster" : true,
         "isTarget" : false,
         "left" : 6537,
         "locked" : false,
-        "name" : "Set Password",
+        "name" : "SetPassword",
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "Qjz4fbJHx",
@@ -5952,7 +5868,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : true,
+              "isEnabled" : false,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -6849,7 +6765,7 @@
                     "codeComponentPackageVersion" : "1.74.0",
                     "codeComponentProps" : {
                       "fill" : "#212121",
-                      "iconName" : "check",
+                      "iconName" : "more-vertical",
                       "onTap" : [
 
                       ]
@@ -6910,7 +6826,7 @@
                     "codeComponentPackageVersion" : "1.74.0",
                     "codeComponentProps" : {
                       "fill" : "#212121",
-                      "iconName" : "check",
+                      "iconName" : "blank",
                       "onTap" : [
 
                       ]
@@ -6972,7 +6888,7 @@
                     "codeComponentPackageVersion" : "1.74.0",
                     "codeComponentProps" : {
                       "fill" : "#212121",
-                      "iconName" : "check",
+                      "iconName" : "blank",
                       "onTap" : [
 
                       ]
@@ -7035,7 +6951,7 @@
                     "codeComponentPackageVersion" : "1.74.0",
                     "codeComponentProps" : {
                       "fill" : "#212121",
-                      "iconName" : "check",
+                      "iconName" : "caret-left",
                       "onTap" : [
 
                       ]
@@ -7160,6 +7076,15 @@
                           "type" : "unstyled"
                         }
                       ],
+                      "cached" : {
+                        "html" : "<div data-offset-key=\"362gu-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"362gu-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Medium&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgb(33, 33, 33);font-size:20px;letter-spacing:NaNpx;line-height:1.2;font-weight:500\"><span data-text=\"true\">LillyApp Password Reset Request<\/span><\/span><\/div>",
+                        "os" : "macos 10_15 framerx",
+                        "size" : {
+                          "height" : 24,
+                          "width" : 301
+                        },
+                        "width" : 0
+                      },
                       "entityMap" : {
 
                       }
@@ -7255,6 +7180,15 @@
                               "type" : "unstyled"
                             }
                           ],
+                          "cached" : {
+                            "html" : "<div data-offset-key=\"3655f-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3655f-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Bold&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:#212121;font-size:14px;letter-spacing:NaNpx;line-height:1.2;font-weight:700\"><span data-text=\"true\">LillyApp<\/span><\/span><\/div>",
+                            "os" : "macos 10_15 framerx",
+                            "size" : {
+                              "height" : 16,
+                              "width" : 52
+                            },
+                            "width" : 0
+                          },
                           "entityMap" : {
 
                           }
@@ -7342,6 +7276,15 @@
                               "type" : "unstyled"
                             }
                           ],
+                          "cached" : {
+                            "html" : "<div data-offset-key=\"3655f-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3655f-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(33, 33, 33, 0.48);font-size:12px;letter-spacing:NaNpx;line-height:1.2;font-weight:400\"><span data-text=\"true\">to me<\/span><\/span><\/div>",
+                            "os" : "macos 10_15 framerx",
+                            "size" : {
+                              "height" : 14,
+                              "width" : 32
+                            },
+                            "width" : 0
+                          },
                           "entityMap" : {
 
                           }
@@ -7430,6 +7373,15 @@
                               "type" : "unstyled"
                             }
                           ],
+                          "cached" : {
+                            "html" : "<div data-offset-key=\"3655f-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3655f-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(33, 33, 33, 0.48);font-size:12px;letter-spacing:NaNpx;line-height:1.2;font-weight:400\"><span data-text=\"true\">11:59 AM<\/span><\/span><\/div>",
+                            "os" : "macos 10_15 framerx",
+                            "size" : {
+                              "height" : 14,
+                              "width" : 53
+                            },
+                            "width" : 0
+                          },
                           "entityMap" : {
 
                           }
@@ -7641,6 +7593,15 @@
                               "type" : "unstyled"
                             }
                           ],
+                          "cached" : {
+                            "html" : "<div data-offset-key=\"6gqv4-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6gqv4-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Medium&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 100%);font-size:20px;letter-spacing:NaNpx;line-height:1.2;font-weight:500\"><span data-text=\"true\">L<\/span><\/span><\/div>",
+                            "os" : "macos 10_15 framerx",
+                            "size" : {
+                              "height" : 24,
+                              "width" : 12
+                            },
+                            "width" : 0
+                          },
                           "entityMap" : {
 
                           }
@@ -8015,6 +7976,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(0,0,0,1);font-size:24px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Reset your password<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 28,
+                      "width" : 224
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -8098,6 +8068,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Medium&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:#212121;font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">LillyApp Support<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 19,
+                      "width" : 119
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -8182,6 +8161,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Medium&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(10, 134, 182, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">1-855-545-5983<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 19,
+                      "width" : 117
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -8346,55 +8334,16 @@
                 "codeComponentPackageVersion" : "1.74.0",
                 "codeComponentProps" : {
                   "buttonStyle" : "primary",
-                  "isDisabled" : false,
+                  "isEnabled" : false,
                   "onTap" : [
-                    {
-                      "actionIdentifier" : "framer\/useNavigate",
-                      "controls" : {
-                        "animation" : {
-                          "type" : "transition",
-                          "value" : {
-                            "damping" : 60,
-                            "delay" : 0,
-                            "duration" : 0.29999999999999999,
-                            "ease" : [
-                              0.44,
-                              0,
-                              0.56000000000000005,
-                              1
-                            ],
-                            "mass" : 1,
-                            "stiffness" : 500,
-                            "type" : "spring"
-                          }
-                        },
-                        "appearsFrom" : {
-                          "type" : "segmentedenum",
-                          "value" : "right"
-                        },
-                        "backdropColor" : {
-                          "type" : "color",
-                          "value" : "rgba(4,4,15,.4)"
-                        },
-                        "target" : {
-                          "type" : "componentinstance",
-                          "value" : "TSLyC6RwR"
-                        },
-                        "transition" : {
-                          "type" : "enum",
-                          "value" : "push"
-                        },
-                        "type" : {
-                          "type" : "segmentedenum",
-                          "value" : "previous"
-                        }
-                      },
-                      "identifier" : "887a7f86-81bd-41cc-9fa4-08c9911be39b"
-                    }
+
                   ],
                   "text" : "Return to App"
                 },
-                "codeOverrideEnabled" : false,
+                "codeOverrideEnabled" : true,
+                "codeOverrideFile" : ".\/App.tsx",
+                "codeOverrideIdentifier" : ".\/App.tsx_BackToAppTransition",
+                "codeOverrideName" : "BackToAppTransition",
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
                   "DNuFUedaz",
@@ -8592,6 +8541,2257 @@
         "top" : 13,
         "visible" : true,
         "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0.062666666666666662,
+        "centerAnchorY" : 0.507496251874063,
+        "children" : [
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : null,
+            "centerAnchorX" : 0.28666666666666668,
+            "centerAnchorY" : 0.15592203898050974,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "r5Kcw7v9j"
+            ],
+            "exportOptions" : [
+
+            ],
+            "height" : 28,
+            "heightType" : 0,
+            "id" : "vZugYOY53",
+            "isTarget" : false,
+            "left" : 24,
+            "locked" : false,
+            "name" : "Sign in to your acco",
+            "opacity" : 0.87,
+            "originalid" : null,
+            "parentid" : "sUTZijs4j",
+            "right" : null,
+            "rotation" : 0,
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "COLOR:rgba(0,0,0,1)"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 8,
+                      "offset" : 0,
+                      "style" : "SIZE:24"
+                    },
+                    {
+                      "length" : 8,
+                      "offset" : 0,
+                      "style" : "FONT:Roboto-Regular"
+                    },
+                    {
+                      "length" : 8,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(0,0,0,1)"
+                    }
+                  ],
+                  "key" : "key",
+                  "text" : "Settings",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(0,0,0,1);font-size:24px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Settings<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 28,
+                  "width" : 89
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : 76,
+            "visible" : true,
+            "width" : 89,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : true,
+        "codeOverrideFile" : ".\/App.tsx",
+        "codeOverrideIdentifier" : ".\/App.tsx_OutofAppTransition",
+        "codeOverrideName" : "OutofAppTransition",
+        "constraintsLocked" : false,
+        "duplicatedFrom" : [
+          "ZBCc1onq9"
+        ],
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "var(--token-62d02b63-8da8-4fde-8c93-567876742301, rgb(250, 250, 250)) \/* {\"name\":\"offwhite\"} *\/",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "framePreset" : "iPhone_375_667",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 667,
+        "heightType" : 0,
+        "id" : "sUTZijs4j",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 6072,
+        "locked" : false,
+        "name" : null,
+        "onTap" : [
+
+        ],
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "Qjz4fbJHx",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 772,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : 80,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.8500749625187406,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
+            "codeComponentPackageVersion" : null,
+            "codeComponentProps" : {
+              "buttonStyle" : "primary",
+              "isEnabled" : false,
+              "onTap" : [
+                {
+                  "actionIdentifier" : "framer\/useNavigate",
+                  "controls" : {
+                    "animation" : {
+                      "type" : "transition",
+                      "value" : {
+                        "damping" : 60,
+                        "delay" : 0,
+                        "duration" : 0.29999999999999999,
+                        "ease" : [
+                          0.44,
+                          0,
+                          0.56000000000000005,
+                          1
+                        ],
+                        "mass" : 1,
+                        "stiffness" : 500,
+                        "type" : "spring"
+                      }
+                    },
+                    "appearsFrom" : {
+                      "type" : "segmentedenum",
+                      "value" : "bottom"
+                    },
+                    "backdropColor" : {
+                      "type" : "color",
+                      "value" : "rgba(4,4,15,.4)"
+                    },
+                    "target" : {
+                      "type" : "componentinstance",
+                      "value" : "Xi51AqsTb"
+                    },
+                    "transition" : {
+                      "type" : "enum",
+                      "value" : "overlay"
+                    },
+                    "type" : {
+                      "type" : "segmentedenum",
+                      "value" : "next"
+                    }
+                  },
+                  "identifier" : "b6cf2ff4-fafc-49d0-b4b3-e482ad4e7b83"
+                }
+              ],
+              "text" : "Open Email App"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              ".\/code\/Button.tsx_Button"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "PCsxCR_6F",
+            "intrinsicHeight" : 40,
+            "intrinsicWidth" : 375,
+            "left" : 24,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 24,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 327,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : 18,
+            "centerAnchorX" : 0.5013333333333333,
+            "centerAnchorY" : 0.94002998500749624,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
+            "codeComponentPackageVersion" : null,
+            "codeComponentProps" : {
+              "buttonStyle" : "tertiary",
+              "isEnabled" : false,
+              "text" : "Resend password reset email"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              ".\/code\/Button.tsx_Button"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 44,
+            "heightType" : 0,
+            "id" : "HiJOmseaC",
+            "intrinsicHeight" : 40,
+            "intrinsicWidth" : 375,
+            "left" : 53,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 52,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 270,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.32683658170914542,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "height" : 28,
+            "heightType" : 0,
+            "id" : "rj6oAhRhD",
+            "isTarget" : true,
+            "left" : null,
+            "locked" : false,
+            "name" : "Title",
+            "opacity" : 0.87,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "right" : null,
+            "rotation" : 0,
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "COLOR:rgba(0,0,0,1)"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 16,
+                      "offset" : 0,
+                      "style" : "SIZE:24"
+                    },
+                    {
+                      "length" : 16,
+                      "offset" : 0,
+                      "style" : "FONT:Roboto-Regular"
+                    },
+                    {
+                      "length" : 16,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(0,0,0,1)"
+                    }
+                  ],
+                  "key" : "key",
+                  "text" : "Check Your Email",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(0,0,0,1);font-size:24px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Check Your Email<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 28,
+                  "width" : 188
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : 204,
+            "visible" : true,
+            "width" : 187,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : false,
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.41379310344827586,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "LGDzKPNgC",
+            "isTarget" : true,
+            "left" : 24,
+            "locked" : false,
+            "name" : "Check_Message",
+            "opacity" : 0.87,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "right" : 24,
+            "rotation" : 0,
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "COLOR:rgba(0,0,0,1)"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 80,
+                      "offset" : 0,
+                      "style" : "SIZE:14"
+                    },
+                    {
+                      "length" : 80,
+                      "offset" : 0,
+                      "style" : "FONT:Roboto-Regular"
+                    },
+                    {
+                      "length" : 80,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1.4285714285714286"
+                    },
+                    {
+                      "length" : 80,
+                      "offset" : 0,
+                      "style" : "ALIGN:center"
+                    },
+                    {
+                      "length" : 80,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(0,0,0,1)"
+                    }
+                  ],
+                  "key" : "key",
+                  "text" : "Please check your email inbox or spam folder for an email from noreply@lilly.com",
+                  "type" : "unstyled"
+                }
+              ],
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : 256,
+            "visible" : true,
+            "width" : 327,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : false,
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : null,
+            "centerAnchorX" : 0.49866666666666665,
+            "centerAnchorY" : 0.49775112443778113,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "RF8u8wPok",
+            "isTarget" : true,
+            "left" : 23.5,
+            "locked" : false,
+            "name" : "Click_Message",
+            "opacity" : 0.87,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "right" : 24.5,
+            "rotation" : 0,
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "COLOR:rgba(0,0,0,1)"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 75,
+                      "offset" : 0,
+                      "style" : "SIZE:14"
+                    },
+                    {
+                      "length" : 75,
+                      "offset" : 0,
+                      "style" : "FONT:Roboto-Regular"
+                    },
+                    {
+                      "length" : 75,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1.4285714285714286"
+                    },
+                    {
+                      "length" : 75,
+                      "offset" : 0,
+                      "style" : "ALIGN:center"
+                    },
+                    {
+                      "length" : 75,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(0,0,0,1)"
+                    }
+                  ],
+                  "key" : "key",
+                  "text" : "Click on the link you were emailed to reset your LillyApp account password.",
+                  "type" : "unstyled"
+                }
+              ],
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 327,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : null,
+            "centerAnchorX" : 0.5013333333333333,
+            "centerAnchorY" : 0.19790104947526238,
+            "children" : [
+              {
+                "__class" : "ShapeContainerNode",
+                "autoSize" : true,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "children" : [
+                  {
+                    "__class" : "PathNode",
+                    "aspectRatio" : null,
+                    "duplicatedFrom" : null,
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(69,186,127,1)",
+                    "fillEnabled" : true,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 80,
+                    "id" : "PGvxFwzLc",
+                    "locked" : false,
+                    "name" : "Oval",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "aXMBqTfSW",
+                    "pathClosed" : true,
+                    "pathSegments" : [
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : -22.091389992,
+                        "handleInY" : 0,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : 22.091389992000003,
+                        "handleOutY" : 0,
+                        "radius" : 0,
+                        "x" : 40,
+                        "y" : 80
+                      },
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : 0,
+                        "handleInY" : 22.091389992000003,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : 0,
+                        "handleOutY" : -22.091389992,
+                        "radius" : 0,
+                        "x" : 80,
+                        "y" : 40
+                      },
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : 22.091389992000003,
+                        "handleInY" : 0,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : -22.091389992,
+                        "handleOutY" : 0,
+                        "radius" : 0,
+                        "x" : 40,
+                        "y" : 0
+                      },
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : 0,
+                        "handleInY" : -22.091389992,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : 0,
+                        "handleOutY" : 22.091389992000003,
+                        "radius" : 0,
+                        "x" : 0,
+                        "y" : 40
+                      }
+                    ],
+                    "rotation" : 0,
+                    "strokeEnabled" : 0,
+                    "visible" : true,
+                    "width" : 80,
+                    "x" : 0,
+                    "y" : 0
+                  }
+                ],
+                "constraintsLocked" : false,
+                "duplicatedFrom" : null,
+                "exportIncludesBackground" : false,
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "#FFF",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 80,
+                "heightType" : 0,
+                "id" : "aXMBqTfSW",
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "Cw0pmVfx8",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "sizeToFit" : true,
+                "top" : null,
+                "visible" : true,
+                "width" : 80,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.49375000000000002,
+                "centerAnchorY" : 0.50624999999999998,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/code\/Icon.tsx_Icon",
+                "codeComponentPackageVersion" : null,
+                "codeComponentProps" : {
+                  "fill" : "hsl(0, 0%, 100%)",
+                  "iconName" : "check"
+                },
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  ".\/code\/Icon.tsx_Icon"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 40,
+                "heightType" : 0,
+                "id" : "qLbjSNffc",
+                "intrinsicHeight" : 24,
+                "intrinsicWidth" : 24,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "Cw0pmVfx8",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 40,
+                "widthType" : 0
+              }
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 80,
+            "heightType" : 0,
+            "id" : "Cw0pmVfx8",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "Icon \/ Contained",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 92,
+            "visible" : true,
+            "width" : 80,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.026986506746626688,
+            "clip" : true,
+            "codeComponentIdentifier" : "@framer\/framer.examples\/.\/StatusBar.tsx_StatusBar",
+            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentProps" : {
+              "appearance" : "dark",
+              "batteryLevel" : 100,
+              "carrier" : "Framer"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "z6ZazWjTp",
+              "cJFhXCe6k",
+              "xdpD_UiAi",
+              "xAoZQCsCY"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 20,
+            "heightType" : 0,
+            "id" : "bZw9GyRcb",
+            "intrinsicHeight" : 20,
+            "intrinsicWidth" : 200,
+            "left" : 16,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "TMLSdyemw",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 16,
+            "rotation" : 0,
+            "top" : 8,
+            "visible" : true,
+            "width" : 343,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "duplicatedFrom" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(250,250,250,1)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 667,
+        "heightType" : 0,
+        "id" : "TMLSdyemw",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : true,
+        "isTarget" : false,
+        "left" : 7002,
+        "locked" : false,
+        "name" : "Check-Email",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "Qjz4fbJHx",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 13,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : 18,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.94002998500749624,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
+            "codeComponentPackageVersion" : null,
+            "codeComponentProps" : {
+              "buttonStyle" : "primary",
+              "isEnabled" : false,
+              "text" : "Finish"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              ".\/code\/Button.tsx_Button",
+              "HiJOmseaC"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 44,
+            "heightType" : 0,
+            "id" : "cJNFmkAYn",
+            "intrinsicHeight" : 40,
+            "intrinsicWidth" : 375,
+            "left" : 24,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "fur12vfw2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 24,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 327,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : 285,
+            "centerAnchorX" : 0.5093333333333333,
+            "centerAnchorY" : 0.55172413793103448,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "rj6oAhRhD"
+            ],
+            "exportOptions" : [
+
+            ],
+            "height" : 28,
+            "heightType" : 0,
+            "id" : "zLygnKMPx",
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "Check Your Email",
+            "opacity" : 0.87,
+            "originalid" : null,
+            "parentid" : "fur12vfw2",
+            "right" : 110,
+            "rotation" : 0,
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "COLOR:rgba(0,0,0,1)"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 14,
+                      "offset" : 0,
+                      "style" : "SIZE:24"
+                    },
+                    {
+                      "length" : 14,
+                      "offset" : 0,
+                      "style" : "FONT:Roboto-Regular"
+                    },
+                    {
+                      "length" : 14,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(0,0,0,1)"
+                    }
+                  ],
+                  "key" : "key",
+                  "text" : "Email Verified",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(0,0,0,1);font-size:24px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Email Verified<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 28,
+                  "width" : 148
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 148,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 10,
+            "blurType" : "layer",
+            "bottom" : null,
+            "centerAnchorX" : 0.5013333333333333,
+            "centerAnchorY" : 0.42278860569715143,
+            "children" : [
+              {
+                "__class" : "ShapeContainerNode",
+                "autoSize" : true,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "children" : [
+                  {
+                    "__class" : "PathNode",
+                    "aspectRatio" : null,
+                    "duplicatedFrom" : [
+                      "PGvxFwzLc"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(69,186,127,1)",
+                    "fillEnabled" : true,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 80,
+                    "id" : "hBEsL9tu7",
+                    "locked" : false,
+                    "name" : "Oval",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "gbBJRuMXH",
+                    "pathClosed" : true,
+                    "pathSegments" : [
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : -22.091389992,
+                        "handleInY" : 0,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : 22.091389992000003,
+                        "handleOutY" : 0,
+                        "radius" : 0,
+                        "x" : 40,
+                        "y" : 80
+                      },
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : 0,
+                        "handleInY" : 22.091389992000003,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : 0,
+                        "handleOutY" : -22.091389992,
+                        "radius" : 0,
+                        "x" : 80,
+                        "y" : 40
+                      },
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : 22.091389992000003,
+                        "handleInY" : 0,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : -22.091389992,
+                        "handleOutY" : 0,
+                        "radius" : 0,
+                        "x" : 40,
+                        "y" : 0
+                      },
+                      {
+                        "__class" : "PathSegment",
+                        "handleInX" : 0,
+                        "handleInY" : -22.091389992,
+                        "handleMirroring" : "symmetric",
+                        "handleOutX" : 0,
+                        "handleOutY" : 22.091389992000003,
+                        "radius" : 0,
+                        "x" : 0,
+                        "y" : 40
+                      }
+                    ],
+                    "rotation" : 0,
+                    "strokeEnabled" : 0,
+                    "visible" : true,
+                    "width" : 80,
+                    "x" : 0,
+                    "y" : 0
+                  }
+                ],
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "aXMBqTfSW"
+                ],
+                "exportIncludesBackground" : false,
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "#FFF",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 80,
+                "heightType" : 0,
+                "id" : "gbBJRuMXH",
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "YZgY8Nk3G",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "sizeToFit" : true,
+                "top" : null,
+                "visible" : true,
+                "width" : 80,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.49375000000000002,
+                "centerAnchorY" : 0.50624999999999998,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/code\/Icon.tsx_Icon",
+                "codeComponentPackageVersion" : null,
+                "codeComponentProps" : {
+                  "fill" : "hsl(0, 0%, 100%)",
+                  "iconName" : "check"
+                },
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  ".\/code\/Icon.tsx_Icon",
+                  "qLbjSNffc"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 40,
+                "heightType" : 0,
+                "id" : "R9CCFcn1R",
+                "intrinsicHeight" : 24,
+                "intrinsicWidth" : 24,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "YZgY8Nk3G",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 40,
+                "widthType" : 0
+              }
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "Cw0pmVfx8"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 80,
+            "heightType" : 0,
+            "id" : "YZgY8Nk3G",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "Icon \/ Contained",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "fur12vfw2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 242,
+            "visible" : true,
+            "width" : 80,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.026986506746626688,
+            "clip" : true,
+            "codeComponentIdentifier" : "@framer\/framer.examples\/.\/StatusBar.tsx_StatusBar",
+            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentProps" : {
+              "appearance" : "dark",
+              "batteryLevel" : 100,
+              "carrier" : "Framer"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "z6ZazWjTp",
+              "cJFhXCe6k",
+              "xdpD_UiAi",
+              "xAoZQCsCY",
+              "bZw9GyRcb"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 20,
+            "heightType" : 0,
+            "id" : "toHnmrg0X",
+            "intrinsicHeight" : 20,
+            "intrinsicWidth" : 200,
+            "left" : 16,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "fur12vfw2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 16,
+            "rotation" : 0,
+            "top" : 8,
+            "visible" : true,
+            "width" : 343,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "duplicatedFrom" : [
+          "TMLSdyemw"
+        ],
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(250,250,250,1)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 667,
+        "heightType" : 0,
+        "id" : "fur12vfw2",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : true,
+        "isTarget" : false,
+        "left" : 7962,
+        "locked" : false,
+        "name" : "Email_Verified",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "Qjz4fbJHx",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 13,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0.5,
+        "centerAnchorY" : 0.5,
+        "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 6,
+            "blurEnabled" : 1,
+            "blurType" : "layer",
+            "bottom" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.5,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255, 255, 255, 0.51)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 190,
+            "heightType" : 0,
+            "id" : "ZOjQ_YnKR",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 0,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "Xi51AqsTb",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 0,
+            "visible" : true,
+            "width" : 355,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "borderBottom" : 1,
+            "borderColor" : "#222",
+            "borderEnabled" : 0,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : 8,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.81052631578947365,
+            "children" : [
+              {
+                "__class" : "TextNode",
+                "autoSize" : true,
+                "blur" : 12,
+                "blurEnabled" : 0,
+                "blurType" : "layer",
+                "bottom" : null,
+                "brightness" : 100,
+                "brightnessEnabled" : 0,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5178571428571429,
+                "clip" : true,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "contrast" : 100,
+                "contrastEnabled" : 0,
+                "duplicatedFrom" : [
+                  "@framer\/edoardo.ios-kit-Z0FnSrSY6-yuVCh_FWL",
+                  "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-yuVCh_FWL"
+                ],
+                "exportOptions" : [
+
+                ],
+                "grayscale" : 0,
+                "grayScaleEnabled" : 0,
+                "height" : 24,
+                "heightType" : 0,
+                "hueRotate" : 0,
+                "hueRotateEnabled" : 0,
+                "id" : "dyEgwcjy0",
+                "invert" : 0,
+                "invertEnabled" : 0,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "siFbL3fPT",
+                "right" : null,
+                "rotation" : 0,
+                "saturate" : 100,
+                "saturateEnabled" : 0,
+                "sepia" : 0,
+                "sepiaEnabled" : 0,
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "emptyStyle" : [
+                          "LINEHEIGHT:1.2",
+                          "COLOR:#007AFF",
+                          "SIZE:20",
+                          "FONT:__SF-UI-Display-Semibold__",
+                          "LETTERSPACING:0.75",
+                          "ALIGN:center"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 6,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.2"
+                        },
+                        {
+                          "length" : 6,
+                          "offset" : 0,
+                          "style" : "COLOR:#007AFF"
+                        },
+                        {
+                          "length" : 6,
+                          "offset" : 0,
+                          "style" : "SIZE:20"
+                        },
+                        {
+                          "length" : 6,
+                          "offset" : 0,
+                          "style" : "FONT:__SF-UI-Display-Semibold__"
+                        },
+                        {
+                          "length" : 6,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0.75"
+                        },
+                        {
+                          "length" : 6,
+                          "offset" : 0,
+                          "style" : "ALIGN:center"
+                        }
+                      ],
+                      "key" : "8cbgv",
+                      "text" : "Cancel",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay-Semibold&quot;, &quot;SFProDisplay-Semibold&quot;, &quot;SFUIDisplay-Semibold&quot;, &quot;.SFUIDisplay-Semibold&quot;, &quot;SF Pro Display&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:#007AFF;font-size:20px;letter-spacing:0.75px;line-height:1.2;font-weight:599\"><span data-text=\"true\">Cancel<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 70
+                    },
+                    "width" : 0
+                  },
+                  "entityMap" : {
+
+                  }
+                },
+                "textVerticalAlignment" : "top",
+                "top" : null,
+                "visible" : true,
+                "width" : 70,
+                "widthType" : 0
+              }
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "codeOverrideFile" : null,
+            "codeOverrideIdentifier" : null,
+            "codeOverrideName" : null,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "@framer\/edoardo.ios-kit-Z0FnSrSY6-OaKjViqzR",
+              "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-OaKjViqzR"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255, 255, 255, 1.00)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 56,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "siFbL3fPT",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 17,
+            "locked" : false,
+            "name" : "button",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "Xi51AqsTb",
+            "previewSettings" : null,
+            "radius" : 14,
+            "radiusBottomLeft" : 14,
+            "radiusBottomRight" : 14,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 14,
+            "radiusTopRight" : 14,
+            "replicaInfo" : null,
+            "right" : 17,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 321,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "borderBottom" : 1,
+            "borderColor" : "#222",
+            "borderEnabled" : 0,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : 128,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.17894736842105263,
+            "children" : [
+              {
+                "__class" : "TextNode",
+                "autoSize" : true,
+                "blur" : 12,
+                "blurEnabled" : 0,
+                "blurType" : "layer",
+                "bottom" : null,
+                "brightness" : 100,
+                "brightnessEnabled" : 0,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "clip" : true,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "contrast" : 100,
+                "contrastEnabled" : 0,
+                "duplicatedFrom" : [
+                  "@framer\/edoardo.ios-kit-Z0FnSrSY6-Xr0xUlWNx",
+                  "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-Xr0xUlWNx"
+                ],
+                "exportOptions" : [
+
+                ],
+                "grayscale" : 0,
+                "grayScaleEnabled" : 0,
+                "height" : 24,
+                "heightType" : 0,
+                "hueRotate" : 0,
+                "hueRotateEnabled" : 0,
+                "id" : "QCkMxSpAm",
+                "invert" : 0,
+                "invertEnabled" : 0,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "EpFwDy6JK",
+                "right" : null,
+                "rotation" : 0,
+                "saturate" : 100,
+                "saturateEnabled" : 0,
+                "sepia" : 0,
+                "sepiaEnabled" : 0,
+                "shadows" : [
+
+                ],
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "emptyStyle" : [
+                          "LINEHEIGHT:1.2",
+                          "SIZE:20",
+                          "FONT:__SF-UI-Display-Regular__",
+                          "ALIGN:center",
+                          "LETTERSPACING:0.38",
+                          "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.2"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "SIZE:20"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "FONT:__SF-UI-Display-Regular__"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "ALIGN:center"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0.38"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
+                        }
+                      ],
+                      "key" : "8cbgv",
+                      "text" : "Gmail",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay&quot;, &quot;SFProDisplay-Regular&quot;, &quot;SFUIDisplay-Regular&quot;, &quot;.SFUIDisplay&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {&quot;name&quot;:&quot;iOS blue&quot;} *\/;font-size:20px;letter-spacing:0.38px;line-height:1.2\"><span data-text=\"true\">Gmail<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 54
+                    },
+                    "width" : 0
+                  },
+                  "entityMap" : {
+
+                  }
+                },
+                "textVerticalAlignment" : "top",
+                "top" : null,
+                "visible" : true,
+                "width" : 54,
+                "widthType" : 0
+              }
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : true,
+            "codeOverrideFile" : ".\/App.tsx",
+            "codeOverrideIdentifier" : ".\/App.tsx_OutofAppTransition",
+            "codeOverrideName" : "OutofAppTransition",
+            "constraintsLocked" : true,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "@framer\/edoardo.ios-kit-Z0FnSrSY6-P9p7WGYU9",
+              "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-P9p7WGYU9"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(247, 247, 247, 0.82)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 56,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "EpFwDy6JK",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 17,
+            "locked" : false,
+            "name" : "button",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "Xi51AqsTb",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : true,
+            "radiusTopLeft" : 14,
+            "radiusTopRight" : 14,
+            "replicaInfo" : null,
+            "right" : 17,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 321,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "borderBottom" : 1,
+            "borderColor" : "#222",
+            "borderEnabled" : 0,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : 72,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.47368421052631576,
+            "children" : [
+              {
+                "__class" : "TextNode",
+                "autoSize" : true,
+                "blur" : 12,
+                "blurEnabled" : 0,
+                "blurType" : "layer",
+                "bottom" : null,
+                "brightness" : 100,
+                "brightnessEnabled" : 0,
+                "centerAnchorX" : 0.5056338028169014,
+                "centerAnchorY" : 0.5,
+                "clip" : true,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "contrast" : 100,
+                "contrastEnabled" : 0,
+                "duplicatedFrom" : [
+                  "@framer\/edoardo.ios-kit-Z0FnSrSY6-YMFtxfmPn",
+                  "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-YMFtxfmPn"
+                ],
+                "exportOptions" : [
+
+                ],
+                "grayscale" : 0,
+                "grayScaleEnabled" : 0,
+                "height" : 24,
+                "heightType" : 0,
+                "hueRotate" : 0,
+                "hueRotateEnabled" : 0,
+                "id" : "xtDdY4jlh",
+                "invert" : 0,
+                "invertEnabled" : 0,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "xmbm4hAZO",
+                "right" : 98,
+                "rotation" : 0,
+                "saturate" : 100,
+                "saturateEnabled" : 0,
+                "sepia" : 0,
+                "sepiaEnabled" : 0,
+                "shadows" : [
+
+                ],
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "emptyStyle" : [
+                          "LINEHEIGHT:1.2",
+                          "SIZE:20",
+                          "FONT:__SF-UI-Display-Regular__",
+                          "ALIGN:center",
+                          "LETTERSPACING:0.38",
+                          "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 17,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.2"
+                        },
+                        {
+                          "length" : 17,
+                          "offset" : 0,
+                          "style" : "SIZE:20"
+                        },
+                        {
+                          "length" : 17,
+                          "offset" : 0,
+                          "style" : "FONT:__SF-UI-Display-Regular__"
+                        },
+                        {
+                          "length" : 17,
+                          "offset" : 0,
+                          "style" : "ALIGN:center"
+                        },
+                        {
+                          "length" : 17,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0.38"
+                        },
+                        {
+                          "length" : 17,
+                          "offset" : 0,
+                          "style" : "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
+                        }
+                      ],
+                      "key" : "8cbgv",
+                      "text" : "Other Mail Client",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay&quot;, &quot;SFProDisplay-Regular&quot;, &quot;SFUIDisplay-Regular&quot;, &quot;.SFUIDisplay&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {&quot;name&quot;:&quot;iOS blue&quot;} *\/;font-size:20px;letter-spacing:0.38px;line-height:1.2\"><span data-text=\"true\">Other Mail Client<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 153
+                    },
+                    "width" : 0
+                  },
+                  "entityMap" : {
+
+                  }
+                },
+                "textVerticalAlignment" : "top",
+                "top" : null,
+                "visible" : true,
+                "width" : 153,
+                "widthType" : 0
+              }
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "codeOverrideFile" : null,
+            "codeOverrideIdentifier" : null,
+            "codeOverrideName" : null,
+            "constraintsLocked" : true,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "@framer\/edoardo.ios-kit-Z0FnSrSY6-jQ_MuqwkY",
+              "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-jQ_MuqwkY"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(247, 247, 247, 0.82)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 56,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "xmbm4hAZO",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 17,
+            "locked" : false,
+            "name" : "button",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "Xi51AqsTb",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 14,
+            "radiusBottomRight" : 14,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : true,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 17,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 321,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "duplicatedFrom" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255, 255, 255, 0.7)",
+        "fillEnabled" : false,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 190,
+        "heightType" : 0,
+        "id" : "Xi51AqsTb",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 7012,
+        "locked" : false,
+        "name" : "Action Sheet",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "Qjz4fbJHx",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : -249,
+        "visible" : true,
+        "width" : 355,
         "widthType" : 0
       },
       {
@@ -10566,2212 +12766,6 @@
         "top" : 0,
         "visible" : true,
         "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0.062666666666666662,
-        "centerAnchorY" : 0.507496251874063,
-        "children" : [
-          {
-            "__class" : "TextNode",
-            "autoSize" : true,
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : null,
-            "centerAnchorX" : 0.28666666666666668,
-            "centerAnchorY" : 0.15592203898050974,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "r5Kcw7v9j"
-            ],
-            "exportOptions" : [
-
-            ],
-            "height" : 28,
-            "heightType" : 0,
-            "id" : "vZugYOY53",
-            "isTarget" : false,
-            "left" : 24,
-            "locked" : false,
-            "name" : "Sign in to your acco",
-            "opacity" : 0.87,
-            "originalid" : null,
-            "parentid" : "sUTZijs4j",
-            "right" : null,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "COLOR:rgba(0,0,0,1)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 8,
-                      "offset" : 0,
-                      "style" : "SIZE:24"
-                    },
-                    {
-                      "length" : 8,
-                      "offset" : 0,
-                      "style" : "FONT:Roboto-Regular"
-                    },
-                    {
-                      "length" : 8,
-                      "offset" : 0,
-                      "style" : "COLOR:rgba(0,0,0,1)"
-                    }
-                  ],
-                  "key" : "key",
-                  "text" : "Settings",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : 76,
-            "visible" : true,
-            "width" : 89,
-            "widthType" : 0
-          }
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : true,
-        "codeOverrideFile" : ".\/App.tsx",
-        "codeOverrideIdentifier" : ".\/App.tsx_OutofAppTransition",
-        "codeOverrideName" : "OutofAppTransition",
-        "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "ZBCc1onq9"
-        ],
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "var(--token-62d02b63-8da8-4fde-8c93-567876742301, rgb(250, 250, 250)) \/* {\"name\":\"offwhite\"} *\/",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : "iPhone_375_667",
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 667,
-        "heightType" : 0,
-        "id" : "sUTZijs4j",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : 6072,
-        "locked" : false,
-        "name" : null,
-        "onTap" : [
-
-        ],
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "Qjz4fbJHx",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 772,
-        "visible" : true,
-        "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0,
-        "centerAnchorY" : 0,
-        "children" : [
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : 80,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.8500749625187406,
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : null,
-            "codeComponentProps" : {
-              "buttonStyle" : "primary",
-              "isDisabled" : false,
-              "onTap" : [
-                {
-                  "actionIdentifier" : "framer\/useNavigate",
-                  "controls" : {
-                    "animation" : {
-                      "type" : "transition",
-                      "value" : {
-                        "damping" : 60,
-                        "delay" : 0,
-                        "duration" : 0.29999999999999999,
-                        "ease" : [
-                          0.44,
-                          0,
-                          0.56000000000000005,
-                          1
-                        ],
-                        "mass" : 1,
-                        "stiffness" : 500,
-                        "type" : "spring"
-                      }
-                    },
-                    "appearsFrom" : {
-                      "type" : "segmentedenum",
-                      "value" : "bottom"
-                    },
-                    "backdropColor" : {
-                      "type" : "color",
-                      "value" : "rgba(4,4,15,.4)"
-                    },
-                    "target" : {
-                      "type" : "componentinstance",
-                      "value" : "Xi51AqsTb"
-                    },
-                    "transition" : {
-                      "type" : "enum",
-                      "value" : "overlay"
-                    },
-                    "type" : {
-                      "type" : "segmentedenum",
-                      "value" : "next"
-                    }
-                  },
-                  "identifier" : "b6cf2ff4-fafc-49d0-b4b3-e482ad4e7b83"
-                }
-              ],
-              "text" : "Open Email App"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              ".\/code\/Button.tsx_Button"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 40,
-            "heightType" : 0,
-            "id" : "PCsxCR_6F",
-            "intrinsicHeight" : 40,
-            "intrinsicWidth" : 375,
-            "left" : 24,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : 24,
-            "rotation" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 327,
-            "widthType" : 0
-          },
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : 18,
-            "centerAnchorX" : 0.5013333333333333,
-            "centerAnchorY" : 0.94002998500749624,
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : null,
-            "codeComponentProps" : {
-              "buttonStyle" : "tertiary",
-              "isDisabled" : false,
-              "text" : "Resend password reset email"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              ".\/code\/Button.tsx_Button"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 44,
-            "heightType" : 0,
-            "id" : "HiJOmseaC",
-            "intrinsicHeight" : 40,
-            "intrinsicWidth" : 375,
-            "left" : 53,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : 52,
-            "rotation" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 270,
-            "widthType" : 0
-          },
-          {
-            "__class" : "TextNode",
-            "autoSize" : true,
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : null,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.32683658170914542,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "height" : 28,
-            "heightType" : 0,
-            "id" : "rj6oAhRhD",
-            "isTarget" : false,
-            "left" : null,
-            "locked" : false,
-            "name" : "Check Your Email",
-            "opacity" : 0.87,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "right" : null,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "COLOR:rgba(0,0,0,1)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 16,
-                      "offset" : 0,
-                      "style" : "SIZE:24"
-                    },
-                    {
-                      "length" : 16,
-                      "offset" : 0,
-                      "style" : "FONT:Roboto-Regular"
-                    },
-                    {
-                      "length" : 16,
-                      "offset" : 0,
-                      "style" : "COLOR:rgba(0,0,0,1)"
-                    }
-                  ],
-                  "key" : "key",
-                  "text" : "Check Your Email",
-                  "type" : "unstyled"
-                }
-              ],
-              "cached" : {
-                "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(0,0,0,1);font-size:24px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Check Your Email<\/span><\/span><\/div>",
-                "os" : "macos 10_15 framerx",
-                "size" : {
-                  "height" : 28,
-                  "width" : 188
-                },
-                "width" : 0
-              },
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : 204,
-            "visible" : true,
-            "width" : 187,
-            "widthType" : 0
-          },
-          {
-            "__class" : "TextNode",
-            "autoSize" : false,
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : null,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.41379310344827586,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "height" : 40,
-            "heightType" : 0,
-            "id" : "LGDzKPNgC",
-            "isTarget" : false,
-            "left" : 24,
-            "locked" : false,
-            "name" : "Please check your em",
-            "opacity" : 0.87,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "right" : 24,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "COLOR:rgba(0,0,0,1)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 80,
-                      "offset" : 0,
-                      "style" : "SIZE:14"
-                    },
-                    {
-                      "length" : 80,
-                      "offset" : 0,
-                      "style" : "FONT:Roboto-Regular"
-                    },
-                    {
-                      "length" : 80,
-                      "offset" : 0,
-                      "style" : "LINEHEIGHT:1.4285714285714286"
-                    },
-                    {
-                      "length" : 80,
-                      "offset" : 0,
-                      "style" : "ALIGN:center"
-                    },
-                    {
-                      "length" : 80,
-                      "offset" : 0,
-                      "style" : "COLOR:rgba(0,0,0,1)"
-                    }
-                  ],
-                  "key" : "key",
-                  "text" : "Please check your email inbox or spam folder for an email from noreply@lilly.com",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : 256,
-            "visible" : true,
-            "width" : 327,
-            "widthType" : 0
-          },
-          {
-            "__class" : "TextNode",
-            "autoSize" : false,
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : null,
-            "centerAnchorX" : 0.49866666666666665,
-            "centerAnchorY" : 0.49775112443778113,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "height" : 40,
-            "heightType" : 0,
-            "id" : "RF8u8wPok",
-            "isTarget" : false,
-            "left" : 23.5,
-            "locked" : false,
-            "name" : "Click on the link yo",
-            "opacity" : 0.87,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "right" : 24.5,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "COLOR:rgba(0,0,0,1)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 75,
-                      "offset" : 0,
-                      "style" : "SIZE:14"
-                    },
-                    {
-                      "length" : 75,
-                      "offset" : 0,
-                      "style" : "FONT:Roboto-Regular"
-                    },
-                    {
-                      "length" : 75,
-                      "offset" : 0,
-                      "style" : "LINEHEIGHT:1.4285714285714286"
-                    },
-                    {
-                      "length" : 75,
-                      "offset" : 0,
-                      "style" : "ALIGN:center"
-                    },
-                    {
-                      "length" : 75,
-                      "offset" : 0,
-                      "style" : "COLOR:rgba(0,0,0,1)"
-                    }
-                  ],
-                  "key" : "key",
-                  "text" : "Click on the link you were emailed to reset your LillyApp account password.",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : null,
-            "visible" : true,
-            "width" : 327,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : null,
-            "centerAnchorX" : 0.5013333333333333,
-            "centerAnchorY" : 0.19790104947526238,
-            "children" : [
-              {
-                "__class" : "ShapeContainerNode",
-                "autoSize" : true,
-                "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.5,
-                "children" : [
-                  {
-                    "__class" : "PathNode",
-                    "aspectRatio" : null,
-                    "duplicatedFrom" : null,
-                    "exportOptions" : [
-
-                    ],
-                    "fillColor" : "rgba(69,186,127,1)",
-                    "fillEnabled" : true,
-                    "fillImage" : null,
-                    "fillImageOriginalName" : null,
-                    "fillImagePixelHeight" : null,
-                    "fillImagePixelWidth" : null,
-                    "fillImageResize" : "fill",
-                    "fillType" : "color",
-                    "height" : 80,
-                    "id" : "PGvxFwzLc",
-                    "locked" : false,
-                    "name" : "Oval",
-                    "opacity" : 1,
-                    "originalid" : null,
-                    "parentid" : "aXMBqTfSW",
-                    "pathClosed" : true,
-                    "pathSegments" : [
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : -22.091389992,
-                        "handleInY" : 0,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : 22.091389992000003,
-                        "handleOutY" : 0,
-                        "radius" : 0,
-                        "x" : 40,
-                        "y" : 80
-                      },
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : 0,
-                        "handleInY" : 22.091389992000003,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : 0,
-                        "handleOutY" : -22.091389992,
-                        "radius" : 0,
-                        "x" : 80,
-                        "y" : 40
-                      },
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : 22.091389992000003,
-                        "handleInY" : 0,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : -22.091389992,
-                        "handleOutY" : 0,
-                        "radius" : 0,
-                        "x" : 40,
-                        "y" : 0
-                      },
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : 0,
-                        "handleInY" : -22.091389992,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : 0,
-                        "handleOutY" : 22.091389992000003,
-                        "radius" : 0,
-                        "x" : 0,
-                        "y" : 40
-                      }
-                    ],
-                    "rotation" : 0,
-                    "strokeEnabled" : 0,
-                    "visible" : true,
-                    "width" : 80,
-                    "x" : 0,
-                    "y" : 0
-                  }
-                ],
-                "constraintsLocked" : false,
-                "duplicatedFrom" : null,
-                "exportIncludesBackground" : false,
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "#FFF",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 80,
-                "heightType" : 0,
-                "id" : "aXMBqTfSW",
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "Cw0pmVfx8",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "sizeToFit" : true,
-                "top" : null,
-                "visible" : true,
-                "width" : 80,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.49375000000000002,
-                "centerAnchorY" : 0.50624999999999998,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/code\/Icon.tsx_Icon",
-                "codeComponentPackageVersion" : null,
-                "codeComponentProps" : {
-                  "fill" : "hsl(0, 0%, 100%)",
-                  "iconName" : "check"
-                },
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  ".\/code\/Icon.tsx_Icon"
-                ],
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 40,
-                "heightType" : 0,
-                "id" : "qLbjSNffc",
-                "intrinsicHeight" : 24,
-                "intrinsicWidth" : 24,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "Cw0pmVfx8",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : 40,
-                "widthType" : 0
-              }
-            ],
-            "clip" : false,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "framePreset" : null,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 80,
-            "heightType" : 0,
-            "id" : "Cw0pmVfx8",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : null,
-            "locked" : false,
-            "name" : "Icon \/ Contained",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : null,
-            "rotation" : 0,
-            "top" : 92,
-            "visible" : true,
-            "width" : 80,
-            "widthType" : 0
-          },
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : null,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.026986506746626688,
-            "clip" : true,
-            "codeComponentIdentifier" : "@framer\/framer.examples\/.\/StatusBar.tsx_StatusBar",
-            "codeComponentPackageVersion" : "1.74.0",
-            "codeComponentProps" : {
-              "appearance" : "dark",
-              "batteryLevel" : 100,
-              "carrier" : "Framer"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "z6ZazWjTp",
-              "cJFhXCe6k",
-              "xdpD_UiAi",
-              "xAoZQCsCY"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 20,
-            "heightType" : 0,
-            "id" : "bZw9GyRcb",
-            "intrinsicHeight" : 20,
-            "intrinsicWidth" : 200,
-            "left" : 16,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "TMLSdyemw",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : 16,
-            "rotation" : 0,
-            "top" : 8,
-            "visible" : true,
-            "width" : 343,
-            "widthType" : 0
-          }
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : null,
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(250,250,250,1)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 667,
-        "heightType" : 0,
-        "id" : "TMLSdyemw",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : true,
-        "isTarget" : false,
-        "left" : 7002,
-        "locked" : false,
-        "name" : "Check-Email",
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "Qjz4fbJHx",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 13,
-        "visible" : true,
-        "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0,
-        "centerAnchorY" : 0,
-        "children" : [
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : 18,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.94002998500749624,
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : null,
-            "codeComponentProps" : {
-              "buttonStyle" : "primary",
-              "isDisabled" : false,
-              "text" : "Finish"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              ".\/code\/Button.tsx_Button",
-              "HiJOmseaC"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 44,
-            "heightType" : 0,
-            "id" : "cJNFmkAYn",
-            "intrinsicHeight" : 40,
-            "intrinsicWidth" : 375,
-            "left" : 24,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "fur12vfw2",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : 24,
-            "rotation" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 327,
-            "widthType" : 0
-          },
-          {
-            "__class" : "TextNode",
-            "autoSize" : true,
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : 285,
-            "centerAnchorX" : 0.5093333333333333,
-            "centerAnchorY" : 0.55172413793103448,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "rj6oAhRhD"
-            ],
-            "exportOptions" : [
-
-            ],
-            "height" : 28,
-            "heightType" : 0,
-            "id" : "zLygnKMPx",
-            "isTarget" : false,
-            "left" : null,
-            "locked" : false,
-            "name" : "Check Your Email",
-            "opacity" : 0.87,
-            "originalid" : null,
-            "parentid" : "fur12vfw2",
-            "right" : 110,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "COLOR:rgba(0,0,0,1)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 14,
-                      "offset" : 0,
-                      "style" : "SIZE:24"
-                    },
-                    {
-                      "length" : 14,
-                      "offset" : 0,
-                      "style" : "FONT:Roboto-Regular"
-                    },
-                    {
-                      "length" : 14,
-                      "offset" : 0,
-                      "style" : "COLOR:rgba(0,0,0,1)"
-                    }
-                  ],
-                  "key" : "key",
-                  "text" : "Email Verified",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : null,
-            "visible" : true,
-            "width" : 148,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "blur" : 10,
-            "blurType" : "layer",
-            "bottom" : null,
-            "centerAnchorX" : 0.5013333333333333,
-            "centerAnchorY" : 0.42278860569715143,
-            "children" : [
-              {
-                "__class" : "ShapeContainerNode",
-                "autoSize" : true,
-                "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.5,
-                "children" : [
-                  {
-                    "__class" : "PathNode",
-                    "aspectRatio" : null,
-                    "duplicatedFrom" : [
-                      "PGvxFwzLc"
-                    ],
-                    "exportOptions" : [
-
-                    ],
-                    "fillColor" : "rgba(69,186,127,1)",
-                    "fillEnabled" : true,
-                    "fillImage" : null,
-                    "fillImageOriginalName" : null,
-                    "fillImagePixelHeight" : null,
-                    "fillImagePixelWidth" : null,
-                    "fillImageResize" : "fill",
-                    "fillType" : "color",
-                    "height" : 80,
-                    "id" : "hBEsL9tu7",
-                    "locked" : false,
-                    "name" : "Oval",
-                    "opacity" : 1,
-                    "originalid" : null,
-                    "parentid" : "gbBJRuMXH",
-                    "pathClosed" : true,
-                    "pathSegments" : [
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : -22.091389992,
-                        "handleInY" : 0,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : 22.091389992000003,
-                        "handleOutY" : 0,
-                        "radius" : 0,
-                        "x" : 40,
-                        "y" : 80
-                      },
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : 0,
-                        "handleInY" : 22.091389992000003,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : 0,
-                        "handleOutY" : -22.091389992,
-                        "radius" : 0,
-                        "x" : 80,
-                        "y" : 40
-                      },
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : 22.091389992000003,
-                        "handleInY" : 0,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : -22.091389992,
-                        "handleOutY" : 0,
-                        "radius" : 0,
-                        "x" : 40,
-                        "y" : 0
-                      },
-                      {
-                        "__class" : "PathSegment",
-                        "handleInX" : 0,
-                        "handleInY" : -22.091389992,
-                        "handleMirroring" : "symmetric",
-                        "handleOutX" : 0,
-                        "handleOutY" : 22.091389992000003,
-                        "radius" : 0,
-                        "x" : 0,
-                        "y" : 40
-                      }
-                    ],
-                    "rotation" : 0,
-                    "strokeEnabled" : 0,
-                    "visible" : true,
-                    "width" : 80,
-                    "x" : 0,
-                    "y" : 0
-                  }
-                ],
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "aXMBqTfSW"
-                ],
-                "exportIncludesBackground" : false,
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "#FFF",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 80,
-                "heightType" : 0,
-                "id" : "gbBJRuMXH",
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "YZgY8Nk3G",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "sizeToFit" : true,
-                "top" : null,
-                "visible" : true,
-                "width" : 80,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.49375000000000002,
-                "centerAnchorY" : 0.50624999999999998,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/code\/Icon.tsx_Icon",
-                "codeComponentPackageVersion" : null,
-                "codeComponentProps" : {
-                  "fill" : "hsl(0, 0%, 100%)",
-                  "iconName" : "check"
-                },
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  ".\/code\/Icon.tsx_Icon",
-                  "qLbjSNffc"
-                ],
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 40,
-                "heightType" : 0,
-                "id" : "R9CCFcn1R",
-                "intrinsicHeight" : 24,
-                "intrinsicWidth" : 24,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "YZgY8Nk3G",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : 40,
-                "widthType" : 0
-              }
-            ],
-            "clip" : false,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "Cw0pmVfx8"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "framePreset" : null,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 80,
-            "heightType" : 0,
-            "id" : "YZgY8Nk3G",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : null,
-            "locked" : false,
-            "name" : "Icon \/ Contained",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "fur12vfw2",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : null,
-            "rotation" : 0,
-            "top" : 242,
-            "visible" : true,
-            "width" : 80,
-            "widthType" : 0
-          },
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : null,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.026986506746626688,
-            "clip" : true,
-            "codeComponentIdentifier" : "@framer\/framer.examples\/.\/StatusBar.tsx_StatusBar",
-            "codeComponentPackageVersion" : "1.74.0",
-            "codeComponentProps" : {
-              "appearance" : "dark",
-              "batteryLevel" : 100,
-              "carrier" : "Framer"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "z6ZazWjTp",
-              "cJFhXCe6k",
-              "xdpD_UiAi",
-              "xAoZQCsCY",
-              "bZw9GyRcb"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 20,
-            "heightType" : 0,
-            "id" : "toHnmrg0X",
-            "intrinsicHeight" : 20,
-            "intrinsicWidth" : 200,
-            "left" : 16,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "fur12vfw2",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : 16,
-            "rotation" : 0,
-            "top" : 8,
-            "visible" : true,
-            "width" : 343,
-            "widthType" : 0
-          }
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "TMLSdyemw"
-        ],
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(250,250,250,1)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 667,
-        "heightType" : 0,
-        "id" : "fur12vfw2",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : 7962,
-        "locked" : false,
-        "name" : "Email_Verified",
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "Qjz4fbJHx",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 13,
-        "visible" : true,
-        "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0.5,
-        "centerAnchorY" : 0.5,
-        "children" : [
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "blur" : 10,
-            "blurEnabled" : 1,
-            "blurType" : "layer",
-            "bottom" : 0,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.5,
-            "children" : [
-
-            ],
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255, 255, 255, 0.51)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "framePreset" : null,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 176,
-            "heightType" : 0,
-            "id" : "ZOjQ_YnKR",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : 0,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "Xi51AqsTb",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : 0,
-            "rotation" : 0,
-            "top" : 0,
-            "visible" : true,
-            "width" : 355,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "blur" : 12,
-            "blurEnabled" : 0,
-            "blurType" : "layer",
-            "borderBottom" : 1,
-            "borderColor" : "#222",
-            "borderEnabled" : 0,
-            "borderLeft" : 1,
-            "borderPerSide" : false,
-            "borderRight" : 1,
-            "borderStyle" : "solid",
-            "borderTop" : 1,
-            "borderWidth" : 1,
-            "bottom" : 8,
-            "brightness" : 100,
-            "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.81052631578947365,
-            "children" : [
-              {
-                "__class" : "TextNode",
-                "autoSize" : true,
-                "blur" : 12,
-                "blurEnabled" : 0,
-                "blurType" : "layer",
-                "bottom" : null,
-                "brightness" : 100,
-                "brightnessEnabled" : 0,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.5178571428571429,
-                "clip" : true,
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "contrast" : 100,
-                "contrastEnabled" : 0,
-                "duplicatedFrom" : [
-                  "@framer\/edoardo.ios-kit-Z0FnSrSY6-yuVCh_FWL",
-                  "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-yuVCh_FWL"
-                ],
-                "exportOptions" : [
-
-                ],
-                "grayscale" : 0,
-                "grayScaleEnabled" : 0,
-                "height" : 24,
-                "heightType" : 0,
-                "hueRotate" : 0,
-                "hueRotateEnabled" : 0,
-                "id" : "dyEgwcjy0",
-                "invert" : 0,
-                "invertEnabled" : 0,
-                "isTarget" : false,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "siFbL3fPT",
-                "right" : null,
-                "rotation" : 0,
-                "saturate" : 100,
-                "saturateEnabled" : 0,
-                "sepia" : 0,
-                "sepiaEnabled" : 0,
-                "styledText" : {
-                  "__class" : "StyledTextDraft",
-                  "blocks" : [
-                    {
-                      "data" : {
-                        "emptyStyle" : [
-                          "LINEHEIGHT:1.2",
-                          "COLOR:#007AFF",
-                          "SIZE:20",
-                          "FONT:__SF-UI-Display-Semibold__",
-                          "LETTERSPACING:0.75",
-                          "ALIGN:center"
-                        ]
-                      },
-                      "depth" : 0,
-                      "entityRanges" : [
-
-                      ],
-                      "inlineStyleRanges" : [
-                        {
-                          "length" : 6,
-                          "offset" : 0,
-                          "style" : "LINEHEIGHT:1.2"
-                        },
-                        {
-                          "length" : 6,
-                          "offset" : 0,
-                          "style" : "COLOR:#007AFF"
-                        },
-                        {
-                          "length" : 6,
-                          "offset" : 0,
-                          "style" : "SIZE:20"
-                        },
-                        {
-                          "length" : 6,
-                          "offset" : 0,
-                          "style" : "FONT:__SF-UI-Display-Semibold__"
-                        },
-                        {
-                          "length" : 6,
-                          "offset" : 0,
-                          "style" : "LETTERSPACING:0.75"
-                        },
-                        {
-                          "length" : 6,
-                          "offset" : 0,
-                          "style" : "ALIGN:center"
-                        }
-                      ],
-                      "key" : "8cbgv",
-                      "text" : "Cancel",
-                      "type" : "unstyled"
-                    }
-                  ],
-                  "entityMap" : {
-
-                  }
-                },
-                "textVerticalAlignment" : "top",
-                "top" : null,
-                "visible" : true,
-                "width" : 70,
-                "widthType" : 0
-              }
-            ],
-            "clip" : false,
-            "codeOverrideEnabled" : false,
-            "codeOverrideFile" : null,
-            "codeOverrideIdentifier" : null,
-            "codeOverrideName" : null,
-            "constraintsLocked" : false,
-            "contrast" : 100,
-            "contrastEnabled" : 0,
-            "duplicatedFrom" : [
-              "@framer\/edoardo.ios-kit-Z0FnSrSY6-OaKjViqzR",
-              "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-OaKjViqzR"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255, 255, 255, 1.00)",
-            "fillEnabled" : true,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillLinearGradient" : {
-              "__class" : "LinearGradient",
-              "alpha" : 1,
-              "angle" : 180,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ]
-            },
-            "fillType" : "color",
-            "framePreset" : null,
-            "grayscale" : 0,
-            "grayScaleEnabled" : 0,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 56,
-            "heightType" : 0,
-            "hueRotate" : 0,
-            "hueRotateEnabled" : 0,
-            "id" : "siFbL3fPT",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "invert" : 0,
-            "invertEnabled" : 0,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : 17,
-            "locked" : false,
-            "name" : "button",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "Xi51AqsTb",
-            "previewSettings" : null,
-            "radius" : 14,
-            "radiusBottomLeft" : 14,
-            "radiusBottomRight" : 14,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 14,
-            "radiusTopRight" : 14,
-            "replicaInfo" : null,
-            "right" : 17,
-            "rotation" : 0,
-            "saturate" : 100,
-            "saturateEnabled" : 0,
-            "sepia" : 0,
-            "sepiaEnabled" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 321,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "blur" : 12,
-            "blurEnabled" : 0,
-            "blurType" : "layer",
-            "borderBottom" : 1,
-            "borderColor" : "#222",
-            "borderEnabled" : 0,
-            "borderLeft" : 1,
-            "borderPerSide" : false,
-            "borderRight" : 1,
-            "borderStyle" : "solid",
-            "borderTop" : 1,
-            "borderWidth" : 1,
-            "bottom" : 128,
-            "brightness" : 100,
-            "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.17894736842105263,
-            "children" : [
-              {
-                "__class" : "TextNode",
-                "autoSize" : true,
-                "blur" : 12,
-                "blurEnabled" : 0,
-                "blurType" : "layer",
-                "bottom" : null,
-                "brightness" : 100,
-                "brightnessEnabled" : 0,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.5,
-                "clip" : true,
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "contrast" : 100,
-                "contrastEnabled" : 0,
-                "duplicatedFrom" : [
-                  "@framer\/edoardo.ios-kit-Z0FnSrSY6-Xr0xUlWNx",
-                  "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-Xr0xUlWNx"
-                ],
-                "exportOptions" : [
-
-                ],
-                "grayscale" : 0,
-                "grayScaleEnabled" : 0,
-                "height" : 24,
-                "heightType" : 0,
-                "hueRotate" : 0,
-                "hueRotateEnabled" : 0,
-                "id" : "QCkMxSpAm",
-                "invert" : 0,
-                "invertEnabled" : 0,
-                "isTarget" : false,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "EpFwDy6JK",
-                "right" : null,
-                "rotation" : 0,
-                "saturate" : 100,
-                "saturateEnabled" : 0,
-                "sepia" : 0,
-                "sepiaEnabled" : 0,
-                "shadows" : [
-
-                ],
-                "styledText" : {
-                  "__class" : "StyledTextDraft",
-                  "blocks" : [
-                    {
-                      "data" : {
-                        "emptyStyle" : [
-                          "LINEHEIGHT:1.2",
-                          "SIZE:20",
-                          "FONT:__SF-UI-Display-Regular__",
-                          "ALIGN:center",
-                          "LETTERSPACING:0.38",
-                          "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
-                        ]
-                      },
-                      "depth" : 0,
-                      "entityRanges" : [
-
-                      ],
-                      "inlineStyleRanges" : [
-                        {
-                          "length" : 5,
-                          "offset" : 0,
-                          "style" : "LINEHEIGHT:1.2"
-                        },
-                        {
-                          "length" : 5,
-                          "offset" : 0,
-                          "style" : "SIZE:20"
-                        },
-                        {
-                          "length" : 5,
-                          "offset" : 0,
-                          "style" : "FONT:__SF-UI-Display-Regular__"
-                        },
-                        {
-                          "length" : 5,
-                          "offset" : 0,
-                          "style" : "ALIGN:center"
-                        },
-                        {
-                          "length" : 5,
-                          "offset" : 0,
-                          "style" : "LETTERSPACING:0.38"
-                        },
-                        {
-                          "length" : 5,
-                          "offset" : 0,
-                          "style" : "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
-                        }
-                      ],
-                      "key" : "8cbgv",
-                      "text" : "Gmail",
-                      "type" : "unstyled"
-                    }
-                  ],
-                  "entityMap" : {
-
-                  }
-                },
-                "textVerticalAlignment" : "top",
-                "top" : null,
-                "visible" : true,
-                "width" : 54,
-                "widthType" : 0
-              }
-            ],
-            "clip" : true,
-            "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/App.tsx",
-            "codeOverrideIdentifier" : ".\/App.tsx_OutofAppTransition",
-            "codeOverrideName" : "OutofAppTransition",
-            "constraintsLocked" : true,
-            "contrast" : 100,
-            "contrastEnabled" : 0,
-            "duplicatedFrom" : [
-              "@framer\/edoardo.ios-kit-Z0FnSrSY6-P9p7WGYU9",
-              "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-P9p7WGYU9"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(247, 247, 247, 0.82)",
-            "fillEnabled" : true,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillLinearGradient" : {
-              "__class" : "LinearGradient",
-              "alpha" : 1,
-              "angle" : 180,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ]
-            },
-            "fillType" : "color",
-            "framePreset" : null,
-            "grayscale" : 0,
-            "grayScaleEnabled" : 0,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 56,
-            "heightType" : 0,
-            "hueRotate" : 0,
-            "hueRotateEnabled" : 0,
-            "id" : "EpFwDy6JK",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "invert" : 0,
-            "invertEnabled" : 0,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : 17,
-            "locked" : false,
-            "name" : "button",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "Xi51AqsTb",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : true,
-            "radiusTopLeft" : 14,
-            "radiusTopRight" : 14,
-            "replicaInfo" : null,
-            "right" : 17,
-            "rotation" : 0,
-            "saturate" : 100,
-            "saturateEnabled" : 0,
-            "sepia" : 0,
-            "sepiaEnabled" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 321,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "blur" : 12,
-            "blurEnabled" : 0,
-            "blurType" : "layer",
-            "borderBottom" : 1,
-            "borderColor" : "#222",
-            "borderEnabled" : 0,
-            "borderLeft" : 1,
-            "borderPerSide" : false,
-            "borderRight" : 1,
-            "borderStyle" : "solid",
-            "borderTop" : 1,
-            "borderWidth" : 1,
-            "bottom" : 72,
-            "brightness" : 100,
-            "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.47368421052631576,
-            "children" : [
-              {
-                "__class" : "TextNode",
-                "autoSize" : true,
-                "blur" : 12,
-                "blurEnabled" : 0,
-                "blurType" : "layer",
-                "bottom" : null,
-                "brightness" : 100,
-                "brightnessEnabled" : 0,
-                "centerAnchorX" : 0.5056338028169014,
-                "centerAnchorY" : 0.5,
-                "clip" : true,
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "contrast" : 100,
-                "contrastEnabled" : 0,
-                "duplicatedFrom" : [
-                  "@framer\/edoardo.ios-kit-Z0FnSrSY6-YMFtxfmPn",
-                  "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-YMFtxfmPn"
-                ],
-                "exportOptions" : [
-
-                ],
-                "grayscale" : 0,
-                "grayScaleEnabled" : 0,
-                "height" : 24,
-                "heightType" : 0,
-                "hueRotate" : 0,
-                "hueRotateEnabled" : 0,
-                "id" : "xtDdY4jlh",
-                "invert" : 0,
-                "invertEnabled" : 0,
-                "isTarget" : false,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "xmbm4hAZO",
-                "right" : 98,
-                "rotation" : 0,
-                "saturate" : 100,
-                "saturateEnabled" : 0,
-                "sepia" : 0,
-                "sepiaEnabled" : 0,
-                "shadows" : [
-
-                ],
-                "styledText" : {
-                  "__class" : "StyledTextDraft",
-                  "blocks" : [
-                    {
-                      "data" : {
-                        "emptyStyle" : [
-                          "LINEHEIGHT:1.2",
-                          "SIZE:20",
-                          "FONT:__SF-UI-Display-Regular__",
-                          "ALIGN:center",
-                          "LETTERSPACING:0.38",
-                          "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
-                        ]
-                      },
-                      "depth" : 0,
-                      "entityRanges" : [
-
-                      ],
-                      "inlineStyleRanges" : [
-                        {
-                          "length" : 17,
-                          "offset" : 0,
-                          "style" : "LINEHEIGHT:1.2"
-                        },
-                        {
-                          "length" : 17,
-                          "offset" : 0,
-                          "style" : "SIZE:20"
-                        },
-                        {
-                          "length" : 17,
-                          "offset" : 0,
-                          "style" : "FONT:__SF-UI-Display-Regular__"
-                        },
-                        {
-                          "length" : 17,
-                          "offset" : 0,
-                          "style" : "ALIGN:center"
-                        },
-                        {
-                          "length" : 17,
-                          "offset" : 0,
-                          "style" : "LETTERSPACING:0.38"
-                        },
-                        {
-                          "length" : 17,
-                          "offset" : 0,
-                          "style" : "COLOR:var(--token-35b87460-2e70-4460-8636-cbd506e90ba2, rgb(0, 122, 255)) \/* {\"name\":\"iOS blue\"} *\/"
-                        }
-                      ],
-                      "key" : "8cbgv",
-                      "text" : "Other Mail Client",
-                      "type" : "unstyled"
-                    }
-                  ],
-                  "entityMap" : {
-
-                  }
-                },
-                "textVerticalAlignment" : "top",
-                "top" : null,
-                "visible" : true,
-                "width" : 153,
-                "widthType" : 0
-              }
-            ],
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "codeOverrideFile" : null,
-            "codeOverrideIdentifier" : null,
-            "codeOverrideName" : null,
-            "constraintsLocked" : true,
-            "contrast" : 100,
-            "contrastEnabled" : 0,
-            "duplicatedFrom" : [
-              "@framer\/edoardo.ios-kit-Z0FnSrSY6-jQ_MuqwkY",
-              "aP9RsOgVn@framer\/edoardo.ios-kit-Z0FnSrSY6-jQ_MuqwkY"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(247, 247, 247, 0.82)",
-            "fillEnabled" : true,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillLinearGradient" : {
-              "__class" : "LinearGradient",
-              "alpha" : 1,
-              "angle" : 180,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ]
-            },
-            "fillType" : "color",
-            "framePreset" : null,
-            "grayscale" : 0,
-            "grayScaleEnabled" : 0,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 56,
-            "heightType" : 0,
-            "hueRotate" : 0,
-            "hueRotateEnabled" : 0,
-            "id" : "xmbm4hAZO",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "invert" : 0,
-            "invertEnabled" : 0,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : 17,
-            "locked" : false,
-            "name" : "button",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "Xi51AqsTb",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 14,
-            "radiusBottomRight" : 14,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : true,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : 17,
-            "rotation" : 0,
-            "saturate" : 100,
-            "saturateEnabled" : 0,
-            "sepia" : 0,
-            "sepiaEnabled" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 321,
-            "widthType" : 0
-          }
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : null,
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(255, 255, 255, 0.7)",
-        "fillEnabled" : false,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 190,
-        "heightType" : 0,
-        "id" : "Xi51AqsTb",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : 7012,
-        "locked" : false,
-        "name" : "Action Sheet",
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "Qjz4fbJHx",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : -249,
-        "visible" : true,
-        "width" : 355,
         "widthType" : 0
       },
       {

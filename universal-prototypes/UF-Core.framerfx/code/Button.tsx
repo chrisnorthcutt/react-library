@@ -43,7 +43,7 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
         transform: scale(.98);
     }
 
-    &:disabled {
+    &.not-enabled {
         background: ${(props) =>
             props.buttonStyle === "tertiary" ||
             props.buttonStyle === "secondary"
@@ -64,14 +64,13 @@ const StyledButton = styled(motion.button).attrs((props: Props) => {
 
 // Export button component
 export function Button(props: any) {
-    const { text, buttonStyle, isDisabled, onTap, style, ...rest } = props
-    const navigation = useNavigation()
+    const { text, buttonStyle, isEnabled, onTap, style, ...rest } = props
     const labelStyle =
-        !isDisabled && buttonStyle != "primary"
-            ? colors.primary600 : isDisabled && buttonStyle != "primary" ? colors.grey700
-            : colors.white
+        isEnabled && buttonStyle != "primary"
+            ? colors.primary600 : isEnabled && buttonStyle != "primary" ? colors.grey700
+                : colors.white
     return (
-        <StyledButton onTap={onTap} buttonStyle={buttonStyle} style={style} disabled={isDisabled}>
+        <StyledButton onTap={onTap} buttonStyle={buttonStyle} style={style} className={!isEnabled ? "not-enabled" : null}>
             <Text.ButtonText color={labelStyle}>{text}</Text.ButtonText>
         </StyledButton>
     )
@@ -95,10 +94,10 @@ addPropertyControls(Button, {
         options: ["primary", "secondary", "tertiary"],
         optionTitles: ["Primary", "Secondary", "Tertiary"],
     },
-    isDisabled: {
-        title: "Disabled",
+    isEnabled: {
+        title: "Enabled",
         type: ControlType.Boolean,
-        defaultValue: false,
+        defaultValue: true,
     },
     onTap: {
         type: ControlType.EventHandler,
