@@ -22,7 +22,10 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "fill" : "#09F",
+              "hasIcon" : false,
+              "iconName" : "check",
+              "isEnabled" : true,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -78,7 +81,10 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "secondary",
-              "isDisabled" : false,
+              "fill" : "#09F",
+              "hasIcon" : false,
+              "iconName" : "check",
+              "isEnabled" : true,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -135,7 +141,10 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "fill" : "#09F",
+              "hasIcon" : false,
+              "iconName" : "check",
+              "isEnabled" : true,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -193,7 +202,10 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "tertiary",
-              "isDisabled" : false,
+              "fill" : "#09F",
+              "hasIcon" : false,
+              "iconName" : "check",
+              "isEnabled" : true,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -252,7 +264,10 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "secondary",
-              "isDisabled" : false,
+              "fill" : "#09F",
+              "hasIcon" : false,
+              "iconName" : "check",
+              "isEnabled" : true,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -328,6 +343,7 @@
                   "enabled" : true,
                   "errorMessage" : "You didn't meet the requirements",
                   "focused" : false,
+                  "hasError" : false,
                   "label" : "Password",
                   "type" : "password"
                 },
@@ -391,6 +407,7 @@
                   "enabled" : true,
                   "errorMessage" : "You didn't meet the requirements",
                   "focused" : false,
+                  "hasError" : false,
                   "label" : "Password",
                   "type" : "password"
                 },
@@ -455,6 +472,7 @@
                   "enabled" : true,
                   "errorMessage" : "You didn't meet the requirements",
                   "focused" : false,
+                  "hasError" : false,
                   "label" : "Email",
                   "type" : "email"
                 },

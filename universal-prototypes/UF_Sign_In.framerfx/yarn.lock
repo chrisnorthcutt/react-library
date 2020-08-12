@@ -31,6 +31,11 @@
   resolved "https://registry.framer.com/@framer/graz.wireframe-kit/-/@framer/graz.wireframe-kit-1.0.0.tgz#50c186fb6590f3c99fcbbd47a75a176265e9051f"
   integrity sha1-UMGG+2WQ88mfy71Hp1oXYmXpBR8=
 
+"@framer/hjotar.browser-x-kit@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.framer.com/@framer/hjotar.browser-x-kit/-/@framer/hjotar.browser-x-kit-1.2.0.tgz#5789b25836a871ff31b9a448ed8985b5b52eb30b"
+  integrity sha512-GuIPoiQ3cApgzWJhn2WtHWiIpC8NuqtziBnTrJ/3Ax1dprJA1MJ4AyZHPCWGD8z92eQ2KFQHENxSE86BUVw6gQ==
+
 "@framer/koenbok.tab-bar@^1.3.0":
   version "1.3.0"
   resolved "https://registry.framer.com/@framer/koenbok.tab-bar/-/@framer/koenbok.tab-bar-1.3.0.tgz#f681491e0f62d7b198aa364c10a3286f016b0d07"

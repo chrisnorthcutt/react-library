@@ -17,6 +17,7 @@
 		"@framer/framer.examples": "^1.7.0",
 		"@framer/framer.lottie": "^1.1.0",
 		"@framer/graz.wireframe-kit": "^1.0.0",
+		"@framer/hjotar.browser-x-kit": "^1.2.0",
 		"@framer/koenbok.tab-bar": "^1.3.0",
 		"@framer/steveruizok.framespy": "^1.4.0"
 	}
