@@ -1,9 +1,10 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { colors, spacing } from "./Variables";
 import styled from "styled-components";
 import { motion, Frame, addPropertyControls, ControlType } from "framer";
 import * as Type from "./Typography";
+import { Icon } from "./Icon";
 
 interface Props {
 	enabled: Boolean;
@@ -61,15 +62,38 @@ export function DateField(props: any) {
 		enabled,
 		focused,
 		empty,
+		hasError,
 		defaultValue = "",
 		assistMessage = "",
 		errorMessage = "This date isn't valid",
 		color,
 	} = props;
+	//********** Set Variables **********//
+
+	let showIcon = false;
+	let activeColor, message;
+	const inputRef = useRef();
+	const id = Math.floor(Math.random() * 8888);
+
+	//********** Set States **********//
+
 	const [isFocused, setFocused] = useState(focused);
 	const [value, setValue] = useState(defaultValue);
-	const [isValid, setValid] = useState(false);
-	const id = Math.floor(Math.random() * 8888);
+	const [isValid, setValid] = useState(hasError);
+
+	//********** Validation Checks **********//
+
+	// Check if email is valid
+	function emailIsValid(email: string) {
+			return /\S+@\S+\.\S+/.test(email);
+	}
+
+	// Check if password is valid
+	function passwordIsValid(password: string) {
+			return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(
+					password
+			);
+	}
 
 	function isValidDate(date: string) {
 		return new Date(date).toString() !== "Invalid Date";
@@ -93,20 +117,25 @@ export function DateField(props: any) {
 		setFocused(false);
 	}
 
-	let activeColor;
-	let message;
 	if (isFocused) {
 		activeColor = color;
 		message = assistMessage;
-	} else if (!isValid && value.length > 0 && !isFocused) {
-		activeColor = colors.danger;
-		message = errorMessage;
-	} else if (!isFocused && !empty || defaultValue != "") {
-		activeColor = colors.grey400;
-		message = assistMessage;
+	} else if ((!isValid && value.length > 0 && !isFocused) || hasError) {
+			if (errorMessage === "") {
+					activeColor = colors.grey400;
+					message = assistMessage;
+			} else {
+					activeColor = colors.danger;
+					message = errorMessage;
+					showIcon = !showIcon;
+			}
+	} else if ((!isFocused && !empty) || defaultValue != "") {
+			activeColor = colors.grey400;
+			message = assistMessage;
 	} else if (empty && !isFocused) {
-		activeColor = colors.danger;
-		message = label.replace(/[^a-zA-Z ]/g, "") + " cannot be empty";
+			showIcon = !showIcon;
+			activeColor = colors.danger;
+			message = label.replace(/[^a-zA-Z ]/g, "") + " cannot be empty";
 	}
 
 	return (
@@ -135,6 +164,16 @@ export function DateField(props: any) {
 			>
 				{label}
 			</motion.label>
+			<Icon
+                iconName={"warning"}
+                fill={colors.danger}
+                style={{
+                    position: "absolute",
+                    right: "12px",
+                    top: "12px",
+                    display: showIcon ? "initial" : "none",
+                }}
+            />
 			<motion.input
 				id={"renene" + id}
 				className="input"

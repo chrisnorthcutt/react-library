@@ -121,16 +121,16 @@ export function funSignIn(): Override {
 
 export function signIn(): Override {
     const navigation = useNavigation()
-    const enabledVal =
-        data.enteredFirstName.length > 0 &&
+    const disabledVal =
+        !(data.enteredFirstName.length > 0 &&
         data.enteredLastName.length > 0 &&
         data.enteredEmail.length > 0 &&
-        data.enteredDOB.length > 0
+        data.enteredDOB.length > 0)
     return {
-        isEnabled: enabledVal,
+        isDisabled: disabledVal,
         onTap() {
             data.signInAttempted = true
-            if (enabledVal) {
+            if (!disabledVal) {
                 navigation.push(<SetPassword />)
             }
         },
@@ -213,7 +213,7 @@ export function PasswordsMatch(props): Override {
 
 export function ResetPassword(): Override {
     return {
-        isEnabled: allTrue(meetsPasswordRequirements),
+        isDisabled: !allTrue(meetsPasswordRequirements),
     }
 }
 

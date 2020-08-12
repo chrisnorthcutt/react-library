@@ -25,7 +25,7 @@
               "fill" : "#09F",
               "hasIcon" : false,
               "iconName" : "check",
-              "isEnabled" : true,
+              "isDisabled" : false,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -84,7 +84,7 @@
               "fill" : "#09F",
               "hasIcon" : false,
               "iconName" : "check",
-              "isEnabled" : true,
+              "isDisabled" : false,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -144,7 +144,7 @@
               "fill" : "#09F",
               "hasIcon" : false,
               "iconName" : "check",
-              "isEnabled" : true,
+              "isDisabled" : false,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -205,7 +205,7 @@
               "fill" : "#09F",
               "hasIcon" : false,
               "iconName" : "check",
-              "isEnabled" : true,
+              "isDisabled" : false,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,
@@ -267,7 +267,7 @@
               "fill" : "#09F",
               "hasIcon" : false,
               "iconName" : "check",
-              "isEnabled" : true,
+              "isDisabled" : false,
               "text" : "Heeey"
             },
             "codeOverrideEnabled" : false,

@@ -4659,73 +4659,6 @@
             "widthType" : 0
           },
           {
-<<<<<<< HEAD
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : 24,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.93403298350824593,
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : "1.74.0",
-            "codeComponentProps" : {
-              "buttonStyle" : "primary",
-              "isEnabled" : true,
-              "onTap" : [
-                {
-                  "actionIdentifier" : "framer\/useNavigate",
-                  "controls" : {
-                    "animation" : {
-                      "type" : "transition",
-                      "value" : {
-                        "damping" : 60,
-                        "delay" : 0,
-                        "duration" : 0.29999999999999999,
-                        "ease" : [
-                          0.44,
-                          0,
-                          0.56000000000000005,
-                          1
-                        ],
-                        "mass" : 1,
-                        "stiffness" : 500,
-                        "type" : "spring"
-                      }
-                    },
-                    "appearsFrom" : {
-                      "type" : "segmentedenum",
-                      "value" : "right"
-                    },
-                    "backdropColor" : {
-                      "type" : "color",
-                      "value" : "rgba(4,4,15,.4)"
-                    },
-                    "target" : {
-                      "type" : "componentinstance",
-                      "value" : "HSxsnOS5q"
-                    },
-                    "transition" : {
-                      "type" : "enum",
-                      "value" : "push"
-                    },
-                    "type" : {
-                      "type" : "segmentedenum",
-                      "value" : "next"
-                    }
-                  },
-                  "identifier" : "11bd21cb-821f-4cca-aae2-4ff845018cca"
-                }
-              ],
-              "text" : "Reset Your Password"
-            },
-            "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/App.tsx",
-            "codeOverrideIdentifier" : ".\/App.tsx_ResetPassword",
-            "codeOverrideName" : "ResetPassword",
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "YQ_6s5la8"
-=======
             "__class" : "ShapeContainerNode",
             "autoSize" : true,
             "bottom" : null,
@@ -4868,7 +4801,6 @@
             "duplicatedFrom" : [
               ".\/code\/Icon.tsx_Icon",
               "Qo3Qh6I_5"
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
             ],
             "exportOptions" : [
 
@@ -9351,55 +9283,6 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-<<<<<<< HEAD
-              "isEnabled" : true,
-              "onTap" : [
-                {
-                  "actionIdentifier" : "framer\/useNavigate",
-                  "controls" : {
-                    "animation" : {
-                      "type" : "transition",
-                      "value" : {
-                        "damping" : 60,
-                        "delay" : 0,
-                        "duration" : 0.29999999999999999,
-                        "ease" : [
-                          0.44,
-                          0,
-                          0.56000000000000005,
-                          1
-                        ],
-                        "mass" : 1,
-                        "stiffness" : 500,
-                        "type" : "spring"
-                      }
-                    },
-                    "appearsFrom" : {
-                      "type" : "segmentedenum",
-                      "value" : "right"
-                    },
-                    "backdropColor" : {
-                      "type" : "color",
-                      "value" : "rgba(4,4,15,.4)"
-                    },
-                    "target" : {
-                      "type" : "componentinstance",
-                      "value" : "s85MmptS4"
-                    },
-                    "transition" : {
-                      "type" : "enum",
-                      "value" : "push"
-                    },
-                    "type" : {
-                      "type" : "segmentedenum",
-                      "value" : "next"
-                    }
-                  },
-                  "identifier" : "887a7f86-81bd-41cc-9fa4-08c9911be39b"
-                }
-              ],
-              "text" : "Reset Your Password"
-=======
               "isDisabled" : false,
               "text" : "Let's Get Started!"
             },
@@ -9458,7 +9341,6 @@
               "battery" : 100,
               "carrier" : "LillApp",
               "signal" : 4
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -9816,11 +9698,6 @@
             "codeComponentIdentifier" : ".\/code\/TextField.tsx_TextField",
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
-<<<<<<< HEAD
-              "buttonStyle" : "primary",
-              "isEnabled" : true,
-              "text" : "Send"
-=======
               "assistMessage" : "",
               "color" : "#00384d",
               "currentValue" : "",
@@ -9831,7 +9708,6 @@
               "focused" : false,
               "label" : "Email Address",
               "type" : "email"
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
             },
             "codeOverrideEnabled" : true,
             "codeOverrideFile" : ".\/App.tsx",
@@ -10273,14 +10149,6 @@
             "centerAnchorX" : 0.5,
             "centerAnchorY" : 0.18890554722638681,
             "clip" : true,
-<<<<<<< HEAD
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : null,
-            "codeComponentProps" : {
-              "buttonStyle" : "tertiary",
-              "isEnabled" : true,
-              "onTap" : [
-=======
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "duplicatedFrom" : null,
@@ -10302,7 +10170,6 @@
             "styledText" : {
               "__class" : "StyledTextDraft",
               "blocks" : [
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
                 {
                   "data" : {
                     "emptyStyle" : [
@@ -10620,98 +10487,6 @@
         "duplicatedFrom" : null,
         "exportOptions" : [
 
-<<<<<<< HEAD
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 66,
-            "heightType" : 0,
-            "id" : "PUrsrsSiD",
-            "intrinsicHeight" : 70,
-            "intrinsicWidth" : 375,
-            "left" : 24,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "KrVuAwtIo",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : 24,
-            "rotation" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 327,
-            "widthType" : 0
-          },
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : 80,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.8500749625187406,
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : null,
-            "codeComponentProps" : {
-              "buttonStyle" : "primary",
-              "isEnabled" : true,
-              "onTap" : [
-                {
-                  "actionIdentifier" : "framer\/useNavigate",
-                  "controls" : {
-                    "animation" : {
-                      "type" : "transition",
-                      "value" : {
-                        "damping" : 60,
-                        "delay" : 0,
-                        "duration" : 0.29999999999999999,
-                        "ease" : [
-                          0.44,
-                          0,
-                          0.56000000000000005,
-                          1
-                        ],
-                        "mass" : 1,
-                        "stiffness" : 500,
-                        "type" : "spring"
-                      }
-                    },
-                    "appearsFrom" : {
-                      "type" : "segmentedenum",
-                      "value" : "right"
-                    },
-                    "backdropColor" : {
-                      "type" : "color",
-                      "value" : "rgba(4,4,15,.4)"
-                    },
-                    "target" : {
-                      "type" : "componentinstance",
-                      "value" : "lUjIsQUAr"
-                    },
-                    "transition" : {
-                      "type" : "enum",
-                      "value" : "push"
-                    },
-                    "type" : {
-                      "type" : "segmentedenum",
-                      "value" : "next"
-                    }
-                  },
-                  "identifier" : "f8b02c1e-1dc0-4683-a297-6000af29ef52"
-=======
         ],
         "height" : 72,
         "heightType" : 0,
@@ -10753,7 +10528,6 @@
                   "length" : 31,
                   "offset" : 0,
                   "style" : "COLOR:rgba(255, 255, 255, 0.49)"
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
                 }
               ],
               "key" : "key",
@@ -11109,14 +10883,9 @@
             "codeComponentIdentifier" : ".\/code\/ListItem.tsx_ListItem",
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
-<<<<<<< HEAD
-              "buttonStyle" : "tertiary",
-              "isEnabled" : true,
-=======
               "hasIcon" : false,
               "icon" : "arrow-left",
               "label" : "Error Scenarios",
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -13361,39 +13130,8 @@
                         "framePreset" : null,
                         "guidesX" : [
 
-<<<<<<< HEAD
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : 207,
-            "visible" : true,
-            "width" : 167,
-            "widthType" : 0
-          },
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : null,
-            "bottom" : 245,
-            "centerAnchorX" : 0.5,
-            "centerAnchorY" : 0.60269865067466266,
-            "clip" : true,
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : "1.74.0",
-            "codeComponentProps" : {
-              "buttonStyle" : "primary",
-              "isEnabled" : true,
-              "text" : "Let's Get Started!"
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "t2FdhCOXO"
-            ],
-            "exportOptions" : [
-=======
                         ],
                         "guidesY" : [
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
 
                         ],
                         "height" : 10,
@@ -13944,66 +13682,6 @@
                         ],
                         "exportOptions" : [
 
-<<<<<<< HEAD
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 70,
-                "heightType" : 0,
-                "id" : "Wh4qKkSxl",
-                "intrinsicHeight" : 70,
-                "intrinsicWidth" : 375,
-                "left" : 24,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "pMAXcz20Y",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : 0,
-                "rotation" : 0,
-                "top" : 274,
-                "visible" : true,
-                "width" : 327,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : 179,
-                "centerAnchorX" : 0.53418803418803418,
-                "centerAnchorY" : 0.70164917541229388,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-                "codeComponentPackageVersion" : null,
-                "codeComponentProps" : {
-                  "buttonStyle" : "primary",
-                  "isEnabled" : true,
-                  "text" : "Sign In"
-                },
-                "codeOverrideEnabled" : true,
-                "codeOverrideFile" : ".\/App.tsx",
-                "codeOverrideIdentifier" : ".\/App.tsx_signIn",
-                "codeOverrideName" : "signIn",
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  ".\/code\/Button.tsx_Button"
-                ],
-                "exportOptions" : [
-=======
                         ],
                         "height" : 14,
                         "heightType" : 0,
@@ -14032,7 +13710,6 @@
                               },
                               "depth" : 0,
                               "entityRanges" : [
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
 
                               ],
                               "inlineStyleRanges" : [
@@ -14226,16 +13903,6 @@
               }
             ],
             "clip" : true,
-<<<<<<< HEAD
-            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
-            "codeComponentPackageVersion" : null,
-            "codeComponentProps" : {
-              "buttonStyle" : "tertiary",
-              "isEnabled" : true,
-              "text" : "Register"
-            },
-=======
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "duplicatedFrom" : null,
@@ -16389,11 +16056,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-<<<<<<< HEAD
-                "parentid" : "eM_2HA86C",
-=======
                 "parentid" : "t7PmtftmB",
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -16497,15 +16160,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-<<<<<<< HEAD
-                "parentid" : "eM_2HA86C",
-=======
-                "parentid" : "t7PmtftmB",
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
                 "pathClosed" : true,
-                "pathSegments" : [
-                  {
-                    "__class" : "PathSegment",
                     "handleInX" : 0,
                     "handleInY" : 0,
                     "handleMirroring" : "straight",
@@ -16579,11 +16234,7 @@
             "fillType" : "color",
             "height" : 30,
             "heightType" : 0,
-<<<<<<< HEAD
-            "id" : "eM_2HA86C",
-=======
             "id" : "t7PmtftmB",
->>>>>>> 24274ab885fea53fb51348cd4b2a54527964d157
             "left" : 0,
             "locked" : false,
             "name" : null,
