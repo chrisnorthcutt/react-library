@@ -213,7 +213,7 @@ export function PasswordsMatch(props): Override {
 
 export function ResetPassword(): Override {
     return {
-        isDisabled: !allTrue(meetsPasswordRequirements),
+        isEnabled: allTrue(meetsPasswordRequirements),
     }
 }
 

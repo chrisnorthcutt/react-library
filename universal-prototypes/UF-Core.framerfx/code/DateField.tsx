@@ -60,6 +60,7 @@ export function DateField(props: any) {
 		label,
 		enabled,
 		focused,
+		empty,
 		defaultValue = "",
 		assistMessage = "",
 		errorMessage = "This date isn't valid",
@@ -97,12 +98,15 @@ export function DateField(props: any) {
 	if (isFocused) {
 		activeColor = color;
 		message = assistMessage;
-	} else if (!isValid && value.length > 0) {
+	} else if (!isValid && value.length > 0 && !isFocused) {
 		activeColor = colors.danger;
 		message = errorMessage;
-	} else {
+	} else if (!isFocused && !empty || defaultValue != "") {
 		activeColor = colors.grey400;
 		message = assistMessage;
+	} else if (empty && !isFocused) {
+		activeColor = colors.danger;
+		message = label.replace(/[^a-zA-Z ]/g, "") + " cannot be empty";
 	}
 
 	return (
@@ -159,7 +163,7 @@ export function DateField(props: any) {
 				height={16}
 				background={"transparent"}
 			>
-				<Type.Caption>{message}</Type.Caption>
+				<Type.Caption color={activeColor}>{message}</Type.Caption>
 			</Frame>
 		</StyledField>
 	);

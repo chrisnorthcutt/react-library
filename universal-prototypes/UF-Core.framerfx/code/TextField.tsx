@@ -140,7 +140,7 @@ export function TextField(props: any) {
 		message = assistMessage;
 	} else if (empty && !isFocused) {
 		activeColor = colors.danger;
-		message = label + " cannot be empty";
+		message = label.replace(/[^a-zA-Z ]/g, "") + " cannot be empty";
 	}
 
 	const togglePassword = () => {

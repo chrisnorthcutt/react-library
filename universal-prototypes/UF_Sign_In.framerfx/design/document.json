@@ -107,7 +107,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -208,7 +208,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "tertiary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "text" : "Resend password reset email"
             },
             "codeOverrideEnabled" : false,
@@ -2461,7 +2461,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -4624,7 +4624,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : true,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -6740,7 +6740,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -6969,7 +6969,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "text" : "Send"
             },
             "codeOverrideEnabled" : true,
@@ -7513,7 +7513,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "tertiary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -7905,7 +7905,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : true,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -8412,7 +8412,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "tertiary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "onTap" : [
                 {
                   "actionIdentifier" : "framer\/useNavigate",
@@ -10765,7 +10765,7 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "text" : "Let's Get Started!"
             },
             "codeOverrideEnabled" : false,
@@ -11330,7 +11330,7 @@
                 "codeComponentPackageVersion" : null,
                 "codeComponentProps" : {
                   "buttonStyle" : "primary",
-                  "isDisabled" : false,
+                  "isEnabled" : true,
                   "text" : "Sign In"
                 },
                 "codeOverrideEnabled" : true,
@@ -11866,7 +11866,7 @@
             "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
               "buttonStyle" : "tertiary",
-              "isDisabled" : false,
+              "isEnabled" : true,
               "text" : "Register"
             },
             "codeOverrideEnabled" : false,
@@ -14272,7 +14272,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-                "parentid" : "gQr4pEXKp",
+                "parentid" : "eM_2HA86C",
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -14376,7 +14376,7 @@
                 "name" : null,
                 "opacity" : 1,
                 "originalid" : null,
-                "parentid" : "gQr4pEXKp",
+                "parentid" : "eM_2HA86C",
                 "pathClosed" : true,
                 "pathSegments" : [
                   {
@@ -14454,7 +14454,7 @@
             "fillType" : "color",
             "height" : 30,
             "heightType" : 0,
-            "id" : "gQr4pEXKp",
+            "id" : "eM_2HA86C",
             "left" : 0,
             "locked" : false,
             "name" : null,
