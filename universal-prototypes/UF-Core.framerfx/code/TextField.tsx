@@ -25,6 +25,26 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
     opacity: ${(props) => (props.enabled ? 1 : 0.5)};
     margin-bottom: 1.5rem;
 
+    > .input {
+        width: 100%;
+        padding: 0 ${spacing["2x"]};
+        height: ${spacing["6x"]};
+        padding-top: 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid ${colors.grey400};
+        outline: none;
+        background: ${(props) =>
+            props.enabled ? colors.white : colors.grey200};
+
+        &:focus {
+            border-color: ${colors.primary600};
+        }
+
+        &:invalid {
+            border-color: ${colors.danger}
+        }
+    }
     > .label {
         position: absolute;
         left: ${spacing["2x"]};
@@ -33,21 +53,11 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
         font-size: 16px;
         line-height: 19px;
     }
-    > .input {
-        width: 100%;
-        padding: 0 ${spacing["2x"]};
-        height: ${spacing["6x"]};
-        padding-top: 12px;
-        font-size: 14px;
-        border-radius: 4px;
-        border-style: solid;
-        outline: none;
-        background: ${(props) =>
-            props.enabled ? colors.white : colors.grey200};
-
-        &:invalid {
-            border-color: ${colors.danger};
-        }
+    > .input:focus:invalid + .label, > .input:focus:invalid ~ .assistive {
+        color: ${colors.danger};
+    }
+    > .input:focus + .label, > .input:focus ~ .assistive {
+        color: ${colors.primary600};
     }
     > .assistive {
         margin-top: 0px;
@@ -58,29 +68,51 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
 `;
 
 export function TextField(props: any) {
+    //********** Set Props **********//
+
     const {
         label,
         enabled,
         focused,
         type,
         empty,
+        hasError,
         defaultValue = "",
         assistMessage = "Password must contain at least one letter, at least one number, and be longer than six charaters.",
         errorMessage = "You have included non-alphabetical characters",
         color,
         ...rest
     } = props;
-    const [isFocused, setFocused] = useState(focused);
 
-    const [value, setValue] = useState(defaultValue);
-    const [isValid, setValid] = useState(false);
+    //********** Set Variables **********//
 
-    const [showPassword, setShowPassword] = useState(false);
-    const inputRef = useRef();
-
-    const id = Math.floor(Math.random() * 8888);
     let showIcon = false;
     let activeColor, message;
+    const inputRef = useRef();
+    const id = Math.floor(Math.random() * 8888);
+
+    //********** Set States **********//
+
+    const [isFocused, setFocused] = useState(focused);
+    const [value, setValue] = useState(defaultValue);
+    const [isValid, setValid] = useState(hasError);
+    const [showPassword, setShowPassword] = useState(false);
+
+    //********** Validation Checks **********//
+
+    // Check if email is valid
+    function emailIsValid(email: string) {
+        return /\S+@\S+\.\S+/.test(email);
+    }
+
+    // Check if password is valid
+    function passwordIsValid(password: string) {
+        return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(
+            password
+        );
+    }
+
+    //********** Input Events **********//
 
     function onChange(e: any) {
         const value = e.target.value;
@@ -94,8 +126,17 @@ export function TextField(props: any) {
         setValue(value);
         if (type === "email") {
             setValid(emailIsValid(value));
-        } else if (type === "text") setValid(textIsValid(value));
-        else if (type === "password") setValid(passwordIsValid(value));
+        } else if (type === "password") setValid(passwordIsValid(value));
+    }
+
+    function toggleFocus() {
+        setFocused(!isFocused);
+    }
+
+    function togglePassword() {
+        setShowPassword(!showPassword);
+        //@ts-ignore
+        inputRef.current.focus();
     }
 
     useEffect(() => {
@@ -107,28 +148,11 @@ export function TextField(props: any) {
         }
     }, [defaultValue]);
 
-    function onFocus() {
-        setFocused(true);
-    }
-    function onBlur() {
-        setFocused(false);
-    }
-    function emailIsValid(email: string) {
-        return /\S+@\S+\.\S+/.test(email);
-    }
-    function textIsValid(text: string) {
-        return /^[a-zA-Z-. ]*$/.test(text);
-    }
-    function passwordIsValid(password: string) {
-        return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(
-            password
-        );
-    }
+    //********** Check Input State **********//
 
     if (isFocused) {
         activeColor = color;
-        message = assistMessage;
-    } else if (!isValid && value.length > 0 && !isFocused) {
+    } else if ((!isValid && value.length > 0 && !isFocused) || hasError) {
         if (errorMessage === "") {
             activeColor = colors.grey400;
             message = assistMessage;
@@ -141,19 +165,26 @@ export function TextField(props: any) {
         activeColor = colors.grey400;
         message = assistMessage;
     } else if (empty && !isFocused) {
-		showIcon = !showIcon;
+        showIcon = !showIcon;
         activeColor = colors.danger;
         message = label + " cannot be empty";
     }
 
-    const togglePassword = () => {
-        setShowPassword(!showPassword);
-        //@ts-ignore
-        inputRef.current.focus();
-    };
-
     return (
         <StyledField enabled={enabled}>
+            <input
+                id={"renene" + id}
+                ref={inputRef}
+                className="input"
+                type={showPassword ? "text" : type}
+                disabled={!enabled}
+                defaultValue={defaultValue}
+                onChange={onChange}
+                onFocus={toggleFocus}
+                onBlur={toggleFocus}
+                onInvalid={() => setValid(false)}
+                style={{borderColor: activeColor}}
+            />
             <motion.label
                 className="label"
                 htmlFor={"renene" + id}
@@ -187,44 +218,24 @@ export function TextField(props: any) {
             >
                 {label}
             </motion.label>
-
-            <motion.input
-                id={"renene" + id}
-                ref={inputRef}
-                className="input"
-                type={showPassword ? "text" : type}
-                disabled={!enabled}
-                defaultValue={defaultValue}
-                onChange={onChange}
-                onFocus={onFocus}
-                onBlur={onBlur}
-                onInvalid={() => setValid(false)}
-                initial={{
-                    borderWidth: 1,
-                    borderColor: activeColor,
-                }}
-                animate={{
-                    borderWidth:
-                        isFocused || (!isValid && value.length > 0) ? 1 : 1,
-                    borderColor: activeColor,
-                }}
-                transition={{
-                    duration: 0.15,
-                }}
-            />
-			<Icon iconName={"warning"} fill={colors.danger} style={{
+            <Icon
+                iconName={"warning"}
+                fill={colors.danger}
+                style={{
                     position: "absolute",
                     right: "12px",
                     top: "12px",
                     display: showIcon ? "initial" : "none",
-                }}/>
+                }}
+            />
             <Icon
                 onTap={togglePassword}
                 style={{
                     position: "absolute",
                     right: "12px",
                     top: "12px",
-                    display: type === "password" && !showIcon ? "initial" : "none",
+                    display:
+                        type === "password" && !showIcon ? "initial" : "none",
                 }}
                 iconName={!showPassword ? "show" : "hide"}
                 fill={colors.grey700}
@@ -250,6 +261,7 @@ TextField.defaultProps = {
     color: colors.primary900,
     width: 375,
     height: 70,
+    hasError: false,
 };
 
 addPropertyControls(TextField, {
@@ -293,6 +305,14 @@ addPropertyControls(TextField, {
         title: "Focused",
         type: ControlType.Boolean,
         defaultValue: false,
+    },
+    hasError: {
+        title: "Error",
+        type: ControlType.Boolean,
+        defaultValue: false,
+        // hidden() {
+        //     return true;
+        // },
     },
     empty: {
         title: "Empty",

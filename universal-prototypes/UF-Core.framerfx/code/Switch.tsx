@@ -24,7 +24,7 @@ const StyledSwitch = styled(motion.div).attrs((props: Props) => {
   align-items: center;
 
   > .label {
-    color: ${(props) => props.color};
+    color: ${colors.grey900};
   }
 
   .container {
@@ -62,15 +62,15 @@ export function Switch(props: any) {
 
   return (
     <StyledSwitch onTap={handleOnTap} enabled={enabled} color={color}>
-      <Type.Body2 className="label">{label}</Type.Body2>
+      <Type.Body2 color={colors.grey900} className="label">{label}</Type.Body2>
       <div className="container">
         <motion.div
           className="bg"
           initial={{
-            background: isOn ? color : colors.grey400,
+            background: isOn ? colors.success : colors.grey400,
           }}
           animate={{
-            background: isOn ? color : colors.grey400,
+            background: isOn ? colors.success : colors.grey400,
           }}
         >
           <motion.div
