@@ -1,0 +1,345 @@
+[2020-08-13 10:45:37.8120] - INFO - Reading from /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx (origin); preserving existing contents of project folder: true
+[2020-08-13 10:45:37.8170] - INFO - Done reading
+[2020-08-13 10:45:37.8180] - INFO - Marking changed: false
+[2020-08-13 10:45:38.2310] - INFO - Proxy Config: http: http://proxy.gtm.lilly.com:9000; https: http://proxy.gtm.lilly.com:9000; exceptions: *.local, 169.254/16; CA Chain: Amazon → Amazon Root CA 1 [TRUSTED]
+[2020-08-13 10:45:39.2200] - INFO - Project server PID: 26604
+[2020-08-13 10:45:39.8040] - ERROR - Thu, 13 Aug 2020 14:45:39 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 10:45:39.8100] - INFO - GET 404 /node_modules/framer/build/framer.debug.js 180 B (2ms)
+[2020-08-13 10:45:39.8220] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 10:45:39.8220] - ERROR -   <rejected39.8220] - ERROR -   <rejectedtion.framerfx (origin); preserving existing contents of project folder: true
+[2020-08-13 10:45:37.8170] - INFO - Done reading
+[2020-08-13 10:45:37.8180] - INFO - Marking changed: false
+[2020-08-13 10:45:38.2310] - INFO - Proxy Config: http: http://proxy.gtm.lilly.com:9000; https: http://proxy.gtm.lilly.com:9000; exceptions: *.local, 169.254/16; CA Chain: Amazon → Amazon Root CA 1 [TRUSTED]
+[2020-08-13 10:45:39.2200] - INFO - Project server PID: 26604
+[2020-08-13 10:45:39.8040] - ERROR - Thu, 13 Aug 2020 14:45:39 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 10:45:39.8100] - INFO - GET 404 /node_modules/framer/build/framer.debug.js 180 B (2ms)
+[2020-08-13 10:45:39.8220] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 10:45:39.8220] - ERROR -   <rejecteder.js:131:17
+[2020-08-13 10:45:39.8100] - INFO - GET 404 /node_modules/framer/build/framer.debug.js 180 B (2ms)
+[2020-08-13 10:45:39.8220] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 10:45:39.8220] - ERROR -   <rejected> AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 10:45:39.8220] - ERROR -       at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 10:45:39.8220] - ERROR -       at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 10:45:39.8220] - ERROR -       at Generator.next (<anonymous>)
+[2020-08-13 10:45:39.8220] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 10:45:39.8220] - ERROR -       at new Promise (<anonymous>)
+[2020-08-13 10:45:39.8220] - ERROR -       at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 10:45:39.8220] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 10:45:39.8220] - ERROR -       at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 10:45:39.8220] - ERROR -       at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 10:45:39.8220] - ERROR -       at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 10:45:39.8220] - ERROR -     generatedMessage: false,
+[2020-08-13 10:45:39.8220] - ERROR -     code: 'ERR_ASSERTION',
+[2020-08-13 10:45:39.8220] - ERROR -     actual: undefined,
+[2020-08-13 10:45:39.8220] - ERROR -     expected: true,
+[2020-08-13 10:45:39.8220] - ERROR -     operator: '=='
+[2020-08-13 10:45:39.8220] - ERROR -   }
+[2020-08-13 10:45:39.8220] - ERROR - } reason: AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 10:45:39.8220] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 10:45:39.8220] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 10:45:39.8220] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 10:45:39.8220] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 10:45:39.8230] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 10:45:39.8230] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 10:45:39.8230] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 10:45:39.8230] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 10:45:39.8230] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 10:45:39.8230] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 10:45:39.8230] - ERROR -   generatedMessage: false,
+[2020-08-13 10:45:39.8230] - ERROR -   code: 'ERR_ASSERTION',
+[2020-08-13 10:45:39.8230] - ERROR -   actual: undefined,
+[2020-08-13 10:45:39.8230] - ERROR -   expected: true,
+[2020-08-13 10:45:39.8230] - ERROR -   operator: '=='
+[2020-08-13 10:45:39.8230] - ERROR - }
+[2020-08-13 10:45:39.8250] - ERROR - This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+[2020-08-13 10:45:39.8250] - ERROR - AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 10:45:39.8250] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 10:45:39.8250] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 10:45:39.8250] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 10:45:39.8250] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 10:45:39.8250] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 10:45:39.8250] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 10:45:39.8260] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 10:45:39.8260] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 10:45:39.8260] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 10:45:39.8260] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7)
+[2020-08-13 10:45:39.9600] - INFO - GET 200 /design/document.json 0 B (5ms)
+[2020-08-13 10:45:40.9680] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:40.9720] - INFO - Installing dependencies…
+[2020-08-13 10:45:41.0110] - INFO - GET 200 /node_modules/framer/build/framer.debug.js 0 B (1ms)
+[2020-08-13 10:45:41.3310] - INFO - GET 200 /node_modules/framer/build/framer.debug.js 0 B (1ms)
+[2020-08-13 10:45:42.1110] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:42.1810] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:42.2490] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:42.3320] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:42.3340] - INFO - Installing dependencies - DONE. Took 1364ms
+[2020-08-13 10:45:42.6500] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:57.5400] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:57.5650] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:57.8570] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:45:57.8690] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:46:06.0410] - ERROR - Thu, 13 Aug 2020 14:46:06 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/middleware.js:77:13
+[2020-08-13 10:46:55.1320] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:46:55.4690] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 10:47:04.9390] - DEBUG - [Save session: 0] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 10:47:04.9390] - DEBUG - [Save session: 0] Before container.writeChanges
+[2020-08-13 10:47:04.9390] - DEBUG - [Save session: 0] Not autosaving to archive, implicitly cancellable
+[2020-08-13 10:47:05.0590] - DEBUG - [Save session: 0] Completed container.writeChanges
+[2020-08-13 10:52:11.8510] - DEBUG - [Save session: 1] Started, operation: autosaveInPlaceOperation
+[2020-08-13 10:52:11.8510] - DEBUG - [Save session: 1] Before container.writeChanges
+[2020-08-13 10:52:11.8510] - DEBUG - [Save session: 1] Before waitUsingRecursiveRunLoop
+[2020-08-13 10:52:11.9460] - DEBUG - [Save session: 1] Completed container.writeChanges
+[2020-08-13 10:52:11.9460] - DEBUG - [Save session: 1] Completed waitUsingRecursiveRunLoop
+[2020-08-13 10:52:11.9490] - DEBUG - [Save session: 1] Completed super.save
+[2020-08-13 10:52:11.9500] - DEBUG - [Save session: 2] Started, operation: autosaveInPlaceOperation
+[2020-08-13 10:52:11.9500] - DEBUG - [Save session: 2] Before container.writeChanges
+[2020-08-13 10:52:11.9500] - DEBUG - [Save session: 2] Before waitUsingRecursiveRunLoop
+[2020-08-13 10:52:12.0260] - DEBUG - [Save session: 2] Completed container.writeChanges
+[2020-08-13 10:52:12.0260] - DEBUG - [Save session: 2] Completed waitUsingRecursiveRunLoop
+[2020-08-13 10:52:12.4880] - DEBUG - [Save session: 2] Completed super.save
+[2020-08-13 10:52:14.5770] - DEBUG - [Save session: 3] Started, operation: autosaveInPlaceOperation
+[2020-08-13 10:52:14.5770] - DEBUG - [Save session: 3] Before container.writeChanges
+[2020-08-13 10:52:14.5770] - DEBUG - [Save session: 3] Before waitUsingRecursiveRunLoop
+[2020-08-13 10:52:14.6520] - DEBUG - [Save session: 3] Completed container.writeChanges
+[2020-08-13 10:52:14.6520] - DEBUG - [Save session: 3] Completed waitUsingRecursiveRunLoop
+[2020-08-13 10:52:14.6570] - DEBUG - [Save session: 3] Completed super.save
+[2020-08-13 10:52:16.7100] - DEBUG - [Save session: 4] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 10:52:16.7100] - DEBUG - [Save session: 4] Before container.writeChanges
+[2020-08-13 10:52:16.7100] - DEBUG - [Save session: 4] Not autosaving to archive, implicitly cancellable
+[2020-08-13 10:52:16.7870] - DEBUG - [Save session: 4] Completed container.writeChanges
+[2020-08-13 10:55:38.4110] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 10.55.38.zip
+[2020-08-13 10:58:16.7010] - DEBUG - [Save session: 5] Started, operation: saveOperation
+[2020-08-13 10:58:16.7010] - DEBUG - [Save session: 5] Before container.writeChanges
+[2020-08-13 10:58:16.7170] - DEBUG - [Save session: 5] Before waitUsingRecursiveRunLoop
+[2020-08-13 10:58:16.7180] - DEBUG - [Save session: 5] Completed container.writeChanges
+[2020-08-13 10:58:16.7180] - DEBUG - [Save session: 5] Completed waitUsingRecursiveRunLoop
+[2020-08-13 10:58:16.7200] - INFO - Marking changed: false
+[2020-08-13 10:58:16.7220] - DEBUG - [Save session: 5] Completed super.save
+[2020-08-13 11:01:11.1050] - DEBUG - [Save session: 6] Started, operation: autosaveInPlaceOperation
+[2020-08-13 11:01:11.1050] - DEBUG - [Save session: 6] Before container.writeChanges
+[2020-08-13 11:01:11.1050] - DEBUG - [Save session: 6] Before waitUsingRecursiveRunLoop
+[2020-08-13 11:01:11.1790] - DEBUG - [Save session: 6] Completed container.writeChanges
+[2020-08-13 11:01:11.1790] - DEBUG - [Save session: 6] Completed waitUsingRecursiveRunLoop
+[2020-08-13 11:01:11.1850] - DEBUG - [Save session: 6] Completed super.save
+[2020-08-13 11:02:37.1200] - DEBUG - [Save session: 7] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 11:02:37.1200] - DEBUG - [Save session: 7] Before container.writeChanges
+[2020-08-13 11:02:37.1200] - DEBUG - [Save session: 7] Not autosaving to archive, implicitly cancellable
+[2020-08-13 11:02:37.1960] - DEBUG - [Save session: 7] Completed container.writeChanges
+
+[2020-08-13 12:37:49.7620] - INFO - Reading from /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx (origin); preserving existing contents of project folder: true
+[2020-08-13 12:37:49.7880] - INFO - Done reading
+[2020-08-13 12:37:49.7880] - INFO - Marking changed: false
+[2020-08-13 12:37:50.0230] - INFO - Proxy Config: http: http://proxy.gtm.lilly.com:9000; https: http://proxy.gtm.lilly.com:9000; exceptions: *.local, 169.254/16; CA Chain: Amazon → Amazon Root CA 1 [TRUSTED]
+[2020-08-13 12:37:51.0240] - INFO - Project server PID: 41385
+[2020-08-13 12:37:51.1510] - ERROR - Thu, 13 Aug 2020 16:37:51 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 12:37:51.1680] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 12:37:51.1680] - ERROR -   <rejected> AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:37:51.1680] - ERROR -       at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:37:51.1680] - ERROR -       at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:37:51.1680] - ERROR -       at Generator.next (<anonymous>)
+[2020-08-13 12:37:51.1680] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:37:51.1680] - ERROR -       at new Promise (<anonymous>)
+[2020-08-13 12:37:51.1680] - ERROR -       at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:37:51.1680] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:37:51.1680] - ERROR -       at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:37:51.1680] - ERROR -       at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:37:51.1680] - ERROR -       at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 12:37:51.1680] - ERROR -     generatedMessage: false,
+[2020-08-13 12:37:51.1680] - ERROR -     code: 'ERR_ASSERTION',
+[2020-08-13 12:37:51.1680] - ERROR -     actual: undefined,
+[2020-08-13 12:37:51.1690] - ERROR -     expected: true,
+[2020-08-13 12:37:51.1690] - ERROR -     operator: '=='
+[2020-08-13 12:37:51.1690] - ERROR -   }
+[2020-08-13 12:37:51.1690] - ERROR - } reason: AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:37:51.1690] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:37:51.1690] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:37:51.1690] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 12:37:51.1690] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:37:51.1690] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 12:37:51.1690] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:37:51.1690] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:37:51.1690] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:37:51.1690] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:37:51.1690] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 12:37:51.1690] - ERROR -   generatedMessage: false,
+[2020-08-13 12:37:51.1690] - ERROR -   code: 'ERR_ASSERTION',
+[2020-08-13 12:37:51.1690] - ERROR -   actual: undefined,
+[2020-08-13 12:37:51.1690] - ERROR -   expected: true,
+[2020-08-13 12:37:51.1690] - ERROR -   operator: '=='
+[2020-08-13 12:37:51.1690] - ERROR - }
+[2020-08-13 12:37:51.1710] - ERROR - This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+[2020-08-13 12:37:51.1710] - ERROR - AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:37:51.1710] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:37:51.1710] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:37:51.1710] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 12:37:51.1710] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:37:51.1710] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 12:37:51.1710] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:37:51.1710] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:37:51.1710] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:37:51.1710] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:37:51.1710] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7)
+[2020-08-13 12:37:51.2580] - INFO - Installing dependencies…
+[2020-08-13 12:37:51.4830] - INFO - GET 200 /design/document.json 0 B (4ms)
+[2020-08-13 12:37:51.8540] - DEBUG - [Save session: 0] Started, operation: autosaveInPlaceOperation
+[2020-08-13 12:37:51.8540] - DEBUG - [Save session: 0] Before container.writeChanges
+[2020-08-13 12:37:51.8540] - DEBUG - [Save session: 0] Before waitUsingRecursiveRunLoop
+
+[2020-08-13 12:38:01.2230] - INFO - Reading from /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx (origin); preserving existing contents of project folder: true
+[2020-08-13 12:38:01.2280] - INFO - Done reading
+[2020-08-13 12:38:01.2290] - INFO - Marking changed: false
+[2020-08-13 12:38:01.4570] - INFO - Proxy Config: http: http://proxy.gtm.lilly.com:9000; https: http://proxy.gtm.lilly.com:9000; exceptions: *.local, 169.254/16; CA Chain: Amazon → Amazon Root CA 1 [TRUSTED]
+[2020-08-13 12:38:02.2100] - INFO - Project server PID: 41448
+[2020-08-13 12:38:02.2990] - ERROR - Thu, 13 Aug 2020 16:38:02 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 12:38:02.3110] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 12:38:02.3110] - ERROR -   <rejected> AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:38:02.3110] - ERROR -       at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:38:02.3110] - ERROR -       at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:38:02.3120] - ERROR -       at Generator.next (<anonymous>)
+[2020-08-13 12:38:02.3120] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:38:02.3120] - ERROR -       at new Promise (<anonymous>)
+[2020-08-13 12:38:02.3120] - ERROR -       at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:38:02.3120] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:38:02.3120] - ERROR -       at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:38:02.3120] - ERROR -       at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:38:02.3120] - ERROR -       at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 12:38:02.3120] - ERROR -     generatedMessage: false,
+[2020-08-13 12:38:02.3120] - ERROR -     code: 'ERR_ASSERTION',
+[2020-08-13 12:38:02.3120] - ERROR -     actual: undefined,
+[2020-08-13 12:38:02.3120] - ERROR -     expected: true,
+[2020-08-13 12:38:02.3120] - ERROR -     operator: '=='
+[2020-08-13 12:38:02.3120] - ERROR -   }
+[2020-08-13 12:38:02.3120] - ERROR - } reason: AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:38:02.3120] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:38:02.3120] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:38:02.3120] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 12:38:02.3120] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:38:02.3120] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 12:38:02.3120] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:38:02.3120] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:38:02.3120] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:38:02.3120] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:38:02.3120] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 12:38:02.3120] - ERROR -   generatedMessage: false,
+[2020-08-13 12:38:02.3120] - ERROR -   code: 'ERR_ASSERTION',
+[2020-08-13 12:38:02.3120] - ERROR -   actual: undefined,
+[2020-08-13 12:38:02.3130] - ERROR -   expected: true,
+[2020-08-13 12:38:02.3130] - ERROR -   operator: '=='
+[2020-08-13 12:38:02.3130] - ERROR - }
+[2020-08-13 12:38:02.3140] - ERROR - This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+[2020-08-13 12:38:02.3140] - ERROR - AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:38:02.3140] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:38:02.3140] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:38:02.3140] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 12:38:02.3140] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:38:02.3140] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 12:38:02.3140] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:38:02.3140] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:38:02.3140] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:38:02.3140] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:38:02.3140] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7)
+[2020-08-13 12:38:02.3920] - INFO - Installing dependencies…
+[2020-08-13 12:38:02.7440] - INFO - GET 200 /design/document.json 0 B (3ms)
+[2020-08-13 12:38:03.5320] - INFO - GET 304 /node_modules/framer/build/framer.debug.js 0 B (1ms)
+[2020-08-13 12:38:03.7460] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:03.8250] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:04.0480] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:04.0480] - INFO - Installing dependencies - DONE. Took 1657ms
+[2020-08-13 12:38:04.2720] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:04.3720] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:18.3370] - DEBUG - [Save session: 0] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 12:38:18.3370] - DEBUG - [Save session: 0] Before container.writeChanges
+[2020-08-13 12:38:18.3370] - DEBUG - [Save session: 0] Not autosaving to archive, implicitly cancellable
+[2020-08-13 12:38:18.4590] - DEBUG - [Save session: 0] Completed container.writeChanges
+[2020-08-13 12:38:19.4170] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:19.6830] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:19.7200] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:38:19.9810] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:39:17.6300] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:39:17.9330] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:42:56.9020] - DEBUG - [Save session: 1] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 12:42:56.9020] - DEBUG - [Save session: 1] Before container.writeChanges
+[2020-08-13 12:42:56.9020] - DEBUG - [Save session: 1] Not autosaving to archive, implicitly cancellable
+[2020-08-13 12:42:56.9810] - DEBUG - [Save session: 1] Completed container.writeChanges
+[2020-08-13 12:46:25.0620] - INFO - Saving to /Users/c258046/Library/Autosave Information/Unsaved Framer Document.framerfx (copy)
+[2020-08-13 12:46:25.1250] - INFO - Done saving
+[2020-08-13 12:48:01.7050] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 12.48.01.zip
+[2020-08-13 12:48:41.6980] - DEBUG - [Save session: 2] Started, operation: saveOperation
+[2020-08-13 12:48:41.6980] - DEBUG - [Save session: 2] Before container.writeChanges
+[2020-08-13 12:48:41.7130] - DEBUG - [Save session: 2] Before waitUsingRecursiveRunLoop
+[2020-08-13 12:48:41.7140] - DEBUG - [Save session: 2] Completed container.writeChanges
+[2020-08-13 12:48:41.7140] - DEBUG - [Save session: 2] Completed waitUsingRecursiveRunLoop
+[2020-08-13 12:48:41.7160] - INFO - Marking changed: false
+[2020-08-13 12:48:41.7190] - DEBUG - [Save session: 2] Completed super.save
+
+[2020-08-13 12:51:42.9650] - INFO - Reading from /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx (origin); preserving existing contents of project folder: true
+[2020-08-13 12:51:42.9770] - INFO - Done reading
+[2020-08-13 12:51:42.9780] - INFO - Marking changed: false
+[2020-08-13 12:51:43.6010] - INFO - Proxy Config: http: http://proxy.gtm.lilly.com:9000; https: http://proxy.gtm.lilly.com:9000; exceptions: *.local, 169.254/16; CA Chain: Amazon → Amazon Root CA 1 [TRUSTED]
+[2020-08-13 12:51:47.3070] - INFO - Project server PID: 42834
+[2020-08-13 12:51:47.7910] - ERROR - Thu, 13 Aug 2020 16:51:47 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 12:51:47.8040] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 12:51:47.8040] - ERROR -   <rejected> AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:51:47.8040] - ERROR -       at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:51:47.8040] - ERROR -       at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:51:47.8040] - ERROR -       at Generator.next (<anonymous>)
+[2020-08-13 12:51:47.8040] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:51:47.8040] - ERROR -       at new Promise (<anonymous>)
+[2020-08-13 12:51:47.8040] - ERROR -       at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:51:47.8040] - ERROR -       at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:51:47.8040] - ERROR -       at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:51:47.8040] - ERROR -       at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:51:47.8050] - ERROR -       at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 12:51:47.8050] - ERROR -     generatedMessage: false,
+[2020-08-13 12:51:47.8050] - ERROR -     code: 'ERR_ASSERTION',
+[2020-08-13 12:51:47.8050] - ERROR -     actual: undefined,
+[2020-08-13 12:51:47.8050] - ERROR -     expected: true,
+[2020-08-13 12:51:47.8050] - ERROR -     operator: '=='
+[2020-08-13 12:51:47.8050] - ERROR -   }
+[2020-08-13 12:51:47.8050] - ERROR - } reason: AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:51:47.8050] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:51:47.8050] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:51:47.8050] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 12:51:47.8050] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:51:47.8050] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 12:51:47.8050] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:51:47.8050] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:51:47.8050] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:51:47.8050] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:51:47.8050] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7) {
+[2020-08-13 12:51:47.8050] - ERROR -   generatedMessage: false,
+[2020-08-13 12:51:47.8050] - ERROR -   code: 'ERR_ASSERTION',
+[2020-08-13 12:51:47.8050] - ERROR -   actual: undefined,
+[2020-08-13 12:51:47.8050] - ERROR -   expected: true,
+[2020-08-13 12:51:47.8050] - ERROR -   operator: '=='
+[2020-08-13 12:51:47.8050] - ERROR - }
+[2020-08-13 12:51:47.8070] - ERROR - This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+[2020-08-13 12:51:47.8070] - ERROR - AssertionError [ERR_ASSERTION]: project is not defined
+[2020-08-13 12:51:47.8070] - ERROR -     at assertProject (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:618:21)
+[2020-08-13 12:51:47.8070] - ERROR -     at Server.<anonymous> (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:265:13)
+[2020-08-13 12:51:47.8070] - ERROR -     at Generator.next (<anonymous>)
+[2020-08-13 12:51:47.8070] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:8:71
+[2020-08-13 12:51:47.8070] - ERROR -     at new Promise (<anonymous>)
+[2020-08-13 12:51:47.8070] - ERROR -     at __awaiter (/Applications/Framer.app/Contents/Resources/Server/lib/server.js:4:12)
+[2020-08-13 12:51:47.8070] - ERROR -     at /Applications/Framer.app/Contents/Resources/Server/lib/server.js:264:89
+[2020-08-13 12:51:47.8070] - ERROR -     at Layer.handle [as handle_request] (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/layer.js:95:5)
+[2020-08-13 12:51:47.8070] - ERROR -     at next (/Applications/Framer.app/Contents/Resources/Server/node_modules/express/lib/router/route.js:137:13)
+[2020-08-13 12:51:47.8070] - ERROR -     at jsonParser (/Applications/Framer.app/Contents/Resources/Server/node_modules/body-parser/lib/types/json.js:109:7)
+[2020-08-13 12:51:47.9800] - INFO - Installing dependencies…
+[2020-08-13 12:51:48.1740] - INFO - GET undefined /node_modules/framer/build/framer.debug.js 0 B (0ms)
+[2020-08-13 12:51:48.2060] - INFO - GET 200 /design/document.json 0 B (1ms)
+[2020-08-13 12:51:49.0440] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:51:49.0440] - INFO - Installing dependencies - DONE. Took 1065ms
+[2020-08-13 12:51:49.1890] - INFO - GET 200 /node_modules/framer/build/framer.debug.js 0 B (1ms)
+[2020-08-13 12:51:49.9170] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:51:49.9710] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:51:50.1320] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:52:05.4790] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:52:05.7760] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:52:48.5100] - DEBUG - [Save session: 0] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 12:52:48.5100] - DEBUG - [Save session: 0] Before container.writeChanges
+[2020-08-13 12:52:48.5100] - DEBUG - [Save session: 0] Not autosaving to archive, implicitly cancellable
+[2020-08-13 12:52:48.6310] - DEBUG - [Save session: 0] Completed container.writeChanges
+[2020-08-13 12:53:04.0970] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 12:53:04.4120] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 13:01:45.6130] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 13.01.45.zip

@@ -1392,7 +1392,7 @@
             "id" : "bv9YnUfDe",
             "intrinsicHeight" : 20,
             "intrinsicWidth" : 200,
-            "left" : 16,
+            "left" : 0,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -1406,11 +1406,11 @@
             "radiusPerCorner" : false,
             "radiusTopLeft" : 0,
             "radiusTopRight" : 0,
-            "right" : 16,
+            "right" : 0,
             "rotation" : 0,
             "top" : 8,
             "visible" : true,
-            "width" : 343,
+            "width" : 375,
             "widthType" : 0
           },
           {
@@ -2092,7 +2092,7 @@
         "replicaInfo" : null,
         "right" : null,
         "rotation" : 0,
-        "top" : 13,
+        "top" : 12,
         "visible" : true,
         "width" : 375,
         "widthType" : 0
@@ -6755,6 +6755,63 @@
           {
             "__class" : "CodeComponentNode",
             "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.059970014992503748,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/NavBar.tsx_NavBar",
+            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentProps" : {
+              "iconLeft" : "arrow-left",
+              "iconRight" : "blank",
+              "navTitle" : "Activation Code"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "wPSN_sGUN",
+              "Hud2CgiYb"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 80,
+            "heightType" : 0,
+            "id" : "dlPXmo_j6",
+            "intrinsicHeight" : 80,
+            "intrinsicWidth" : 375,
+            "left" : 0,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "t6CMt6gA_",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 0,
+            "visible" : true,
+            "width" : 375,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
             "bottom" : 24,
             "centerAnchorX" : 0.5,
             "centerAnchorY" : 0.93403298350824593,
@@ -6763,6 +6820,116 @@
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
               "buttonStyle" : "primary",
+              "fill" : "#09F",
+              "hasIcon" : false,
+              "iconName" : "check",
+              "isDisabled" : true,
+              "onTap" : [
+                {
+                  "actionIdentifier" : "framer\/useNavigate",
+                  "controls" : {
+                    "animation" : {
+                      "type" : "transition",
+                      "value" : {
+                        "damping" : 60,
+                        "delay" : 0,
+                        "duration" : 0.29999999999999999,
+                        "ease" : [
+                          0.44,
+                          0,
+                          0.56000000000000005,
+                          1
+                        ],
+                        "mass" : 1,
+                        "stiffness" : 500,
+                        "type" : "spring"
+                      }
+                    },
+                    "appearsFrom" : {
+                      "type" : "segmentedenum",
+                      "value" : "right"
+                    },
+                    "backdropColor" : {
+                      "type" : "color",
+                      "value" : "rgba(4,4,15,.4)"
+                    },
+                    "target" : {
+                      "type" : "componentinstance",
+                      "value" : "HSxsnOS5q"
+                    },
+                    "transition" : {
+                      "type" : "enum",
+                      "value" : "push"
+                    },
+                    "type" : {
+                      "type" : "segmentedenum",
+                      "value" : "next"
+                    }
+                  },
+                  "identifier" : "11bd21cb-821f-4cca-aae2-4ff845018cca"
+                }
+              ],
+              "text" : "Submit Code"
+            },
+            "codeOverrideEnabled" : true,
+            "codeOverrideFile" : ".\/App.tsx",
+            "codeOverrideIdentifier" : ".\/App.tsx_ResetPassword",
+            "codeOverrideName" : "ResetPassword",
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "YQ_6s5la8",
+              "U_xoyLEYS",
+              "vZHDiNm4g",
+              "vuoRvRMh3"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "cJAkjuNCL",
+            "intrinsicHeight" : 40,
+            "intrinsicWidth" : 375,
+            "left" : 24,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "t6CMt6gA_",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 24,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 327,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.46626686656671662,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/Button.tsx_Button",
+            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentProps" : {
+              "buttonStyle" : "tertiary",
               "fill" : "#09F",
               "hasIcon" : false,
               "iconName" : "check",
@@ -6812,18 +6979,16 @@
                   "identifier" : "11bd21cb-821f-4cca-aae2-4ff845018cca"
                 }
               ],
-              "text" : "Continue"
+              "text" : "I don't have a code"
             },
-            "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/App.tsx",
-            "codeOverrideIdentifier" : ".\/App.tsx_ResetPassword",
-            "codeOverrideName" : "ResetPassword",
+            "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "duplicatedFrom" : [
               "YQ_6s5la8",
               "U_xoyLEYS",
               "vZHDiNm4g",
-              "vuoRvRMh3"
+              "vuoRvRMh3",
+              "cJAkjuNCL"
             ],
             "exportOptions" : [
 
@@ -6838,7 +7003,7 @@
             "fillType" : "color",
             "height" : 40,
             "heightType" : 0,
-            "id" : "cJAkjuNCL",
+            "id" : "boniojkmR",
             "intrinsicHeight" : 40,
             "intrinsicWidth" : 375,
             "left" : 24,
@@ -6857,7 +7022,7 @@
             "radiusTopRight" : 0,
             "right" : 24,
             "rotation" : 0,
-            "top" : null,
+            "top" : 291,
             "visible" : true,
             "width" : 327,
             "widthType" : 0
@@ -6927,35 +7092,32 @@
           },
           {
             "__class" : "TextNode",
-            "autoSize" : true,
+            "autoSize" : false,
             "blur" : 10,
             "blurType" : "layer",
             "bottom" : null,
             "centerAnchorX" : 0.5013333333333333,
-            "centerAnchorY" : 0.13493253373313344,
+            "centerAnchorY" : 0.22563718140929534,
             "clip" : true,
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "duplicatedFrom" : [
-              "r5Kcw7v9j",
-              "Wz1WqDjsc",
-              "Y0rr9p2zZ",
-              "Q7oMiqwaC"
+              "qJmK98BxD"
             ],
             "exportOptions" : [
 
             ],
-            "height" : 28,
+            "height" : 81,
             "heightType" : 0,
-            "id" : "zzbZYZACr",
+            "id" : "yWdfBnjcC",
             "isTarget" : false,
-            "left" : null,
+            "left" : 32,
             "locked" : false,
-            "name" : "Sign in to your acco",
+            "name" : "Body",
             "opacity" : 0.87,
             "originalid" : null,
             "parentid" : "t6CMt6gA_",
-            "right" : null,
+            "right" : 31,
             "rotation" : 0,
             "styledText" : {
               "__class" : "StyledTextDraft",
@@ -6963,7 +7125,11 @@
                 {
                   "data" : {
                     "emptyStyle" : [
-                      "COLOR:rgba(0,0,0,1)"
+                      "SIZE:14",
+                      "FONT:Roboto-Regular",
+                      "LINEHEIGHT:1.4285714285714286",
+                      "COLOR:rgba(0,0,0,1)",
+                      "ALIGN:center"
                     ]
                   },
                   "depth" : 0,
@@ -6972,43 +7138,108 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 15,
+                      "length" : 131,
                       "offset" : 0,
-                      "style" : "SIZE:24"
+                      "style" : "SIZE:14"
                     },
                     {
-                      "length" : 15,
+                      "length" : 131,
                       "offset" : 0,
                       "style" : "FONT:Roboto-Regular"
                     },
                     {
-                      "length" : 15,
+                      "length" : 131,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1.4285714285714286"
+                    },
+                    {
+                      "length" : 131,
                       "offset" : 0,
                       "style" : "COLOR:rgba(0,0,0,1)"
+                    },
+                    {
+                      "length" : 131,
+                      "offset" : 0,
+                      "style" : "ALIGN:center"
                     }
                   ],
                   "key" : "key",
-                  "text" : "Activation Code",
+                  "text" : "You must have an activation code from your healthcare professional to create a myTempo Basal account. Please enter your code below:",
                   "type" : "unstyled"
                 }
               ],
-              "cached" : {
-                "html" : "<div data-offset-key=\"key-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"key-0-0\" style=\"tab-size:4;font-family:&quot;Roboto-Regular&quot;, &quot;Roboto&quot;, sans-serif;-webkit-text-fill-color:rgba(0,0,0,1);font-size:24px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">Activation Code<\/span><\/span><\/div>",
-                "os" : "macos 10_15 framerx",
-                "size" : {
-                  "height" : 28,
-                  "width" : 170
-                },
-                "width" : 0
-              },
               "entityMap" : {
 
               }
             },
             "textVerticalAlignment" : "top",
-            "top" : 76,
+            "top" : 110,
             "visible" : true,
-            "width" : 170,
+            "width" : 312,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.5013333333333333,
+            "centerAnchorY" : 0.33883058470764615,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/code\/TextField.tsx_TextField",
+            "codeComponentPackageVersion" : "1.74.0",
+            "codeComponentProps" : {
+              "assistMessage" : "",
+              "color" : "#00384d",
+              "currentValue" : "",
+              "defaultValue" : "",
+              "empty" : false,
+              "enabled" : true,
+              "errorMessage" : "",
+              "focused" : false,
+              "hasError" : false,
+              "label" : "Activation Code",
+              "type" : "text"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "Wh1CSfVl3"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 70,
+            "heightType" : 0,
+            "id" : "hylhozLUe",
+            "intrinsicHeight" : 70,
+            "intrinsicWidth" : 375,
+            "left" : 32,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "t6CMt6gA_",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 31,
+            "rotation" : 0,
+            "top" : 191,
+            "visible" : true,
+            "width" : 312,
             "widthType" : 0
           }
         ],
@@ -13117,6 +13348,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay&quot;, &quot;SFProDisplay-Regular&quot;, &quot;SFUIDisplay-Regular&quot;, &quot;.SFUIDisplay&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:#FF3B30;font-size:20px;letter-spacing:0.38px;line-height:1.2\"><span data-text=\"true\">Destructive Action<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 168
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -13348,6 +13588,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay&quot;, &quot;SFProDisplay-Regular&quot;, &quot;SFUIDisplay-Regular&quot;, &quot;.SFUIDisplay&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:#007AFF;font-size:20px;letter-spacing:0.38px;line-height:1.2\"><span data-text=\"true\">Action<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 60
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -13569,6 +13818,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay&quot;, &quot;SFProDisplay-Regular&quot;, &quot;SFUIDisplay-Regular&quot;, &quot;.SFUIDisplay&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:rgba(142, 142, 147, 1.00);font-size:20px;letter-spacing:0.38px;line-height:1.2\"><span data-text=\"true\">Disabled Action<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 144
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -13800,6 +14058,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay&quot;, &quot;SFProDisplay-Regular&quot;, &quot;SFUIDisplay-Regular&quot;, &quot;.SFUIDisplay&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:#007AFF;font-size:20px;letter-spacing:0.38px;line-height:1.2\"><span data-text=\"true\">Action<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 60
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }
@@ -14021,6 +14288,15 @@
                       "type" : "unstyled"
                     }
                   ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"8cbgv-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8cbgv-0-0\" style=\"tab-size:4;font-family:&quot;.SFNSDisplay-Semibold&quot;, &quot;SFProDisplay-Semibold&quot;, &quot;SFUIDisplay-Semibold&quot;, &quot;.SFUIDisplay-Semibold&quot;, &quot;SF Pro Display&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, sans-serif;-webkit-text-fill-color:#007AFF;font-size:20px;letter-spacing:0.75px;line-height:1.2;font-weight:599\"><span data-text=\"true\">Cancel<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 24,
+                      "width" : 70
+                    },
+                    "width" : 0
+                  },
                   "entityMap" : {
 
                   }

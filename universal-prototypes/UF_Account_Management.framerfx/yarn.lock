@@ -2,22 +2,12 @@
 # yarn lockfile v1
 
 
-"@framer/edoardo.ios-kit@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.framer.com/@framer/edoardo.ios-kit/-/@framer/edoardo.ios-kit-1.6.0.tgz#4106996f04874240464cf2ff2dadd75219c96226"
-  integrity sha512-XiPljPZc9MpsjGzbW9qSlTkIOo+zTc8+/7myaYqJ7G0ZK4Cyg3YjPidueMWChACkFADxdeVr/HCCAkg9rVOGLQ==
-
-"@framer/framer.default@^1.74.0":
-  version "1.74.0"
-  resolved "https://registry.framer.com/@framer/framer.default/-/@framer/framer.default-1.74.0.tgz#691c3ea9648888d2b92c2b67c4df1bb94fb3b3cd"
-  integrity sha512-yA67FPeud/+TOGfM0BkVaetC9WbrHEWzqJ92sBCYJgxgUCq1NbO2n2fnWQSs/WCmHK/CdpW3L94G7yXnN3YSTQ==
+"@framer/framer.default@^1.76.0":
+  version "1.76.0"
+  resolved "https://registry.framer.com/@framer/framer.default/-/@framer/framer.default-1.76.0.tgz#7f9f0b9ff8099c6e9731729187ec555c47bf9485"
+  integrity sha512-8FbWGmYEx0GmXJITJxf4LlO/zJMq3LoQO0r7YtgHSZbz3KyMKZ3RGkeP6ywJHDOkt6q+BX4Xyxr61yBvHbbdLA==
   dependencies:
     react-feather "^2.0.3"
-
-"@framer/framer.examples@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.framer.com/@framer/framer.examples/-/@framer/framer.examples-1.7.0.tgz#65c98f155b5cf78a89c88b9a7099790700678e56"
-  integrity sha512-GA0jKhhUuNMrQaaVJUipp2o+tM2oX+vZAc3aE4bgpJ8Gs0DiCnl3l1er5QtiQAZUT/F3E9AEiKk6vOpFCAekjA==
 
 "@types/prop-types@*":
   version "15.7.0"

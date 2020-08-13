@@ -1,0 +1,33 @@
+{
+  "files" : {
+    ".backups/2020-08-13 10.09.01.zip" : {
+      "sha1" : "uqD9tteXrIQanHH6hSj6Xaa+vEQ=",
+      "size" : 35769
+    },
+    "build/index.js" : {
+      "sha1" : "YjsrLGgzbYW4G+yIOcJWHHHhJ0c=",
+      "size" : 14983
+    },
+    "build/vendors.js" : {
+      "sha1" : "Dz3nuSktbI2q4SgIrvMXX8dzEBs=",
+      "size" : 405
+    },
+    "code/canvas.tsx" : {
+      "sha1" : "4lVYZXgHtILZN1ThrpQlbANXgVc=",
+      "size" : 1620
+    },
+    "design/document.json" : {
+      "sha1" : "+Gi+jkbmWVGJ9niqcWgIfwn4SEI=",
+      "size" : 535790
+    },
+    "package.json" : {
+      "sha1" : "ZJcz/JRXLVvjfbHpyZ8Buzt969k=",
+      "size" : 111
+    },
+    "yarn.lock" : {
+      "sha1" : "tzRdmv61M2e2ZEjUd3grt33Iv1k=",
+      "size" : 86
+    }
+  },
+  "uuid" : "D8B9D9CD-B669-476B-A1C3-5AE84504BBBD"
+}
