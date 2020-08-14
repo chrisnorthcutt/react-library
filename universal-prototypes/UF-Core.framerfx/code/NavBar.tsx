@@ -32,22 +32,22 @@ export function NavBar(props) {
                 width={"100%"}
             >
                 <Stack direction={"horizontal"} gap={32}>
-                    <Icon
+                    {iconLeft !== "blank" ? <Icon
                         fill={colors.grey900}
                         onTap={iconLeftNav}
                         iconName={iconLeft}
-                    />
+                    /> : null}
                     <Text.H6 style={{ color: colors.grey900 }}>
                         {navTitle}
                     </Text.H6>
                 </Stack>
 
-                <Icon
+                {iconRight !== "blank" ? <Icon
                     onTap={iconRightNav}
                     style={{ marginLeft: "auto" }}
                     fill={colors.grey900}
                     iconName={iconRight}
-                />
+                /> : null}
             </Stack>
         </Frame>
     )

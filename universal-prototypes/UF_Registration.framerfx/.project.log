@@ -433,3 +433,56 @@
 [2020-08-13 23:15:33.2800] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
 [2020-08-13 23:15:33.2870] - INFO - Marking changed: false
 [2020-08-13 23:18:51.7000] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 23.18.51.zip
+[2020-08-14 11:40:00.2600] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-14 11.40.00.zip
+[2020-08-14 11:40:42.4940] - DEBUG - [Save session: 1] Started, operation: autosaveInPlaceOperation
+[2020-08-14 11:40:42.4940] - DEBUG - [Save session: 1] Before container.writeChanges
+[2020-08-14 11:40:42.4940] - DEBUG - [Save session: 1] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:40:42.5750] - DEBUG - [Save session: 1] Completed container.writeChanges
+[2020-08-14 11:40:42.5760] - DEBUG - [Save session: 1] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:40:42.5810] - DEBUG - [Save session: 1] Completed super.save
+[2020-08-14 11:41:03.0420] - DEBUG - [Save session: 2] Started, operation: saveOperation
+[2020-08-14 11:41:03.0420] - DEBUG - [Save session: 2] Before container.writeChanges
+[2020-08-14 11:41:03.0420] - DEBUG - [Save session: 2] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:41:03.1150] - DEBUG - [Save session: 2] Completed container.writeChanges
+[2020-08-14 11:41:03.1150] - DEBUG - [Save session: 2] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:41:03.1190] - INFO - Marking changed: false
+[2020-08-14 11:41:03.1220] - DEBUG - [Save session: 2] Completed super.save
+[2020-08-14 11:50:00.4800] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-14 11.50.00.zip
+[2020-08-14 11:50:04.8040] - DEBUG - [Save session: 3] Started, operation: autosaveInPlaceOperation
+[2020-08-14 11:50:04.8040] - DEBUG - [Save session: 3] Before container.writeChanges
+[2020-08-14 11:50:04.8040] - DEBUG - [Save session: 3] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:50:04.8930] - DEBUG - [Save session: 3] Completed container.writeChanges
+[2020-08-14 11:50:04.8930] - DEBUG - [Save session: 3] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:50:04.8970] - DEBUG - [Save session: 3] Completed super.save
+[2020-08-14 11:50:04.9000] - DEBUG - [Save session: 4] Started, operation: autosaveInPlaceOperation
+[2020-08-14 11:50:04.9000] - DEBUG - [Save session: 4] Before container.writeChanges
+[2020-08-14 11:50:04.9010] - DEBUG - [Save session: 4] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:50:04.9710] - DEBUG - [Save session: 4] Completed container.writeChanges
+[2020-08-14 11:50:04.9710] - DEBUG - [Save session: 4] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:50:05.4170] - DEBUG - [Save session: 4] Completed super.save
+[2020-08-14 11:50:05.5740] - DEBUG - [Save session: 5] Started, operation: autosaveInPlaceOperation
+[2020-08-14 11:50:05.5740] - DEBUG - [Save session: 5] Before container.writeChanges
+[2020-08-14 11:50:05.5740] - DEBUG - [Save session: 5] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:50:05.6460] - DEBUG - [Save session: 5] Completed container.writeChanges
+[2020-08-14 11:50:05.6460] - DEBUG - [Save session: 5] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:50:05.9340] - DEBUG - [Save session: 5] Completed super.save
+[2020-08-14 11:50:05.9940] - DEBUG - [Save session: 6] Started, operation: autosaveInPlaceOperation
+[2020-08-14 11:50:05.9940] - DEBUG - [Save session: 6] Before container.writeChanges
+[2020-08-14 11:50:05.9940] - DEBUG - [Save session: 6] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:50:06.0660] - DEBUG - [Save session: 6] Completed container.writeChanges
+[2020-08-14 11:50:06.0660] - DEBUG - [Save session: 6] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:50:06.4710] - DEBUG - [Save session: 6] Completed super.save
+[2020-08-14 11:50:26.6170] - DEBUG - [Save session: 7] Started, operation: saveOperation
+[2020-08-14 11:50:26.6170] - DEBUG - [Save session: 7] Before container.writeChanges
+[2020-08-14 11:50:26.6170] - DEBUG - [Save session: 7] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:50:26.6780] - DEBUG - [Save session: 7] Completed container.writeChanges
+[2020-08-14 11:50:26.6780] - DEBUG - [Save session: 7] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:50:26.6800] - INFO - Marking changed: false
+[2020-08-14 11:50:26.6830] - DEBUG - [Save session: 7] Completed super.save
+[2020-08-14 11:50:31.2170] - DEBUG - [Save session: 8] Started, operation: saveOperation
+[2020-08-14 11:50:31.2170] - DEBUG - [Save session: 8] Before container.writeChanges
+[2020-08-14 11:50:31.2320] - DEBUG - [Save session: 8] Before waitUsingRecursiveRunLoop
+[2020-08-14 11:50:31.2330] - DEBUG - [Save session: 8] Completed container.writeChanges
+[2020-08-14 11:50:31.2330] - DEBUG - [Save session: 8] Completed waitUsingRecursiveRunLoop
+[2020-08-14 11:50:31.2360] - INFO - Marking changed: false
+[2020-08-14 11:50:31.2380] - DEBUG - [Save session: 8] Completed super.save
