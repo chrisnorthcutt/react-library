@@ -74,7 +74,7 @@
             "blendingMode" : "normal",
             "borderBottom" : 1,
             "borderColor" : "hsl(0, 0%, 76%)",
-            "borderEnabled" : 1,
+            "borderEnabled" : -1,
             "borderLeft" : 1,
             "borderPerSide" : true,
             "borderRight" : 1,
@@ -99,8 +99,7 @@
                   "hasIcon" : true,
                   "icon" : "caret-right",
                   "iconPosition" : "Right",
-                  "label" : "Manage Account",
-                  "lastInList" : false
+                  "label" : "Manage Account"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -154,12 +153,11 @@
                 "codeComponentIdentifier" : ".\/code\/ListItem.tsx_ListItem",
                 "codeComponentPackageVersion" : "1.76.0",
                 "codeComponentProps" : {
-                  "firstInList" : true,
+                  "firstInList" : false,
                   "hasIcon" : true,
                   "icon" : "caret-right",
                   "iconPosition" : "Right",
-                  "label" : "Data Sharing",
-                  "lastInList" : true
+                  "label" : "Data Sharing"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -214,12 +212,11 @@
                 "codeComponentIdentifier" : ".\/code\/ListItem.tsx_ListItem",
                 "codeComponentPackageVersion" : "1.76.0",
                 "codeComponentProps" : {
-                  "firstInList" : true,
+                  "firstInList" : false,
                   "hasIcon" : true,
                   "icon" : "caret-right",
                   "iconPosition" : "Right",
-                  "label" : "Notifications",
-                  "lastInList" : true
+                  "label" : "Notifications"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -275,12 +272,11 @@
                 "codeComponentIdentifier" : ".\/code\/ListItem.tsx_ListItem",
                 "codeComponentPackageVersion" : "1.76.0",
                 "codeComponentProps" : {
-                  "firstInList" : true,
+                  "firstInList" : false,
                   "hasIcon" : true,
                   "icon" : "caret-right",
                   "iconPosition" : "Right",
-                  "label" : "Language",
-                  "lastInList" : true
+                  "label" : "Language"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -358,7 +354,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 24,
+            "left" : 0,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -379,7 +375,7 @@
             "radiusTopLeft" : 0,
             "radiusTopRight" : 0,
             "replicaInfo" : null,
-            "right" : 24,
+            "right" : 0,
             "rotation" : 0,
             "stackAlignment" : "center",
             "stackDirection" : "vertical",
@@ -388,7 +384,7 @@
             "stackGap" : 0,
             "top" : 161,
             "visible" : true,
-            "width" : 327,
+            "width" : 375,
             "widthType" : 0
           }
         ],
