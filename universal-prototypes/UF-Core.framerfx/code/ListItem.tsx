@@ -8,14 +8,20 @@ import { iconOptions, iconNames } from "./IconList"
 // Learn more: https://framer.com/api
 
 export function ListItem(props) {
-    const { label, icon, onTap, hasIcon, iconPosition, ...rest } = props
+    const { label, icon, onTap, hasIcon, iconPosition, lastInList, firstInList, ...rest } = props
 
     return (
-        <Frame {...rest} background={colors.white}>
+        <Frame {...rest} background={colors.white}
+            style={{
+                borderBottom: lastInList ? null : "1px solid " + colors.grey200,
+                borderTop: firstInList ? "1px solid " + colors.grey200 : null
+            }}
+        >
             <Stack
                 {...rest}
                 onTap={onTap}
                 paddingLeft={16}
+                paddingRight={16}
                 gap={16}
                 alignment={"center"}
                 distribution={iconPosition === "Left" ? "start" : "space-between"}
@@ -35,12 +41,6 @@ export function ListItem(props) {
                     size={24}
                 /> : null}
             </Stack>
-            <Frame
-                bottom={0}
-                background={colors.grey400}
-                height={1}
-                width={"100%"}
-            />
         </Frame>
     )
 }
@@ -80,6 +80,16 @@ addPropertyControls(ListItem, {
         hidden(props) {
             return !props.hasIcon
         }
+    },
+    firstInList: {
+        title: "First in List",
+        type: ControlType.Boolean,
+        defaultValue: true
+    },
+    lastInList: {
+        title: "Last in List",
+        type: ControlType.Boolean,
+        defaultValue: false
     },
     onTap: {
         type: ControlType.EventHandler,

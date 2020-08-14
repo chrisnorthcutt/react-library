@@ -6,6 +6,10 @@
 [2020-08-13 10:45:39.8040] - ERROR - Thu, 13 Aug 2020 14:45:39 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
 [2020-08-13 10:45:39.8100] - INFO - GET 404 /node_modules/framer/build/framer.debug.js 180 B (2ms)
 [2020-08-13 10:45:39.8220] - ERROR - Unhandled Rejection at: Promise Promise {
+[2020-08-13 10:45:39.8220] - ERROR -   <rejected:45:39.2200] - INFO - Project server PID: 26604
+[2020-08-13 10:45:39.8040] - ERROR - Thu, 13 Aug 2020 14:45:39 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 10:45:39.8100] - INFO - GET 404 /node_modules/framer/build/framer.debug.js 180 B (2ms)
+[2020-08-13 10:45:39.8220] - ERROR - Unhandled Rejection at: Promise Promise {
 [2020-08-13 10:45:39.8220] - ERROR -   <rejected39.8220] - ERROR -   <rejectedtion.framerfx (origin); preserving existing contents of project folder: true
 [2020-08-13 10:45:37.8170] - INFO - Done reading
 [2020-08-13 10:45:37.8180] - INFO - Marking changed: false
@@ -343,3 +347,89 @@
 [2020-08-13 12:53:04.0970] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
 [2020-08-13 12:53:04.4120] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
 [2020-08-13 13:01:45.6130] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 13.01.45.zip
+[2020-08-13 13:49:19.3450] - DEBUG - [Save session: 1] Started, operation: autosaveInPlaceOperation
+[2020-08-13 13:49:19.3450] - DEBUG - [Save session: 1] Before container.writeChanges
+[2020-08-13 13:49:19.3450] - DEBUG - [Save session: 1] Before waitUsingRecursiveRunLoop
+[2020-08-13 13:49:19.4100] - DEBUG - [Save session: 1] Completed container.writeChanges
+[2020-08-13 13:49:19.4100] - DEBUG - [Save session: 1] Completed waitUsingRecursiveRunLoop
+[2020-08-13 13:49:19.4170] - DEBUG - [Save session: 1] Completed super.save
+[2020-08-13 13:49:50.9740] - DEBUG - [Save session: 2] Started, operation: saveOperation
+[2020-08-13 13:49:50.9740] - DEBUG - [Save session: 2] Before container.writeChanges
+[2020-08-13 13:49:50.9740] - DEBUG - [Save session: 2] Before waitUsingRecursiveRunLoop
+[2020-08-13 13:49:51.0430] - DEBUG - [Save session: 2] Completed container.writeChanges
+[2020-08-13 13:49:51.0430] - DEBUG - [Save session: 2] Completed waitUsingRecursiveRunLoop
+[2020-08-13 13:49:51.0470] - INFO - Marking changed: false
+[2020-08-13 13:49:51.0490] - DEBUG - [Save session: 2] Completed super.save
+[2020-08-13 13:49:57.0510] - DEBUG - [Save session: 3] Started, operation: saveOperation
+[2020-08-13 13:49:57.0510] - DEBUG - [Save session: 3] Before container.writeChanges
+[2020-08-13 13:49:57.0510] - DEBUG - [Save session: 3] Before waitUsingRecursiveRunLoop
+[2020-08-13 13:49:57.1270] - DEBUG - [Save session: 3] Completed container.writeChanges
+[2020-08-13 13:49:57.1270] - DEBUG - [Save session: 3] Completed waitUsingRecursiveRunLoop
+[2020-08-13 13:49:57.1310] - INFO - Marking changed: false
+[2020-08-13 13:49:57.1330] - DEBUG - [Save session: 3] Completed super.save
+[2020-08-13 13:50:03.4990] - DEBUG - [Save session: 4] Started, operation: saveOperation
+[2020-08-13 13:50:03.4990] - DEBUG - [Save session: 4] Before container.writeChanges
+[2020-08-13 13:50:03.4990] - DEBUG - [Save session: 4] Before waitUsingRecursiveRunLoop
+[2020-08-13 13:50:03.5720] - DEBUG - [Save session: 4] Completed container.writeChanges
+[2020-08-13 13:50:03.5720] - DEBUG - [Save session: 4] Completed waitUsingRecursiveRunLoop
+[2020-08-13 13:50:03.5740] - INFO - Marking changed: false
+[2020-08-13 13:50:03.5770] - DEBUG - [Save session: 4] Completed super.save
+[2020-08-13 13:50:21.4650] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 13.50.21.zip
+[2020-08-13 13:51:00.7360] - DEBUG - [Save session: 5] Started, operation: saveOperation
+[2020-08-13 13:51:00.7360] - DEBUG - [Save session: 5] Before container.writeChanges
+[2020-08-13 13:51:00.7370] - DEBUG - [Save session: 5] Before waitUsingRecursiveRunLoop
+[2020-08-13 13:51:00.8140] - DEBUG - [Save session: 5] Completed container.writeChanges
+[2020-08-13 13:51:00.8140] - DEBUG - [Save session: 5] Completed waitUsingRecursiveRunLoop
+[2020-08-13 13:51:00.8170] - INFO - Marking changed: false
+[2020-08-13 13:51:00.8190] - DEBUG - [Save session: 5] Completed super.save
+[2020-08-13 14:00:21.9320] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 14.00.21.zip
+[2020-08-13 14:02:37.1270] - DEBUG - [Save session: 6] Started, operation: saveOperation
+[2020-08-13 14:02:37.1270] - DEBUG - [Save session: 6] Before container.writeChanges
+[2020-08-13 14:02:37.1450] - DEBUG - [Save session: 6] Before waitUsingRecursiveRunLoop
+[2020-08-13 14:02:37.1460] - DEBUG - [Save session: 6] Completed container.writeChanges
+[2020-08-13 14:02:37.1460] - DEBUG - [Save session: 6] Completed waitUsingRecursiveRunLoop
+[2020-08-13 14:02:37.1490] - INFO - Marking changed: false
+[2020-08-13 14:02:37.1520] - DEBUG - [Save session: 6] Completed super.save
+[2020-08-13 14:04:57.9590] - DEBUG - [Save session: 7] Started, operation: autosaveInPlaceOperation
+[2020-08-13 14:04:57.9600] - DEBUG - [Save session: 7] Before container.writeChanges
+[2020-08-13 14:04:57.9600] - DEBUG - [Save session: 7] Before waitUsingRecursiveRunLoop
+[2020-08-13 14:04:58.0350] - DEBUG - [Save session: 7] Completed container.writeChanges
+[2020-08-13 14:04:58.0350] - DEBUG - [Save session: 7] Completed waitUsingRecursiveRunLoop
+[2020-08-13 14:04:58.0390] - DEBUG - [Save session: 7] Completed super.save
+[2020-08-13 14:07:31.3190] - DEBUG - [Save session: 8] Started, operation: saveOperation
+[2020-08-13 14:07:31.3190] - DEBUG - [Save session: 8] Before container.writeChanges
+[2020-08-13 14:07:31.3360] - DEBUG - [Save session: 8] Before waitUsingRecursiveRunLoop
+[2020-08-13 14:07:31.3370] - DEBUG - [Save session: 8] Completed container.writeChanges
+[2020-08-13 14:07:31.3370] - DEBUG - [Save session: 8] Completed waitUsingRecursiveRunLoop
+[2020-08-13 14:07:31.3390] - INFO - Marking changed: false
+[2020-08-13 14:07:31.3420] - DEBUG - [Save session: 8] Completed super.save
+[2020-08-13 14:10:24.5670] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 14.10.24.zip
+
+[2020-08-13 23:08:34.6870] - INFO - Reading from /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx (origin); preserving existing contents of project folder: true
+[2020-08-13 23:08:35.4260] - INFO - Done reading
+[2020-08-13 23:08:35.4340] - INFO - Marking changed: false
+[2020-08-13 23:08:35.4350] - INFO - Marking changed: false
+[2020-08-13 23:08:36.5100] - INFO - Proxy Config: exceptions: *.local, 169.254/16
+[2020-08-13 23:08:56.4730] - INFO - Project server PID: 2538
+[2020-08-13 23:08:57.5670] - INFO - Installing dependencies…
+[2020-08-13 23:08:57.6500] - ERROR - Fri, 14 Aug 2020 03:08:57 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at Applications/Framer.app/Contents/Resources/Server/lib/server.js:131:17
+[2020-08-13 23:08:57.7210] - INFO - GET 304 /node_modules/framer/build/framer.debug.js 0 B (4ms)
+[2020-08-13 23:08:58.7370] - INFO - GET 304 /node_modules/framer/build/framer.debug.js 0 B (1ms)
+[2020-08-13 23:08:58.9690] - INFO - GET 200 /design/document.json 0 B (5ms)
+[2020-08-13 23:09:59.7680] - DEBUG - [Save session: 0] Started, operation: autosaveInPlaceOperation, implicitly cancellable
+[2020-08-13 23:09:59.7680] - DEBUG - [Save session: 0] Before container.writeChanges
+[2020-08-13 23:09:59.7680] - DEBUG - [Save session: 0] Not autosaving to archive, implicitly cancellable
+[2020-08-13 23:10:00.0210] - DEBUG - [Save session: 0] Completed container.writeChanges
+[2020-08-13 23:15:32.1190] - ERROR - yarn info: Received invalid response from npm.
+[2020-08-13 23:15:32.2420] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.2840] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.3210] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.3270] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.4600] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.4610] - INFO - Installing dependencies - DONE. Took 394894ms
+[2020-08-13 23:15:32.5290] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.6410] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:32.7490] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:33.2800] - ERROR - error running yarn: {"type":"warning","data":"package.json: No license field"}
+[2020-08-13 23:15:33.2870] - INFO - Marking changed: false
+[2020-08-13 23:18:51.7000] - INFO - Backing up to /Users/c258046/Documents/repos/universal-flows/universal-prototypes/UF_Registration.framerfx/.backups/2020-08-13 23.18.51.zip

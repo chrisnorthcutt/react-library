@@ -838,10 +838,12 @@
             "codeComponentIdentifier" : ".\/ListItem.tsx_ListItem",
             "codeComponentPackageVersion" : "1.74.0",
             "codeComponentProps" : {
+              "firstInList" : true,
               "hasIcon" : true,
               "icon" : "caret-right",
               "iconPosition" : "Right",
-              "label" : "Hello Framer!"
+              "label" : "Hello Framer!",
+              "lastInList" : true
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -859,7 +861,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 48,
+            "height" : 50,
             "heightType" : 0,
             "id" : "NLccq0VtB",
             "intrinsicHeight" : 48,
