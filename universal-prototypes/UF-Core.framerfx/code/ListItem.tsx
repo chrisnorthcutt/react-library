@@ -21,25 +21,31 @@ export function ListItem(props) {
                 {...rest}
                 onTap={onTap}
                 paddingLeft={16}
-                paddingRight={16}
+                paddingRight={12}
                 gap={16}
                 alignment={"center"}
-                distribution={iconPosition === "Left" ? "start" : "space-between"}
+                distribution={
+                    iconPosition === "Left" ? "start" : "space-between"
+                }
                 direction={"horizontal"}
             >
-                {iconPosition === "Left" ? <Icon
-                    iconName={icon}
-                    style={{ display: hasIcon ? "initial" : "none" }}
-                    fill={colors.primary600}
-                    size={24}
-                /> : null}
+                {iconPosition === "Left" ? (
+                    <Icon
+                        iconName={icon}
+                        style={{ display: hasIcon ? "initial" : "none" }}
+                        fill={colors.primary600}
+                        size={24}
+                    />
+                ) : null}
                 <Type.Body1>{label}</Type.Body1>
-                {iconPosition === "Right" ? <Icon
-                    iconName={icon}
-                    style={{ display: hasIcon ? "initial" : "none"}}
-                    fill={colors.primary600}
-                    size={24}
-                /> : null}
+                {iconPosition === "Right" ? (
+                    <Icon
+                        iconName={icon}
+                        style={{ display: hasIcon ? "initial" : "none" }}
+                        fill={colors.primary600}
+                        size={24}
+                    />
+                ) : null}
             </Stack>
         </Frame>
     )
@@ -79,7 +85,7 @@ addPropertyControls(ListItem, {
         defaultValue: "Left",
         hidden(props) {
             return !props.hasIcon
-        }
+        },
     },
     firstInList: {
         title: "First in List",

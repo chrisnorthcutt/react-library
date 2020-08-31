@@ -4,6 +4,7 @@ import { colors, spacing, shadows } from "./Variables"
 import * as Text from "./Typography"
 import { Icon } from "./Icon"
 import { iconNames, iconOptions } from "./IconList"
+import { StatusBar } from "./StatusBar"
 
 // Learn more: https://framer.com/api
 
@@ -12,42 +13,48 @@ export function NavBar(props) {
         navTitle,
         iconLeft,
         iconLeftNav,
-        iconRightNav,
-        iconRight,
+        iconRightNav1,
+        iconRightNav2,
+        iconRight1,
+        iconRight2,
+        hasStatus,
         ...rest
     } = props
 
     return (
-        <Frame
-            background={colors.white}
-            {...rest}
-            style={{ borderBottom: `1px solid ${colors.grey200}` }}
-        >
+        <Frame background={colors.white} {...rest} shadow={shadows.z2i}>
+            <StatusBar style={{ opacity: hasStatus ? 1 : 0 }} />
             <Stack
                 direction={"horizontal"}
                 padding={16}
+                distribution={"space-between"}
                 background={colors.white}
                 height={56}
                 bottom={0}
                 width={"100%"}
             >
-                <Stack direction={"horizontal"} gap={32}>
-                    {iconLeft !== "blank" ? <Icon
-                        fill={colors.grey900}
-                        onTap={iconLeftNav}
-                        iconName={iconLeft}
-                    /> : null}
-                    <Text.H6 style={{ color: colors.grey900 }}>
-                        {navTitle}
-                    </Text.H6>
+                <Icon
+                    fill={colors.primary600}
+                    onTap={iconLeftNav}
+                    iconName={iconLeft}
+                />
+                <Text.PageTitle
+                    style={{ marginLeft: 48, color: colors.grey900 }}
+                >
+                    {navTitle}
+                </Text.PageTitle>
+                <Stack direction={"horizontal"} gap={24} width={72}>
+                    <Icon
+                        onTap={iconRightNav1}
+                        fill={colors.primary600}
+                        iconName={iconRight1}
+                    />
+                    <Icon
+                        onTap={iconRightNav2}
+                        fill={colors.primary600}
+                        iconName={iconRight2}
+                    />
                 </Stack>
-
-                {iconRight !== "blank" ? <Icon
-                    onTap={iconRightNav}
-                    style={{ marginLeft: "auto" }}
-                    fill={colors.grey900}
-                    iconName={iconRight}
-                /> : null}
             </Stack>
         </Frame>
     )
@@ -57,7 +64,8 @@ NavBar.defaultProps = {
     height: 80,
     width: 375,
     iconLeft: "arrow-left",
-    iconRight: "info",
+    iconRight1: "blank",
+    iconRight2: "info",
     navTitle: "Title",
 }
 
@@ -74,16 +82,31 @@ addPropertyControls(NavBar, {
         options: iconNames,
         optionTitles: iconOptions,
     },
+
     iconLeftNav: {
         type: ControlType.EventHandler,
     },
-    iconRightNav: {
+    iconRightNav1: {
         type: ControlType.EventHandler,
     },
-    iconRight: {
-        title: "Right Icon",
+    iconRightNav2: {
+        type: ControlType.EventHandler,
+    },
+    iconRight1: {
+        title: "Right Icon 1",
         type: ControlType.Enum,
         options: iconNames,
         optionTitles: iconOptions,
+    },
+    iconRight2: {
+        title: "Right Icon 2",
+        type: ControlType.Enum,
+        options: iconNames,
+        optionTitles: iconOptions,
+    },
+    hasStatus: {
+        title: "Status Bar",
+        type: ControlType.Boolean,
+        defaultValue: false,
     },
 })

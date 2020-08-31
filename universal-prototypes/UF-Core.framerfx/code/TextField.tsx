@@ -1,24 +1,24 @@
-import * as React from "react";
-import { useState, useRef, useEffect } from "react";
-import { colors, spacing } from "./Variables";
-import styled from "styled-components";
-import { motion, addPropertyControls, ControlType, Frame } from "framer";
-import * as Type from "./Typography";
-import { Icon } from "./Icon";
+import * as React from "react"
+import { useState, useRef, useEffect } from "react"
+import { colors, spacing } from "./Variables"
+import styled from "styled-components"
+import { motion, addPropertyControls, ControlType, Frame } from "framer"
+import * as Type from "./Typography"
+import { Icon } from "./Icon"
 
 interface Props {
-    enabled: Boolean;
-    focused: Boolean;
-    type: String;
+    enabled: Boolean
+    focused: Boolean
+    type: String
 }
 
 const StyledField = styled(motion.div).attrs((props: Props) => {
-    const { enabled, focused, type } = props;
+    const { enabled, focused, type } = props
     return {
         enabled: enabled,
         type: type,
         focused: focused,
-    };
+    }
 })`
     width: 100%;
     height: 100%;
@@ -65,7 +65,7 @@ const StyledField = styled(motion.div).attrs((props: Props) => {
         padding: 0 ${spacing["2x"]};
         padding-top: 4px;
     }
-`;
+`
 
 export function TextField(props: any) {
     //********** Set Props **********//
@@ -76,99 +76,122 @@ export function TextField(props: any) {
         focused,
         type,
         empty,
+        inputMask,
         hasError,
         defaultValue = "",
         assistMessage = "Password must contain at least one letter, at least one number, and be longer than six charaters.",
         errorMessage = "You have included non-alphabetical characters",
         color,
         ...rest
-    } = props;
+    } = props
 
     //********** Set Variables **********//
 
-    let showIcon = false;
-    let activeColor, message;
-    const inputRef = useRef();
-    const id = Math.floor(Math.random() * 8888);
+    let showIcon = false
+    let activeColor, message
+    const inputRef = useRef()
+    const id = Math.floor(Math.random() * 8888)
 
     //********** Set States **********//
 
-    const [isFocused, setFocused] = useState(focused);
-    const [value, setValue] = useState(defaultValue);
-    const [isValid, setValid] = useState(hasError);
-    const [showPassword, setShowPassword] = useState(false);
+    const [isFocused, setFocused] = useState(focused)
+    const [value, setValue] = useState(defaultValue)
+    const [isValid, setValid] = useState(hasError)
+    const [showPassword, setShowPassword] = useState(false)
 
     //********** Validation Checks **********//
 
     // Check if email is valid
     function emailIsValid(email: string) {
-        return /\S+@\S+\.\S+/.test(email);
+        return /\S+@\S+\.\S+/.test(email)
     }
 
     // Check if password is valid
     function passwordIsValid(password: string) {
-        return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(
-            password
-        );
+        return /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/.test(password)
+    }
+
+    // Check Phone Number is valid
+
+    function phoneIsValid(phone: any) {
+        return /(\d{3})(\d{3})(\d{4})/.test(phone)
     }
 
     //********** Input Events **********//
 
     function onChange(e: any) {
-        const value = e.target.value;
-        if (props.onChange) props.onChange(value);
+        const value = e.target.value
+        if (props.onChange) props.onChange(value)
 
-        setValue(value);
+        setValue(value)
 
         if (props.onValueChange) {
-            props.onValueChange(value);
+            props.onValueChange(value)
         }
-        setValue(value);
+        setValue(value)
         if (type === "email") {
-            setValid(emailIsValid(value));
-        } else if (type === "password") setValid(passwordIsValid(value));
+            setValid(emailIsValid(value))
+        } else if (type === "password") {
+            setValid(passwordIsValid(value))
+        } else if (type === "text" && inputMask === "phone") {
+            phoneMask(event)
+        }
     }
 
-    function toggleFocus() {
-        setFocused(!isFocused);
+    function toggleFocus(event) {
+        setFocused(!isFocused)
     }
 
     function togglePassword() {
-        setShowPassword(!showPassword);
+        setShowPassword(!showPassword)
         //@ts-ignore
-        inputRef.current.focus();
+        inputRef.current.focus()
     }
 
     useEffect(() => {
         if (emailIsValid(defaultValue)) {
-            setValid(true);
+            setValid(true)
             if (value != defaultValue || defaultValue != "") {
-                setValue(defaultValue);
+                setValue(defaultValue)
             }
         }
-    }, [defaultValue]);
+    }, [defaultValue])
+
+    function phoneMask(event) {
+        let Regex = /(\d{0,3})(\d{0,3})(\d{0,4})/
+        let value = event.target.value
+        let newValue = event.target.value.replace(/\D/g, "").match(Regex)
+
+        event.target.value = !newValue[2]
+            ? newValue[1]
+            : "(" +
+              newValue[1] +
+              ") " +
+              newValue[2] +
+              (newValue[3] ? "-" + newValue[3] : "")
+        setValid(value.length === 14)
+    }
 
     //********** Check Input State **********//
 
     if (isFocused) {
-        activeColor = color;
-        message = assistMessage;
+        activeColor = color
     } else if ((!isValid && value.length > 0 && !isFocused) || hasError) {
         if (errorMessage === "") {
-            activeColor = colors.grey400;
-            message = assistMessage;
+            activeColor = colors.grey400
+            message = assistMessage
         } else {
-            activeColor = colors.danger;
-            message = errorMessage;
-            showIcon = !showIcon;
+            activeColor = colors.danger
+            message = errorMessage
+            showIcon = !showIcon
         }
     } else if ((!isFocused && !empty) || defaultValue != "") {
-        activeColor = colors.grey400;
-        message = assistMessage;
+        activeColor = colors.grey400
+        message = assistMessage
     } else if (empty && !isFocused) {
-        showIcon = !showIcon;
-        activeColor = colors.danger;
-        message = label + " cannot be empty";
+        showIcon = !showIcon
+        activeColor = colors.danger
+        message = label + " cannot be empty"
     }
 
     return (
@@ -184,7 +207,7 @@ export function TextField(props: any) {
                 onFocus={toggleFocus}
                 onBlur={toggleFocus}
                 onInvalid={() => setValid(false)}
-                style={{borderColor: activeColor}}
+                style={{ borderColor: activeColor }}
             />
             <motion.label
                 className="label"
@@ -251,7 +274,7 @@ export function TextField(props: any) {
                 <Type.Caption color={activeColor}>{message}</Type.Caption>
             </Frame>
         </StyledField>
-    );
+    )
 }
 
 TextField.defaultProps = {
@@ -263,7 +286,8 @@ TextField.defaultProps = {
     width: 375,
     height: 70,
     hasError: false,
-};
+    inputMask: "none",
+}
 
 addPropertyControls(TextField, {
     defaultValue: {
@@ -276,7 +300,7 @@ addPropertyControls(TextField, {
         type: ControlType.String,
         defaultValue: "",
         hidden() {
-            return true;
+            return true
         },
     },
     type: {
@@ -288,6 +312,16 @@ addPropertyControls(TextField, {
     label: {
         title: "Label",
         type: ControlType.String,
+    },
+    inputMask: {
+        title: "Input Mask",
+        type: ControlType.SegmentedEnum,
+        options: ["phone", "none"],
+        optionTitles: ["Phone", "None"],
+        defaultValue: "phone",
+        hidden(props) {
+            return props.type != "text"
+        },
     },
     assistMessage: {
         title: "Assist Msg",
@@ -320,7 +354,7 @@ addPropertyControls(TextField, {
         type: ControlType.Boolean,
         defaultValue: false,
         hidden() {
-            return true;
+            return true
         },
     },
     color: {
@@ -328,7 +362,7 @@ addPropertyControls(TextField, {
         type: ControlType.Color,
         defaultValue: colors.primary900,
         hidden(props) {
-            return true;
+            return true
         },
     },
-});
+})

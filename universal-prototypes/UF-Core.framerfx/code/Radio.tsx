@@ -6,103 +6,128 @@ import * as Type from "./Typography";
 import { motion, addPropertyControls, ControlType } from "framer";
 
 interface Props {
-  enabled: Boolean;
-  color: String;
+    disabled: Boolean;
+    color: String;
+    selected: Boolean;
+    activeColor: String;
 }
 
 const StyledRadio = styled(motion.div).attrs((props: Props) => {
-  return {
-    enabled: props.enabled,
-    color: props.color,
-  };
+    return {
+        disabled: props.disabled,
+        selected: props.selected,
+        activeColor: colors.primary600,
+    };
 })`
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: start;
-  align-content: flex-start;
-  align-items: center;
+    width: 100%;
+    height: ${spacing["5x"]};
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    align-items: center;
 
-  .container {
-    width: 1.5rem;
-    height: 1.5rem;
-    background: ${(props) => (props.enabled ? colors.white : colors.grey200)};
-    outline: none;
-    border: 1px solid ${(props) => props.color};
-    border-radius: 50%;
+    .container {
+        width: ${spacing["3x"]};
+        height: ${spacing["3x"]};
+        background: ${(props) =>
+            !props.disabled ? colors.white : colors.grey200};
+        outline: none;
+        border: 1px solid
+            ${(props) =>
+                props.selected && !props.disabled
+                    ? props.activeColor
+                    : !props.selected && !props.disabled
+                    ? colors.grey700
+                    : colors.grey400};
+        border-radius: 50%;
 
-    > .background {
-      width: 1rem;
-      height: 1rem;
-      margin: 3px auto;
-      background: ${(props) => props.color};
-      border-radius: 50%;
+        > .background {
+            width: ${spacing["2x"]};
+            height: ${spacing["2x"]};
+            margin: 3px auto;
+            background: ${(props) =>
+                props.selected && !props.disabled
+                    ? props.activeColor
+                    : !props.selected && !props.disabled
+                    ? colors.white
+                    : colors.grey400};
+            border-radius: 50%;
+        }
     }
-  }
-  > .label {
-    margin: 0 ${spacing["2x"]};
-    color: ${(props) => props.color};
-  }
+    > .label {
+        margin: 0 ${spacing["2x"]};
+        color: ${(props) => colors.grey900};
+        cursor: pointer;
+    }
 `;
 
 export function Radio(props: any) {
-  const { enabled, color, label } = props;
-  const [isChecked, setChecked] = useState(false);
+    const { disabled, label, selected } = props;
+    const [isChecked, setChecked] = useState(selected);
 
-  return (
-    <StyledRadio
-      onTap={() => {
-        setChecked(enabled ? !isChecked : isChecked);
-      }}
-      enabled={enabled}
-      color={color}
-    >
-      <div className="container">
-        <motion.div
-          initial={{
-            scale: isChecked ? 1 : 0,
-            opacity: isChecked ? 1 : 0,
-          }}
-          animate={{
-            scale: isChecked ? 1 : 0,
-            opacity: isChecked ? 1 : 0,
-          }}
-          transition={{
-            duration: 0.2,
-          }}
-          className="background"
-        />
-      </div>
-      <Type.Body2 className="label">{label}</Type.Body2>
-    </StyledRadio>
-  );
+    React.useEffect(() => {
+        let newSelectedState;
+        if (selected === true) {
+            newSelectedState = true;
+        } else if (selected === false) {
+            newSelectedState = false;
+        }
+        setChecked(newSelectedState);
+    }, [selected]);
+
+    return (
+        <StyledRadio
+            onTap={() => {
+                setChecked(!disabled ? !isChecked : isChecked);
+            }}
+            selected={isChecked}
+            disabled={disabled}
+        >
+            <div className="container">
+                <motion.div
+                    initial={{
+                        scale: isChecked ? 1 : 0,
+                        opacity: isChecked ? 1 : 0,
+                    }}
+                    animate={{
+                        scale: isChecked ? 1 : 0,
+                        opacity: isChecked ? 1 : 0,
+                    }}
+                    transition={{
+                        duration: 0.2,
+                    }}
+                    className="background"
+                />
+            </div>
+            <Type.Body2 className="label" style={{ marginLeft: ".5rem" }}>
+                {label}
+            </Type.Body2>
+        </StyledRadio>
+    );
 }
 
 Radio.defaultProps = {
-  width: 200,
-  height: 40,
-  color: colors.primary900,
-  enabled: true,
-  label: "Label",
+    width: 200,
+    height: 40,
+    color: colors.grey700,
+    disabled: true,
+    label: "Label",
 };
 
 addPropertyControls(Radio, {
-  enabled: {
-    title: "Enabled",
-    type: ControlType.Boolean,
-    defaultValue: true,
-  },
-  color: {
-    title: "Color",
-    type: ControlType.Color,
-    defaultValue: colors.primary900,
-    hidden(props) {
-      return true;
+    disabled: {
+        title: "Disabled",
+        type: ControlType.Boolean,
+        defaultValue: false,
     },
-  },
-  label: {
-    title: "Label",
-    type: ControlType.String,
-    defaultValue: "Label",
-  },
+    selected: {
+        title: "Selected",
+        type: ControlType.Boolean,
+        defaultValue: false,
+    },
+    label: {
+        title: "Label",
+        type: ControlType.String,
+        defaultValue: "Label",
+    },
 });

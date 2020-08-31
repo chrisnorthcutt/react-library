@@ -89,3 +89,13 @@ export const ButtonText = styled.span`
     letter-spacing: normal;
     text-transform: none;
 `
+
+export const PageTitle = styled.p`
+    color: ${(props) => props.color || "#212121"};
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+`
