@@ -1,9 +1,0 @@
-{
-	"framer": {
-		"id": "4557c3b4-d2eb-42b1-b7ff-49a404a364dd"
-	},
-	"peerDependencies": {
-		"framer": "^1"
-	},
-	"author": "Ken Spry"
-}
