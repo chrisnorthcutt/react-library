@@ -67,7 +67,7 @@ export function StatusBar(props) {
                     ></Frame>
                 </Stack>
 
-                <Text.Caption style={{ margin: 0 }}>{carrier}</Text.Caption>
+                <Text.Caption style={{ margin: 0 }}>Carrier</Text.Caption>
             </Stack>
 
             <Stack
@@ -120,18 +120,12 @@ export function StatusBar(props) {
 StatusBar.defaultProps = {
     height: 24,
     width: 375,
-    carrier: "LillyApp",
     battery: 100,
-    signal: 2,
+    signal: 4,
 }
 
 // Learn more: https://framer.com/api/property-controls/
 addPropertyControls(StatusBar, {
-    carrier: {
-        title: "Carrier",
-        type: ControlType.String,
-        defaultValue: "LillApp",
-    },
     battery: {
         title: "Battery",
         type: ControlType.Number,
