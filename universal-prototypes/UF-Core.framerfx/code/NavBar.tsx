@@ -22,7 +22,7 @@ export function NavBar(props) {
     } = props
 
     return (
-        <Frame background={colors.white} {...rest} shadow={shadows.z2i}>
+        <Frame background={colors.white} {...rest} shadow={shadows.z2i} width="100%">
             <StatusBar style={{ opacity: hasStatus ? 1 : 0 }} />
             <Stack
                 direction={"horizontal"}
@@ -61,8 +61,6 @@ export function NavBar(props) {
 }
 
 NavBar.defaultProps = {
-    height: 80,
-    width: 375,
     iconLeft: "arrow-left",
     iconRight1: "blank",
     iconRight2: "info",

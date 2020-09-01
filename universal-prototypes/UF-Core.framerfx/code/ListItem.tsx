@@ -11,7 +11,7 @@ export function ListItem(props) {
     const { label, icon, onTap, hasIcon, iconPosition, firstInList, ...rest } = props
 
     return (
-        <Frame {...rest} background={colors.white}
+        <Frame {...rest} background={colors.white} width="100%"
             style={{
                 borderBottom: "1px solid " + colors.grey200,
                 borderTop: firstInList ? "1px solid " + colors.grey200 : null
@@ -20,6 +20,7 @@ export function ListItem(props) {
             <Stack
                 {...rest}
                 onTap={onTap}
+                width="100%"
                 paddingLeft={16}
                 paddingRight={12}
                 gap={16}
@@ -53,7 +54,6 @@ export function ListItem(props) {
 
 ListItem.defaultProps = {
     height: 48,
-    width: 375,
     label: "List Item",
     hasIcon: true,
 }
